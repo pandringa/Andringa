@@ -28,33 +28,47 @@ var jadeIncludeSection = function(name){
 }
 
 //Components
-gulp.task('scripts', function() {
-	return gulp.src(paths.js)
-		//.pipe(minifyJS())
-		.pipe( concat('master.js') )
-		.pipe( gulp.dest( pathUtil.join(outPath, 'js/') ) );
-});
-gulp.task('images', function() {
-	return gulp.src(paths.img)
-		.pipe( imagemin( {optimizationLevel: 5} ) )
-		.pipe( gulp.dest( pathUtil.join(outPath,'img/') ) );
-});
-gulp.task('styles', function() {
-	return gulp.src(paths.css)
-		.pipe( stylus() )
-		.pipe( minifyCSS() )
-		.pipe( gulp.dest( pathUtil.join(outPath+'css/') ) );
-});
-gulp.task('pages', function() {
-	return gulp.src(paths.html)
-		.pipe( jade( {data: {section: jadeIncludeSection}} ) )
-		.pipe( minifyHTML() )
-		.pipe( gulp.dest(outPath) );
-});
-gulp.task('static', function() {
-	return gulp.src(paths.static)
-		.pipe( gulp.dest(outPath) );
-});
+var compiler = {
+	scripts: function() {
+		return gulp.src(paths.js)
+			//.pipe(minifyJS())
+			.pipe( concat('master.js') )
+			.pipe( gulp.dest( pathUtil.join(outPath, 'js/') ) );
+	},
+	images: function() {
+		return gulp.src(paths.img)
+			.pipe( imagemin( {optimizationLevel: 5} ) )
+			.pipe( gulp.dest( pathUtil.join(outPath,'img/') ) );
+	},
+	styles: function() {
+		return gulp.src(paths.css)
+			.pipe( stylus() )
+			.pipe( minifyCSS() )
+			.pipe( gulp.dest( pathUtil.join(outPath+'css/') ) );
+	},
+	pages: function() {
+		return gulp.src(paths.html)
+			.pipe( jade( {data: {section: jadeIncludeSection}} ) )
+			.pipe( minifyHTML() )
+			.pipe( gulp.dest(outPath) );
+	},
+	static:  function() {
+		return gulp.src(paths.static)
+			.pipe( gulp.dest(outPath) );
+	},
+	clean: function(done) {
+		rimraf( pathUtil.join(outPath), function(err) {
+			if(err) return done(err);
+			done();
+		});
+	}
+}
+gulp.task('scripts', compiler.scripts);
+gulp.task('images', compiler.images);
+gulp.task('styles', compiler.styles);
+gulp.task('pages', compiler.pages);
+gulp.task('static', compiler.static);
+
 
 // Methods
 gulp.task('watch', function() {
@@ -71,9 +85,30 @@ gulp.task('server', function() {
 	).listen(8000);
 });
 
-gulp.task('compile', ['scripts', 'images', 'styles', 'pages', 'static']);
 
-gulp.task('pushRemote', ['compile'], function(done) {
+gulp.task('compile', function(done) {
+	compiler.clean(function(err){
+		compiler.scripts();
+		compiler.images();
+		compiler.styles();
+		compiler.pages();
+		compiler.static();
+		done();
+	});
+});
+
+gulp.task('nojekyll', function(done) {
+	fs.writeFile("out/.nojekyll", "", function(err){
+		done();
+	})
+});
+gulp.task('gitignore', function(done){
+	fs.writeFile("out/.gitignore", ".DS_Store", function(err){
+		done();
+	});
+});
+
+gulp.task('pushRemote', ['compile', 'nojekyll', 'gitignore'], function(done) {
 	// Get last commit line
 	safeps.spawnCommand('git', ['log', '--oneline'], {cwd: __dirname}, function(err, stdout) {
 		if(err){
@@ -106,6 +141,8 @@ gulp.task('resetRemote', ['pushRemote'], function(done) {
 	});
 });
 
-gulp.task('deploy', ['compile', 'pushRemote', 'resetRemote']);
+gulp.task('deploy', ['compile', 'pushRemote', 'resetRemote'], function(){
+	console.log("Deployed to Github Pages!");
+});
 
 gulp.task('default', ['compile', 'watch', 'server']);
