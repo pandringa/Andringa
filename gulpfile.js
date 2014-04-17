@@ -98,7 +98,7 @@ gulp.task('pushRemote', ['compile'], function(done) {
 	});
 });
 
-gulp.task('resetRemote', ['pushRemote'] function(done) {
+gulp.task('resetRemote', ['pushRemote'], function(done) {
 	rimraf( pathUtil.join(outPath, ".git"), function(err) {
 		if(err) return done(err);
 		done();
