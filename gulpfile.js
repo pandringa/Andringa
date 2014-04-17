@@ -75,12 +75,13 @@ gulp.task('compile', ['scripts', 'images', 'styles', 'pages', 'static']);
 
 gulp.task('pushRemote', ['compile'], function(done) {
 	// Get last commit line
-	safeps.spawnCommand('git', ['log', '--oneline'], {cwd: __dirname}, function(err) {
+	safeps.spawnCommand('git', ['log', '--oneline'], {cwd: __dirname}, function(err, stdout) {
 		if(err){
 			console.log("ERROR getting git log", err);
 			return done(err);
 		} 
 		var lastCommit = stdout.split('\n')[0];
+		console.log("Last commit", lastCommit);
 		var gitCommands = [
 			['init'],
 			['add', '--all', '--force'],
