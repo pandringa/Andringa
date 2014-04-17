@@ -11,6 +11,7 @@ var connect = require('connect'),
 	jadeCompiler = require('jade'),
 	rimraf = require('rimraf'),
 	pathUtil = require('path'),
+	fs = require('fs'),
 	safeps = require('safeps');
 
 var paths = {
@@ -56,6 +57,11 @@ var compiler = {
 		return gulp.src(paths.static)
 			.pipe( gulp.dest(outPath) );
 	},
+	dotfiles: function() {
+		fs.mkdirSync( pathUtil.join(outPath) );
+		fs.writeFileSync( pathUtil.join(outPath)+'.gitignore', '.DS_Store');
+		fs.writeFileSync( pathUtil.join(outPath)+'.nojekyll', '');
+	},
 	clean: function(done) {
 		rimraf( pathUtil.join(outPath), function(err) {
 			if(err) return done(err);
@@ -88,6 +94,7 @@ gulp.task('server', function() {
 
 gulp.task('compile', function(done) {
 	compiler.clean(function(err){
+		compiler.dotfiles();
 		compiler.scripts();
 		compiler.images();
 		compiler.styles();
@@ -97,18 +104,7 @@ gulp.task('compile', function(done) {
 	});
 });
 
-gulp.task('nojekyll', function(done) {
-	fs.writeFile("out/.nojekyll", "", function(err){
-		done();
-	})
-});
-gulp.task('gitignore', function(done){
-	fs.writeFile("out/.gitignore", ".DS_Store", function(err){
-		done();
-	});
-});
-
-gulp.task('pushRemote', ['compile', 'nojekyll', 'gitignore'], function(done) {
+gulp.task('pushRemote', ['compile'], function(done) {
 	// Get last commit line
 	safeps.spawnCommand('git', ['log', '--oneline'], {cwd: __dirname}, function(err, stdout) {
 		if(err){
