@@ -11,7 +11,7 @@ var connect = require('connect'),
 	jadeCompiler = require('jade'),
 	rimraf = require('rimraf'),
 	pathUtil = require('path'),
-	safefs = require('safefs');
+	safeps = require('safeps');
 
 var paths = {
   'js': ['js/lib/*.js', 'js/*.js'],
@@ -73,13 +73,13 @@ gulp.task('server', function() {
 
 gulp.task('compile', ['scripts', 'images', 'styles', 'pages', 'static']);
 
-gulp.task('resetRemote', function() {
-	return rimraf( pathUtil.join(outPath, ".git") );
-});
-gulp.task('pushRemote', function(done) {
+gulp.task('pushRemote', ['compile'], function(done) {
 	// Get last commit line
 	safeps.spawnCommand('git', ['log', '--oneline'], {cwd: __dirname}, function(err) {
-		if(err) console.log("ERROR while getting last commit", err)
+		if(err){
+			console.log("ERROR getting git log", err);
+			return done(err);
+		} 
 		var lastCommit = stdout.split('\n')[0];
 		var gitCommands = [
 			['init'],
@@ -89,12 +89,22 @@ gulp.task('pushRemote', function(done) {
 		]
 		// Run git commands
 		safeps.spawnCommands('git', gitCommands, {cwd:outPath, stdio:'inherit'}, function(err){
-			if(err) console.log("ERROR while deploying", err);
-			done(err);
+			if(err){
+				console.log("ERROR with git commands", err);
+				return done(err);	
+			} 
+			return done();
 		});
 	});
 });
 
-gulp.task('deploy', ['resetRemote', 'compile', 'pushRemote', 'resetRemote']);
+gulp.task('resetRemote', ['pushRemote'] function(done) {
+	rimraf( pathUtil.join(outPath, ".git"), function(err) {
+		if(err) return done(err);
+		done();
+	});
+});
+
+gulp.task('deploy', ['compile', 'pushRemote', 'resetRemote']);
 
 gulp.task('default', ['compile', 'watch', 'server']);
