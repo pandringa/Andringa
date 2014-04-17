@@ -1,0 +1,235 @@
+@import 'normalize.css'
+@import '_fonts'
+*, *:after, *::before
+	-webkit-box-sizing border-box
+	-moz-box-sizing border-box
+	box-sizing border-box
+
+html, body, .container
+	position relative
+	width 100%
+	height 100%
+
+body
+	color #000
+	background #D3D1D2
+	font-family 'Droid Serif'
+
+
+.no-touch .container
+	overflow-x hidden
+
+
+
+.container
+	.header
+		z-index 200
+		margin 0 auto
+		padding 2em
+		width 80%
+		text-align center
+		-webkit-backface-visibility hidden
+		h1
+			margin 0 0 0.8em 0
+			padding 0
+			font-family 'Duase'
+			font-weight normal
+			font-size 4em
+			line-height 1
+			-webkit-backface-visibility hidden
+		span
+			display block
+			padding 0 0 0.6em 0.1em
+			font-size 60%
+			font-weight 400
+			color #000
+		.nav
+			position relative
+			display block
+			margin 0 auto
+			padding 0
+			list-style none
+			li
+				display inline-block
+				margin-bottom 10px
+				text-align center
+				text-decoration none
+				a.nav-link
+					position relative
+					display inline-block
+					margin 0 10px
+					padding 10px 0
+					outline none
+					border-top 2px solid #000
+					border-bottom 2px solid #000
+					color #000
+					text-decoration none
+					font-family 'Duase'
+					letter-spacing 2px
+					font-weight 700
+					font-size 1.5em
+					-webkit-transition border-color 0.3s, color 0.3s
+					transition border-color 0.3s, color 0.3s
+					&:hover, &:focus
+						border-color #fff
+						color #fff
+	.wrapper
+		position relative
+		display block
+		overflow hidden
+		min-height 100%
+		width 100%
+		section
+			z-index 1
+			min-height 100%
+			background-position 100% 0
+			background-repeat no-repeat
+			.content
+				position relative
+				margin auto
+				padding 1em 0
+				width 95%
+				text-align left
+				font-size 1.5em
+				h2
+					position relative
+					margin 30px 0 40px
+					color #000
+					font-family 'Duase'
+					font-weight 700
+					font-size 3em
+				.col
+					margin 0 auto
+					color #000
+					text-align justify
+					line-height 1.4
+					-webkit-column-width 30%
+					-moz-column-width 30%
+					column-width 30%
+					-webkit-column-count 3
+					-moz-column-count 3
+					column-count 3
+					-webkit-column-gap 1%
+					-moz-column-gap 1%
+					column-gap 1%
+				p
+					margin 0 0 20px 0
+					padding 0
+
+	.sidenav
+		div
+			position fixed
+			top 0
+			z-index 500
+			width 10%
+			height 100%
+			background rgba(0,0,0,0.3)
+			cursor pointer
+			-webkit-transition background 0.3s
+			transition background 0.3s
+			&:hover
+				background rgba(0,0,0,0.2)
+		.sidenav-left
+			left 0px
+		.sidenav-right
+			right 0px
+
+	&.triplelayout
+		// .nav
+		// 	width 33.33%
+		// 	height 80px
+		// 	li
+		// 		position absolute
+		// 		visibility hidden
+		// 		width 100%
+		// 	.nav-current, .nav-left, .nav-right, .nav-right-outer, .nav-left-outer
+		// 			visibility visible
+		// 	.nav-current
+		// 		left 0%
+		// 		a.nav-link
+		// 			border-color #fff
+		// 			color #fff
+		// 	.nav-left
+		// 		left -100%
+		// 	.nav-left-outer
+		// 		left -200%
+		// 	.nav-right
+		// 		left 100%
+		// 	.nav-right-outer
+		// 		left 200%
+		.wrapper
+			section
+				position absolute
+				top 0
+				left 10%
+				visibility hidden
+				padding 0 0 100px
+				width 80%
+				-webkit-backface-visibility hidden
+			section:not(.current)
+				overflow hidden
+				height 100%
+			.left, .left-outer, .current, .right, .right-outer
+				visibility visible
+			.left
+				left -70%
+			.left-outer
+				left -150%
+			.current
+				position relative
+				z-index 100
+			.right
+				left 90%
+			.right-outer
+				left 170%
+				
+
+	&.move-left
+		// .nav-current, .nav-left, .nav-right, .nav-right-outer, .nav-left-outer
+		// 	-webkit-transition -webkit-transform 0.5s, opacity 0.5s
+		// 	transition transform 0.5s, opacity 0.5s
+		// 	-webkit-transform translate3d(-100%,0,0)
+		// 	transform translate3d(-100%,0,0)
+		// .nav-left
+		// 	opacity 0
+		// .nav-right
+		// 	a.nav-link
+		// 		border-color #fff
+		// 		color #fff
+		// .nav-current
+		// 	a.nav-link
+		// 		border-color #893027
+		// 		color #893027
+		.left, .current, .right, .right-outer
+			-webkit-transition -webkit-transform 0.5s
+			transition transform 0.5s
+			-webkit-transform translate3d(-100%,0,0)
+			transform translate3d(-100%,0,0)
+
+	&.move-right
+		// .nav-current, .nav-left, .nav-right, .nav-right-outer, .nav-left-outer
+		// 	-webkit-transition -webkit-transform 0.5s, opacity 0.5s
+		// 	transition transform 0.5s, opacity 0.5s
+		// 	-webkit-transform translate3d(100%,0,0)
+		// 	transform translate3d(100%,0,0)
+		// .nav-left
+		// 	a.nav-link
+		// 		border-color #fff
+		// 		color #fff
+		// .nav-right
+		// 	opacity 0
+		// .nav-current
+		// 	a.nav-link
+		// 		border-color #893027
+		// 		color #893027
+		.left, .left-outer, .current, .right
+			-webkit-transition -webkit-transform 0.5s
+			transition transform 0.5s
+			-webkit-transform translate3d(100%,0,0)
+			transform translate3d(100%,0,0)
+
+	&.speed
+		.left, .left-outer, .current, .right
+			transition-timing-function linear
+		
+@import '_mq'			

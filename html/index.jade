@@ -1,0 +1,42 @@
+doctype
+html
+	head
+		title Testing out the new stuff!
+		link(rel="stylesheet" href="/css/master.css")
+
+		script(src="/js/modernizr.js")
+	body
+		div.container#container
+			header.header
+				h1 Peter Andringa
+				ul.nav
+					li#goto-1
+						a.nav-link(href="#section-1") First
+					li#goto-2
+						a.nav-link(href="#section-2") Second
+					li#goto-3
+						a.nav-link(href="#section-3") Third
+					li#goto-4
+						a.nav-link(href="#section-4") Fourth
+					li#goto-5
+						a.nav-link(href="#section-5") Fifth
+
+			div.wrapper
+				section#section-1
+					div.content
+						!= section("home")
+				section#section-2
+					div.content
+						!= section("about")
+				section#section-3
+					div.content
+						!= section("resume")
+				section#section-4
+					div.content
+						!= section("projects")
+				section#section-5
+					div.content
+						!= section("blog")
+
+
+		script(src="/js/master.js")
