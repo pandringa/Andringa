@@ -1,5 +1,38 @@
+// Normalize
 @import 'normalize.css'
-@import '_fonts'
+// Fonts
+//@import url("http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|Josefin\+Slab:300,400,700,300italic,400italic,700italic|Raleway:400,100,200,700,500");
+
+// Font-awesome
+@import 'font-awesome'
+// Nib
+@import 'nib'
+// Pure
+//@import url("http://yui.yahooapis.com/combo?pure/0.4.2/base-min.css&pure/0.4.2/grids-min.css")
+
+backgroundColor = #ecf0f1
+linkHoverColor = #0099CC
+titleColor = #2c3e50s
+
+headerHeight = 180px
+
+socialSize = 70px
+// Should always == -1 * (socialSize / 2)
+socialCircleOffset = -35px
+socialFontSize = 40px
+socialMargin = 25px
+
+facebookColor = #3B5998
+twitterColor = #55ACEE
+linkedinColor = #4875B4
+envelopeColor = #D14836
+rssColor = #FF6600
+dropboxColor = #007ee5
+githubColor = #000000
+
+
+@import '_typography'
+
 *, *:after, *::before
 	-webkit-box-sizing border-box
 	-moz-box-sizing border-box
@@ -12,13 +45,13 @@ html, body, .container
 
 body
 	color #000
-	background #D3D1D2
-	font-family 'Droid Serif'
+	background backgroundColor
+	padding 0
+	margin 0
 
 
 .no-touch .container
 	overflow-x hidden
-
 
 
 .container
@@ -26,24 +59,26 @@ body
 		z-index 200
 		margin 0 auto
 		padding 2em
+		position absolute
+		top 0
+		left 10%
 		width 80%
 		text-align center
 		-webkit-backface-visibility hidden
+		transition top 0.5s
+		&.frontpage
+			top 250px
 		h1
-			margin 0 0 0.8em 0
+			margin 0 0 0.3em 0
 			padding 0
-			font-family 'Duase'
-			font-weight normal
-			font-size 4em
-			line-height 1
-			-webkit-backface-visibility hidden
+
 		span
 			display block
 			padding 0 0 0.6em 0.1em
 			font-size 60%
 			font-weight 400
 			color #000
-		.nav
+		.main-nav
 			position relative
 			display block
 			margin 0 auto
@@ -54,68 +89,109 @@ body
 				margin-bottom 10px
 				text-align center
 				text-decoration none
+				z-index 1
 				a.nav-link
 					position relative
 					display inline-block
 					margin 0 10px
-					padding 10px 0
+					padding 10px 5px
 					outline none
-					border-top 2px solid #000
-					border-bottom 2px solid #000
-					color #000
-					text-decoration none
-					font-family 'Duase'
-					letter-spacing 2px
-					font-weight 700
-					font-size 1.5em
-					-webkit-transition border-color 0.3s, color 0.3s
-					transition border-color 0.3s, color 0.3s
-					&:hover, &:focus
-						border-color #fff
-						color #fff
+					transition color 0.5s, opacity 0.5s
+
+					&::before, &::after
+						position absolute
+						left 0
+						width 100%
+						height 1px
+						background #000
+						content ''
+						opacity 0
+						transition opacity 0.5s, transform 0.5s, background 0.5s
+						transform translateY(-10px)
+
+					&::before
+						top 0
+						transform translateY(-10px)
+
+					&::after
+						bottom 0
+						transform translateY(10px)
+
+					&.currentLink
+						opacity 1
+						&::after
+							opacity 1
+							transform translateY(0px)
+
+				&:hover, &:focus
+					& a.nav-link
+						opacity 1 !important
+						&::before, &::after
+							opacity 1 !important
+							transform translateY(0px) !important
+
+		&:hover a.nav-link
+			opacity 0.7 !important
+			&::after
+				opacity 0 !important
+				transform translateY(10px) !important
+
 	.wrapper
 		position relative
 		display block
-		overflow hidden
-		min-height 100%
 		width 100%
+		height 1px //forces children to work with min-height
+		margin-top headerHeight
+		min-height 625px
 		section
 			z-index 1
-			min-height 100%
 			background-position 100% 0
 			background-repeat no-repeat
+			position absolute
+			top 0
+			left 10%
+			visibility hidden
+			width 80%
+			height 1px
+			min-height 100%
+			-webkit-backface-visibility hidden
+			padding 0px 50px
+			&:not(.current)
+				overflow hidden
 			.content
 				position relative
+				display block
 				margin auto
 				padding 1em 0
 				width 95%
-				text-align left
-				font-size 1.5em
+				height 1px
+				min-height 100%
+				
 				h2
 					position relative
 					margin 30px 0 40px
-					color #000
-					font-family 'Duase'
-					font-weight 700
-					font-size 3em
-				.col
-					margin 0 auto
-					color #000
-					text-align justify
-					line-height 1.4
-					-webkit-column-width 30%
-					-moz-column-width 30%
-					column-width 30%
-					-webkit-column-count 3
-					-moz-column-count 3
-					column-count 3
-					-webkit-column-gap 1%
-					-moz-column-gap 1%
-					column-gap 1%
-				p
-					margin 0 0 20px 0
-					padding 0
-
+					
+				.body
+					min-height 100%
+					height auto !important
+					height 100%
+					margin 0 auto -100px
+				.footer
+					height 100px
+					margin-bottom 100px
+		.left, .left-outer, .current, .right, .right-outer
+			visibility visible
+		.left
+			left -70%
+		.left-outer
+			left -150%
+		.current
+			position relative
+			z-index 100
+		.right
+			left 90%
+		.right-outer
+			left 170%
 	.sidenav
 		div
 			position fixed
@@ -134,72 +210,7 @@ body
 		.sidenav-right
 			right 0px
 
-	&.triplelayout
-		// .nav
-		// 	width 33.33%
-		// 	height 80px
-		// 	li
-		// 		position absolute
-		// 		visibility hidden
-		// 		width 100%
-		// 	.nav-current, .nav-left, .nav-right, .nav-right-outer, .nav-left-outer
-		// 			visibility visible
-		// 	.nav-current
-		// 		left 0%
-		// 		a.nav-link
-		// 			border-color #fff
-		// 			color #fff
-		// 	.nav-left
-		// 		left -100%
-		// 	.nav-left-outer
-		// 		left -200%
-		// 	.nav-right
-		// 		left 100%
-		// 	.nav-right-outer
-		// 		left 200%
-		.wrapper
-			section
-				position absolute
-				top 0
-				left 10%
-				visibility hidden
-				padding 0 0 100px
-				width 80%
-				-webkit-backface-visibility hidden
-			section:not(.current)
-				overflow hidden
-				height 100%
-			.left, .left-outer, .current, .right, .right-outer
-				visibility visible
-			.left
-				left -70%
-			.left-outer
-				left -150%
-			.current
-				position relative
-				z-index 100
-			.right
-				left 90%
-			.right-outer
-				left 170%
-				
-
 	&.move-left
-		// .nav-current, .nav-left, .nav-right, .nav-right-outer, .nav-left-outer
-		// 	-webkit-transition -webkit-transform 0.5s, opacity 0.5s
-		// 	transition transform 0.5s, opacity 0.5s
-		// 	-webkit-transform translate3d(-100%,0,0)
-		// 	transform translate3d(-100%,0,0)
-		// .nav-left
-		// 	opacity 0
-		// .nav-right
-		// 	a.nav-link
-		// 		border-color #fff
-		// 		color #fff
-		// .nav-current
-		// 	a.nav-link
-		// 		border-color #893027
-		// 		color #893027
 		.left, .current, .right, .right-outer
 			-webkit-transition -webkit-transform 0.5s
 			transition transform 0.5s
@@ -231,5 +242,96 @@ body
 	&.speed
 		.left, .left-outer, .current, .right
 			transition-timing-function linear
-		
+
+.social
+	display none
+	text-align center
+	width 100%
+	a
+		background rgba(0,0,0,0)
+		border-radius socialSize
+		border 0px !important
+		cursor pointer
+		display inline-block
+		font-size socialFontSize
+		height socialSize 
+		line-height 25px			
+		margin 0 socialMargin
+		position relative
+		text-align center
+		user-select none
+		width socialSize 
+		.circle
+			border-radius 0
+			display block
+			height 0
+			left 50%
+			margin 0
+			position absolute
+			top 50%
+			transition all 0.3s
+			width 0
+		.fa
+			background none
+			color white
+			height socialSize 
+			line-height socialSize 
+			width socialSize 
+			position absolute
+			top 0
+			left 0
+			bottom 0
+			transition all 0.3s
+			z-index 10
+			height 100%
+			text-align center
+		&:hover
+			.circle
+				width socialSize 
+				height socialSize 
+				border-radius socialSize 
+				margin socialCircleOffset
+			.fa
+				color #FFF !important
+		&.facebook
+			.circle
+				background facebookColor
+			.fa
+				color facebookColor
+		&.twitter
+			.circle
+				background twitterColor
+			.fa
+				color twitterColor
+		&.linkedin
+			.circle
+				background linkedinColor
+			.fa
+				color linkedinColor
+		&.email
+			.circle
+				background envelopeColor
+			.fa
+				color envelopeColor
+		&.rss
+			.circle
+				background rssColor
+			.fa
+				color rssColor
+		&.dropbox
+			.circle
+				background dropboxColor
+			.fa
+				color dropboxColor
+		&.github
+			.circle
+				background githubColor
+			.fa
+				color githubColor
+
+.current, .left, .right
+	.social
+		display block			
+
+@import '_sections'	
 @import '_mq'			

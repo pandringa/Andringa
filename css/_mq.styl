@@ -1,4 +1,4 @@
-@media screen and (max-width 72.875em) 
+@media screen and (max-width 768px) 
 
 	.container
 		.header
@@ -9,6 +9,7 @@
 						widtn 160px
 		.wrapper 
 			font-size 80%
+			margin-top 60px
 			section
 				.content 
 					width 85%
@@ -22,16 +23,18 @@
 						-moz-column-count 2
 						column-count 2
 
-@media screen and (max-width 45.25em) 
+@media screen and (max-width 320px) 
 	.container
 		header
 			h1 
 				margin-bottom 0
 		.wrapper 
 			font-size 80%
+			margin-top 25px
 			section
 				background-position 0 28em
 				background-size 100%
+				position relative
 				.content
 					h2
 						margin 0 0 1em
@@ -42,3 +45,9 @@
 						-webkit-column-count auto
 						-moz-column-count auto
 						column-count auto
+			.current
+				width 90%
+			.left
+				right 5%
+			.right
+				left 95%

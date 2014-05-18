@@ -1,0 +1,93 @@
+#page-2 // About Me
+	.profile
+		float right
+		width 200px
+		height 200px
+		border-radius 100px
+		margin 10px
+		border-color #eee #ddd #bbb
+		border-width 1px
+		border-style solid
+		box-shadow rgba(0, 0, 0, 0.15) 0px 1px 3px
+
+#page-3 // Resume
+	.col
+		margin 5px
+		.resume-head
+			display block
+			width 100%
+			text-align center
+			font-family titleFont
+			font-weight 500
+
+		ul
+			font-size 0.9em
+			line-height 1.5em
+
+			li
+				margin 10px 0px
+
+			span.description
+				display block
+				font-size 0.85em
+				margin-left 5px
+				color #000
+				line-height 1.3em
+				margin-top 5px
+				margin-bottom 5px
+				a
+					padding-bottom 0px
+
+	.download
+		display block
+		width 100%
+		text-align center
+
+#page-4 // Projects
+	.grid-inner
+		padding 15px
+		padding-bottom 20px
+		h3
+			padding 0
+			margin 0
+			font-family 'Raleway'
+		p
+			padding 0
+			margin 0
+		.project-button
+			display block
+			width 250px
+			height 40px
+			border-radius 20px
+			border 1px solid black
+			margin 7px auto
+			text-align center
+			line-height 38px
+			font-family 'Raleway'
+			color black
+			cursor pointer
+			transition color 0.2s
+			transition border-color 0.2s
+			&:hover
+				color linkHoverColor
+				border-color linkHoverColor
+			&:after
+				content ''
+	.github
+		display block
+		width 100%
+		text-align center
+		margin-top 35px
+
+#page-5 // Blog
+	padding-top 5px
+	.medium
+		padding-bottom 25px
+		.embed
+			margin auto
+			display none
+
+#wrapper
+	.left, .right, .current
+		.embed
+			display block !important

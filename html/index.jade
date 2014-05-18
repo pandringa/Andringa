@@ -1,42 +1,44 @@
 doctype
 html
 	head
-		title Testing out the new stuff!
+		title Peter Andringa
+		meta(name="viewport" content="width=320")
+		link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,700,500|Quattrocento:400,700")
+		link(rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.4.2/base-min.css&pure/0.4.2/grids-min.css")
 		link(rel="stylesheet" href="/css/master.css")
-
 		script(src="/js/modernizr.js")
 	body
 		div.container#container
-			header.header
+			header.header.frontpage
 				h1 Peter Andringa
-				ul.nav
+				ul.main-nav
 					li#goto-1
-						a.nav-link(href="#section-1") First
+						a.nav-link(href="#home" data-page="1") Home
 					li#goto-2
-						a.nav-link(href="#section-2") Second
+						a.nav-link(href="#about" data-page="2") About Me
 					li#goto-3
-						a.nav-link(href="#section-3") Third
+						a.nav-link(href="#resume" data-page="3") Resume
 					li#goto-4
-						a.nav-link(href="#section-4") Fourth
+						a.nav-link(href="#projects" data-page="4") Projects
 					li#goto-5
-						a.nav-link(href="#section-5") Fifth
+						a.nav-link(href="#blog" data-page="5") Blog
 
-			div.wrapper
-				section#section-1
-					div.content
+			div.wrapper#wrapper
+				section(data-page="1")#section-1
+					div.content#page-1
 						!= section("home")
-				section#section-2
-					div.content
+				section(data-page="2")#section-2
+					div.content#page-2
 						!= section("about")
-				section#section-3
-					div.content
+				section(data-page="3")#section-3
+					div.content#page-3
 						!= section("resume")
-				section#section-4
-					div.content
+				section(data-page="4")#section-4
+					div.content#page-4
 						!= section("projects")
-				section#section-5
-					div.content
+				section(data-page="5")#section-5
+					div.content#page-5
 						!= section("blog")
 
 
-		script(src="/js/master.js")
+		script(async src="/js/master.js")

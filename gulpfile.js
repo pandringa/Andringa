@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
 	stylus = require('gulp-stylus'),
+	nib = require('nib')(),
+	bootstrap = require('bootstrap-stylus')
 	jade = require('gulp-jade'),
 	concat = require('gulp-concat'),
 	minifyJS = require('gulp-uglify'),
@@ -22,7 +24,7 @@ var paths = {
   'static': 'static/**/*'
 };
 var outPath = pathUtil.join( __dirname, "out/" );
-var deployRepo = "https://github.com/pandringa/test-deploy.git";
+var deployRepo = "FILL IN FOR DEPLOY";
 
 var jadeIncludeSection = function(name){
 	return jadeCompiler.renderFile( pathUtil.join(__dirname, "html/_sections", "_"+name)+".jade", {section: jadeIncludeSection} );
@@ -43,7 +45,11 @@ var compiler = {
 	},
 	styles: function() {
 		return gulp.src(paths.css)
-			.pipe( stylus() )
+			.pipe( stylus({
+				use: [nib, bootstrap],
+				compress: true,
+				'include css': true
+			}) )
 			.pipe( minifyCSS() )
 			.pipe( gulp.dest( pathUtil.join(outPath+'css/') ) );
 	},
@@ -80,15 +86,16 @@ gulp.task('static', compiler.static);
 gulp.task('watch', function() {
   gulp.watch(paths.js, ['scripts']);
   gulp.watch(paths.img, ['images']);
-  gulp.watch(paths.css, ['styles']);
-  gulp.watch(paths.html, ['pages']);
+  gulp.watch('css/**/*', ['styles']);
+  gulp.watch('html/**/*', ['pages']);
   gulp.watch(paths.static, ['static']);
 });
 
-gulp.task('server', function() {
-	connect.createServer(
-		connect.static( pathUtil.join(__dirname+"/"+outPath) )
-	).listen(8000);
+gulp.task('server', ['compile', 'watch'], function() {
+	connect()
+		.use(connect.static('out'))
+		.listen(9000);
+	console.log("Server listening on port 9000...");
 });
 
 
@@ -103,7 +110,6 @@ gulp.task('compile', function(done) {
 		done();
 	});
 });
-
 gulp.task('pushRemote', ['compile'], function(done) {
 	// Get last commit line
 	safeps.spawnCommand('git', ['log', '--oneline'], {cwd: __dirname}, function(err, stdout) {
@@ -129,7 +135,6 @@ gulp.task('pushRemote', ['compile'], function(done) {
 		});
 	});
 });
-
 gulp.task('resetRemote', ['pushRemote'], function(done) {
 	rimraf( pathUtil.join(outPath, ".git"), function(err) {
 		if(err) return done(err);
@@ -141,4 +146,4 @@ gulp.task('deploy', ['compile', 'pushRemote', 'resetRemote'], function(){
 	console.log("Deployed to Github Pages!");
 });
 
-gulp.task('default', ['compile', 'watch', 'server']);
+gulp.task('default', ['server']);

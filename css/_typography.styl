@@ -1,0 +1,55 @@
+titleFont = 'Raleway', sans-serif
+titleWeight = 100
+linkWeight = 400
+headerWeight = 500
+
+bodyFont = 'Quattrocento', serif;
+bodyWeight = 400
+
+linkBlue = #3498DB
+darkLinkBlue = #1066A0
+
+.header
+	h1
+		font-family titleFont 
+		font-weight titleWeight
+		font-size 4em
+		line-height 1
+		-webkit-backface-visibility hidden
+		color titleColor
+	.main-nav
+		a.nav-link
+			color #000
+			opacity 0.7
+			text-decoration none
+			font-family titleFont 
+			letter-spacing 2px
+			font-weight linkWeight
+			font-size 1.5em
+
+.wrapper
+	.content, .pure-g-r [class *= "pure-u"] 
+		text-align left
+		font-size 1.2rem
+		line-height 1.5em
+		color #000
+		font-family bodyFont
+		font-weight bodyWeight
+		line-height 1.5em
+
+		h2
+			font-family titleFont 
+			font-weight headerWeight
+			font-size 3em
+
+		a
+			text-decoration none
+			color linkBlue
+			padding-bottom 1px
+			border-bottom 1px solid linkBlue
+			transition border-width 1s
+			transition color 0.5s
+			transition border-color 0.5s
+			&:hover
+				color darkLinkBlue
+				border-color darkLinkBlue
