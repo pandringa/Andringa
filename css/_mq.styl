@@ -12,7 +12,7 @@
 			margin-top 60px
 			section
 				.content 
-					width 85%
+					width 100%
 					h2
 						font-size 1.8em
 					.col
@@ -25,17 +25,55 @@
 
 @media screen and (max-width 320px) 
 	.container
-		header
+		.header:not(.frontpage)
+			padding 0px
+			top -20px
 			h1 
 				margin-bottom 0
-		.wrapper 
-			font-size 80%
-			margin-top 25px
+				display none
+			.main-nav
+				li
+					a.nav-link
+						font-size 30px
+						width 100%
+						margin auto
+						text-align center
+						margin 0px
+						padding 0px
+						top 2px
+						&:not(.currentLink)
+							display none
+
+		.header.frontpage
+			top 0px !important
+			padding 0px
+			h1
+				display block
+				margin-bottom 0
+			.main-nav
+				padding 0
+				li
+					display block
+					margin auto
+					a.nav-link
+						display block
+						width 100%
+						text-align center
+						margin auto
+						display block
+		.wrapper
+			margin-top 0px
+			top 0px
 			section
 				background-position 0 28em
 				background-size 100%
 				position relative
+				padding 0px
+				margin-top 20px
 				.content
+					font-size 1em
+					margin 0px
+					padding 4px
 					h2
 						margin 0 0 1em
 					.col
@@ -45,9 +83,32 @@
 						-webkit-column-count auto
 						-moz-column-count auto
 						column-count auto
-			.current
+					.footer.social
+						display none
+					a.project-button
+						width 100% !important
+						margin auto !important
+			#section-2
+				top -100%
+			#section-3
+				top -210%
+			#section-4
+				top -315%
+			#section-5
+				top -420%
+
+			&.current
 				width 90%
-			.left
+			&.left
 				right 5%
-			.right
+			&.right
 				left 95%
+
+
+			//Page-specific
+			#page-2
+				img.profile
+					display block
+					margin auto
+					float none
+
