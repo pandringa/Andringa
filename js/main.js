@@ -217,25 +217,6 @@ window.onresize = function(event) { // Calculate height on resize
 	if(oldHeight != window.innerHeight)
 		calculateWrapperHeight();
 }
-var isScrolling = false;
-if(!mobilecheck()){
-	setInterval(function(){
-		var overScroll = (window.pageYOffset || document.documentElement.scrollTop)  - (document.documentElement.clientTop || 0);
-		
-		if(!isScrolling){
-			if(overScroll > 50){
-				navigate( 'right' );
-				isScrolling = true;
-			} else if(overScroll < -50){
-				navigate( 'left' );
-				isScrolling = true;
-			}
-		}
-		if( overScroll == 0){
-			isScrolling = false
-		}
-	}, 10);
-}
 
 
 /* --------------- Responsive Layout -------------- */
