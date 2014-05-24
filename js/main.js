@@ -37,7 +37,7 @@ var container = document.getElementById( 'container' ),
 		'transition': 'transitionend'
 	},
 	transEndEventName = transEndEventNames[Modernizr.prefixed( 'transition' )],
-	eventtype = mobilecheck() ? 'touchstart' : 'click',
+	eventtype = mobilecheck() ? 'touchend' : 'click',
 	sectionHashes = ['home', 'about', 'resume', 'projects', 'blog'],
 	sectionTitles = ['Home', 'About Me', 'Resume', 'Projects', 'Blog'],
 	current = 0,
@@ -87,7 +87,7 @@ function navigate(dir) {
 	removeClass( prevLink, 'currentLink');
 	addClass( nextLink, 'currentLink' );
 
-	window.location.hash = '#'+sectionHashes[ nextL ];
+	window.location.hash = nextL == 0 ? '' : '#'+sectionHashes[ nextL ];
 	document.title = 'Peter Andringa | '+sectionTitles[ nextL ];
 
 	calculateWrapperHeight();
@@ -165,26 +165,20 @@ else
 	jumpTo(0);
 
 
-var navL = document.createElement( 'div' ),
-	navR = document.createElement( 'div' ),
-	sidenav = document.createElement( 'nav' );
-
-navL.className = 'sidenav-left';
-navR.className = 'sidenav-right';
-sidenav.className = 'sidenav';
-
-sidenav.appendChild( navL );
-sidenav.appendChild( navR );
-container.insertBefore( sidenav, wrapper.nextSibling );
+var navL = document.getElementById( 'sidenav-left' ),
+	navR = document.getElementById( 'sidenav-right' ),
+	sidenav = document.getElementById( 'sidenav' );
 
 navL.addEventListener( eventtype, function() { navigate( 'left' ) } );
 navR.addEventListener( eventtype, function() { navigate( 'right' ) } );
-
+console.log('eventtype!', eventtype)
 links.forEach( function( el, i ) {
-	el.addEventListener( eventtype, function( ev ) {
+	el.addEventListener( 'click', function( ev ) {
 		var num = el.getAttribute('data-page')
 		jumpTo(num-1);
-	})
+		ev.preventDefault();
+		ev.stopPropagation();
+	});
 } );
 
 /* --------------- Listeners -------------- */

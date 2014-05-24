@@ -23,11 +23,16 @@
 						-moz-column-count 2
 						column-count 2
 
-@media screen and (max-width 320px) 
+@media screen and (max-width 640px) 
+	body
+		overflow hidden
+		overflow-y auto
 	.container
+		overflow hidden
+		overflow-y auto
 		.header:not(.frontpage)
 			padding 0px
-			top -20px
+			top 10px
 			h1 
 				margin-bottom 0
 				display none
@@ -45,7 +50,7 @@
 							display none
 
 		.header.frontpage
-			top 0px !important
+			top 50px
 			padding 0px
 			h1
 				display block
@@ -57,21 +62,21 @@
 					margin auto
 					a.nav-link
 						display block
-						width 100%
+						width 50%
 						text-align center
 						margin auto
 						display block
 		.wrapper
-			margin-top 0px
+			margin-top 65px
 			top 0px
 			section
 				background-position 0 28em
 				background-size 100%
 				position relative
 				padding 0px
-				margin-top 20px
+				margin-top 30px
 				.content
-					font-size 1em
+					//font-size 1em
 					margin 0px
 					padding 4px
 					h2
@@ -85,6 +90,8 @@
 						column-count auto
 					.footer.social
 						display none
+					.footer.navHelp
+						display block
 					a.project-button
 						width 100% !important
 						margin auto !important
