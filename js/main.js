@@ -177,7 +177,6 @@ var navL = document.getElementById( 'sidenav-left' ),
 
 navL.addEventListener( eventtype, function() { navigate( 'left' ) } );
 navR.addEventListener( eventtype, function() { navigate( 'right' ) } );
-console.log('eventtype!', eventtype)
 links.forEach( function( el, i ) {
 	el.addEventListener( 'click', function( ev ) {
 		var num = el.getAttribute('data-page')
