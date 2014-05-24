@@ -89,6 +89,7 @@ function navigate(dir) {
 
 	window.location.hash = nextL == 0 ? '' : '#'+sectionHashes[ nextL ];
 	document.title = 'Peter Andringa | '+sectionTitles[ nextL ];
+	ga('send', 'pageview', '/#'+sectionHashes[ nextL ]);
 
 	calculateWrapperHeight();
 
@@ -152,6 +153,11 @@ function jumpTo(num){
 	addClass(links[ num ], 'currentLink');
 
 	current = num;
+
+	window.location.hash = current == 0 ? '' : '#'+sectionHashes[ current ];
+	document.title = 'Peter Andringa | '+sectionTitles[ current ];
+	ga('send', 'pageview', '/#'+sectionHashes[ current ]);
+
 }
 if(window.location.hash === "#about")
 	jumpTo(1);
