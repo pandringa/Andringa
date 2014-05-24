@@ -24,7 +24,7 @@ var paths = {
   'static': 'static/**/*'
 };
 var outPath = pathUtil.join( __dirname, "out/" );
-var deployRepo = "FILL IN FOR DEPLOY";
+var deployRepo = "https://github.com/pandringa/pandringa.github.io";
 
 var jadeIncludeSection = function(name){
 	return jadeCompiler.renderFile( pathUtil.join(__dirname, "html/_sections", "_"+name)+".jade", {section: jadeIncludeSection} );
