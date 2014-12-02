@@ -40,7 +40,7 @@ var compiler = {
 	},
 	images: function() {
 		return gulp.src(paths.img)
-			.pipe( imagemin( {optimizationLevel: 5} ) )
+			// .pipe( imagemin( {optimizationLevel: 5} ) )
 			.pipe( gulp.dest( pathUtil.join(outPath,'img/') ) );
 	},
 	styles: function() {
