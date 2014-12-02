@@ -189,23 +189,23 @@ body
 		.right-outer
 			left 170%
 	.sidenav > div
-		position fixed
-		top 0
-		z-index 500
-		width 10%
-		height 100%
-		background rgba(0,0,0,0.3)
-		cursor pointer
-		-webkit-transition background 0.3s
-		transition background 0.3s
-		&:hover
-			background rgba(0,0,0,0.2)
-			
+			position fixed
+			top 0
+			z-index 500
+			width 10%
+			height 100%
+			background rgba(0,0,0,0.3)
+			cursor pointer
+			-webkit-transition background 0.3s
+			transition background 0.3s
+			&:hover
+				background rgba(0,0,0,0.2)
 		.sidenav-left
 			left 0px
+			
 		.sidenav-right
 			right 0px
-			
+
 		.arrow
 			font-size 75px
 			font-weight 100
@@ -219,8 +219,11 @@ body
 				left 6%
 			&.right-arrow
 				right 6%
-		&:hover .arrow
-			color linkHoverColor
+				
+	.sidenav-left:hover .left-arrow
+		color linkHoverColor
+	.sidenav-right:hover .right-arrow
+		color linkHoverColor
 
 	&.move-left
 		.left, .current, .right, .right-outer
