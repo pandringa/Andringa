@@ -32,11 +32,13 @@ body{
 	display: block;
 	position: absolute;
 	width: 30%;
+	min-width: 400px;
 	padding: 10px 20px;
 	border-radius: 2px;
 	@include respond-to("mobile"){
-		width: calc(100% - 30px);
+		width: calc(95% - 30px);
 		height: calc(100% - 30px);
+		min-width: 0px;
 	}
 	top: 50%;
 	left: 50%;
@@ -98,6 +100,12 @@ body{
  			border-radius: 50%;
  			border: 1px solid rgba(55, 55, 55, 0);
  			text-decoration: none;
+ 			&:first-of-type{
+				margin-left: 0;
+			}
+			&:last-of-type{
+				margin-right: 0;
+			}
   			&:hover{
   				border-color: rgba(55, 55, 55, 0.7);
   			}
