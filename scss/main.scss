@@ -82,6 +82,12 @@ body{
 		li{
 			display: inline-block;
 			list-style-type: none;
+			&:first-of-type .icon{
+				margin-left: 0;
+			}
+			&:last-of-type .icon{
+				margin-right: 0;
+			}
 		}
 		.icon{
 			display: inline-block;
@@ -100,12 +106,6 @@ body{
  			border-radius: 50%;
  			border: 1px solid rgba(55, 55, 55, 0);
  			text-decoration: none;
- 			&:first-of-type{
-				margin-left: 0;
-			}
-			&:last-of-type{
-				margin-right: 0;
-			}
   			&:hover{
   				border-color: rgba(55, 55, 55, 0.7);
   			}
