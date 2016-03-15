@@ -1,4 +1,5 @@
 @import "mixins";
+@import "icons/icons";
 
 body{
 	width: 100%;
@@ -18,7 +19,7 @@ body{
 		height: 100%;
 		margin: 0;
 		padding: 0;
-		transition: opacity 8s;
+		transition: opacity 7s;
 		opacity: 0;
 		background: white;
 		&.two{
@@ -31,7 +32,7 @@ body{
 	display: block;
 	position: absolute;
 	width: 30%;
-	height: 50%;
+	padding: 10px 20px;
 	border-radius: 2px;
 	@include respond-to("mobile"){
 		width: calc(100% - 30px);
@@ -50,11 +51,77 @@ body{
 		display: block;
 		margin: 50px auto 0px;
 	}
-	.name{
+	.name, .sub{
 		font-weight: 100;
-		text-transform: uppercase;
-		font-size: 2em;
 		text-align: center;
 		margin-top: 10px;
+		&.name{
+			text-transform: uppercase;
+			font-size: 2em;
+		}
+		&.sub{
+			font-weight: 100;
+			font-size: 1.2em;
+		}
+		a{
+			text-decoration: none;
+			color: #333;
+			border-bottom: 1px solid #555;
+			font-weight: 300;
+			color: #555;
+		}
+	}
+	ul.icons{
+		display: block;
+		margin: auto;
+		text-align: center;
+		margin-top: 30px;
+		padding-left: 0;
+		li{
+			display: inline-block;
+			list-style-type: none;
+		}
+		.icon{
+			display: inline-block;
+			font-size: 28px;
+			color: #555;
+			cursor: pointer;
+			z-index: 10;
+			position: relative;
+			width: 100%;
+			text-align: middle;
+			line-height: 60px;
+
+			width: 60px;
+  			height: 60px;
+  			margin: 5px;
+ 			border-radius: 50%;
+ 			border: 1px solid rgba(55, 55, 55, 0);
+ 			text-decoration: none;
+  			&:hover{
+  				border-color: rgba(55, 55, 55, 0.7);
+  			}
+  			transition: border-color 0.5s;
+			&.icon-twitter:hover{
+				border-color: #55ACEE;
+				color: #55ACEE;
+			}
+			&.icon-linkedin:hover{
+				border-color: #4875B4;
+				color: #4875B4;
+			}
+			&.icon-email:hover{
+				border-color: #FF6600;
+				color: #FF6600;
+			}
+			&.icon-resume:hover{
+				border-color: #2ECC71;
+				color: #2ECC71;
+			}
+			&.icon-github:hover{
+				border-color: #000000;
+				color: #000000;
+			}
+		}
 	}
 }
