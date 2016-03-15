@@ -1,235 +1,39 @@
-/* --------------- Helpers -------------- */
-function mobilecheck() {
-	var check = false;
-	(function(a){if(/(android|ipad|playbook|silk|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
-	return check;
-}
+var gradients = [
+	["#DE6262","#FFB88C"],
+	["#70e1f5","#ffd194"],
+	["#B3FFAB","#12FFF7"],
+	["#F0C27B","#4B1248"],
+	["#C9FFBF","#FFAFBD"],
+	["#B993D6","#8CA6DB"],
+	["#D3959B","#BFE6BA"],
+	["#DAD299","#B0DAB9"],
+	["#5D4157","#A8CABA"],
+	["#DDD6F3","#FAACA8"],
+	["#DE6262","#cbad6d"],
+	["#4B6CB7","#182848"],
+	["#FC354C","#0ABFBC"],
+	["#5F2C82","#49A09D"],
+	["#7474BF","#7474BF"],
+	["#3D7EAA","#FFE47A"],
+	["#5C258D","#4389A2"],
+	["#C2E59C","#64B3F4"],
+	["#348F50","#56B4D3"]
+]
 
-function hasClass(element, className){
-	return (element.className.indexOf(className) >= 0);
-}
-function addClass(element, className){
-	if ( 'classList' in document.documentElement )
-		element.classList.add(className);
-	else
-		element.className = element.className + " " + className;
-}
-function removeClass(element, className){
-	if(element.className.indexOf(className) >= 0)
-		if ( 'classList' in document.documentElement )
-			element.classList.remove(className);
-		else
-			element.className = element.className.replace(className, "");
-	}
+var current = one = document.querySelector('.background.one');
+var next = two = document.querySelector('.background.two');
 
-/* --------------- Variables -------------- */
-var container = document.getElementById( 'container' ),
-	wrapper = container.querySelector( 'div.wrapper' ),
-	header = container.querySelector( 'header.header' )
-	sections = Array.prototype.slice.call( wrapper.querySelectorAll( 'section' ) ),
-	links = Array.prototype.slice.call( container.querySelectorAll( 'a.nav-link' ) ),
-	sectionsCount = sections.length,
-	transEndEventNames = {
-		'WebkitTransition': 'webkitTransitionEnd',
-		'MozTransition': 'transitionend',
-		'OTransition': 'oTransitionEnd',
-		'msTransition': 'MSTransitionEnd',
-		'transition': 'transitionend'
-	},
-	transEndEventName = transEndEventNames[Modernizr.prefixed( 'transition' )],
-	eventtype = mobilecheck() ? 'touchend' : 'click',
-	sectionHashes = ['home', 'about', 'resume', 'projects', 'blog'],
-	sectionTitles = ['Home', 'About Me', 'Resume', 'Projects', 'Blog'],
-	current = 0,
-	isAnimating = false;
-
-function cleanClasses() {
-	sections.forEach( function( el, i ) {
-		el.className = '';
-	} );
-}
-function cleanLinks() {
-	sections.forEach( function( el, i ) {
-		removeClass(el, 'currentLink');
-	} );
-}
-
-/* --------------- Navigation -------------- */
-function navigate(dir) {
-	if( isAnimating ) {
-		return false;
-	}
-	isAnimating = true;
-
-	var invDir = dir === 'right' ? 'left' : 'right';
-	addClass( container, 'move-' + invDir );
+function changeGradient(){
+	var r = Math.floor(Math.random()*gradients.length);
+	next.style.background = "linear-gradient(to right, "+gradients[r][0]+", "+gradients[r][1]+")";
+	next.style.opacity = 1;
+	current.style.opacity = 0;
 	
-	var l = current === 0 ? sectionsCount - 1 : current - 1,
-		r = current < sectionsCount - 1 ? current + 1 : 0,
-		nextE, nextL;
-
-	if( dir === 'right' ) {
-		nextE = r < sectionsCount - 1 ? r + 1 : 0;
-		nextL = r < sectionsCount-1 ? r : sectionsCount-1;
-	}
-	else if( dir === 'left' ) {
-		nextE = l > 0 ? l - 1 : sectionsCount - 1;
-		nextL = l > 0 ? l : 0;
-	}
-
-	var nextSection = sections[ nextE ];
-	var prevLink = links[ current ]; 
-	var nextLink = links[ nextL ];
-
-	nextSection.className = '';
-	addClass( nextSection, '' + dir + '-outer' );
-
-	removeClass( prevLink, 'currentLink');
-	addClass( nextLink, 'currentLink' );
-
-	window.location.hash = nextL == 0 ? '' : '#'+sectionHashes[ nextL ];
-	document.title = 'Peter Andringa | '+sectionTitles[ nextL ];
-	ga('send', 'pageview', '/#'+sectionHashes[ nextL ]);
-
-	calculateWrapperHeight();
-
-	var moveToNum = dir == 'left' ? current - 1 : current + 1;
-	moveToNum = moveToNum%5;
-	if( moveToNum == 0)
-		addClass(header, 'frontpage')
-	if( current == 0)
-		removeClass(header, 'frontpage')
-
-	var onTransitionEndFn = function() {
-		nextSection.removeEventListener( transEndEventName, onTransitionEndFn );
-		cleanClasses();
-
-		if( dir === 'right' ) {
-			addClass( sections[ current ], 'left' );
-			addClass( sections[ r ], 'current' );
-			addClass( nextSection, 'right' );
-
-			current = current < sectionsCount - 1 ? current + 1 : 0;
-		}
-		else if( dir === 'left' ) {
-			addClass( nextSection, 'left' );
-			addClass( sections[ l ], 'current' );
-			addClass( sections[ current ], 'right' );
-
-			current = current > 0 ? current - 1 : sectionsCount - 1;
-		}
-		removeClass( container, 'move-' + invDir );
-		isAnimating = false;
-	}
-
-	nextSection.addEventListener( transEndEventName, onTransitionEndFn );
+	var temp = next;
+	next = current;
+	current = temp;
 }
+changeGradient()
 
-/* --------------- Navigation Setup -------------- */
-function jumpTo(num){
-	// Escape
-	var adjustedNum = (num == 0 && current == 4) ? 5 : num;
-	if(current - adjustedNum == 1)
-		return navigate('left');
-	if(current - adjustedNum == -1)
-		return navigate('right');
-
-	var numR = (num+1) > (sectionsCount-1) ? 0 : num+1,
-		numL = (num-1) < 0 ? sectionsCount-1 : num-1;
-
-	cleanClasses();
-
-	if(current == 0)
-		removeClass(header, 'frontpage');
-
-	if(num == 0)
-		addClass(header, 'frontpage');
-
-	addClass( sections[ num ], 'current' );
-	addClass( sections[ numR ], 'right' );
-	addClass( sections[ numL ], 'left' );
-
-	removeClass(links[ current ], 'currentLink');
-	addClass(links[ num ], 'currentLink');
-
-	current = num;
-
-	window.location.hash = current == 0 ? '' : '#'+sectionHashes[ current ];
-	document.title = 'Peter Andringa | '+sectionTitles[ current ];
-	ga('send', 'pageview', '/#'+sectionHashes[ current ]);
-
-}
-if(window.location.hash === "#about")
-	jumpTo(1);
-else if(window.location.hash === "#resume")
-	jumpTo(2);
-else if(window.location.hash === "#projects")
-	jumpTo(3);
-else if(window.location.hash === "#blog")
-	jumpTo(4);
-else
-	jumpTo(0);
-
-
-var navL = document.getElementById( 'sidenav-left' ),
-	navR = document.getElementById( 'sidenav-right' ),
-	sidenav = document.getElementById( 'sidenav' );
-
-navL.addEventListener( eventtype, function() { navigate( 'left' ) } );
-navR.addEventListener( eventtype, function() { navigate( 'right' ) } );
-links.forEach( function( el, i ) {
-	el.addEventListener( 'click', function( ev ) {
-		var num = el.getAttribute('data-page')
-		jumpTo(num-1);
-		ev.preventDefault();
-		ev.stopPropagation();
-	});
-} );
-
-/* --------------- Listeners -------------- */
-document.addEventListener( 'keydown', function( ev ) {
-	var keyCode = ev.keyCode || ev.which,
-		arrow = {
-			left: 37,
-			right: 39
-		};
-	switch (keyCode) {
-		case arrow.left :
-			navigate( 'left' );
-			break;
-		case arrow.right :
-			navigate( 'right' );
-			break;
-	}
-});
-
-if( mobilecheck() ) {
-	Hammer( container ).on( 'swipeleft', function( ev ) {
-		navigate( 'right' );
-	});
-
-	Hammer( container ).on( 'swiperight', function( ev ) {
-		navigate( 'left' );
-	});
-}
-
-window.onresize = function(event) { // Calculate height on resize
-	if(oldHeight != window.innerHeight)
-		calculateWrapperHeight();
-}
-
-
-/* --------------- Responsive Layout -------------- */
-var oldHeight = window.innerHeight;
-function calculateWrapperHeight() {
-	if(! mobilecheck() ){
-		var wrapper = document.getElementById('wrapper');
-		// Cross-browser page height, as per http://stackoverflow.com/a/1147768/1982325
-		var pageHeight = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
-		wrapper.style['min-height'] = (pageHeight-wrapper.offsetTop)+"px";
-		oldHeight = window.innerHeight;
-	}
-}
-calculateWrapperHeight(); // initial height
-
-/* --------------- Load Blog Posts -------------- */
+setTimeout(changeGradient, 2000)
+setInterval(changeGradient,8*1000)

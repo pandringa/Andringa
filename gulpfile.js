@@ -1,13 +1,13 @@
 var gulp = require('gulp'),
-	stylus = require('gulp-stylus'),
-	nib = require('nib')(),
-	bootstrap = require('bootstrap-stylus')
 	jade = require('gulp-jade'),
+	sass = require('gulp-sass'),
 	concat = require('gulp-concat'),
 	minifyJS = require('gulp-uglify'),
 	minifyCSS = require('gulp-minify-css'),
 	minifyHTML = require('gulp-minify-html'),
+	livereload = require('gulp-livereload'),
 	imagemin = require('gulp-imagemin');
+
 
 var connect = require('connect'),
 	jadeCompiler = require('jade'),
@@ -17,47 +17,42 @@ var connect = require('connect'),
 	safeps = require('safeps');
 
 var paths = {
-  'js': ['js/lib/*.js', 'js/*.js'],
+  'js': ['js/_*.js', 'js/[!_]*.js'],
   'img': 'img/**/*',
-  'css': 'css/[!_]*.styl',
-  'html': 'html/[!_]*.jade',
+  'css': 'scss/[!_]*.scss',
+  'html': 'jade/[!_]*.jade',
   'static': 'static/**/*'
 };
 var outPath = pathUtil.join( __dirname, "out/" );
 var deployRepo = "https://github.com/pandringa/pandringa.github.io";
 
-var jadeIncludeSection = function(name){
-	return jadeCompiler.renderFile( pathUtil.join(__dirname, "html/_sections", "_"+name)+".jade", {section: jadeIncludeSection} );
-}
-
 //Components
 var compiler = {
 	scripts: function() {
 		return gulp.src(paths.js)
-			//.pipe(minifyJS())
-			.pipe( concat('master.js') )
+			.pipe(minifyJS())
+			.pipe( concat('main.js') )
 			.pipe( gulp.dest( pathUtil.join(outPath, 'js/') ) );
 	},
 	images: function() {
 		return gulp.src(paths.img)
-			// .pipe( imagemin( {optimizationLevel: 5} ) )
+			.pipe( imagemin( {optimizationLevel: 5} ) )
 			.pipe( gulp.dest( pathUtil.join(outPath,'img/') ) );
 	},
 	styles: function() {
 		return gulp.src(paths.css)
-			.pipe( stylus({
-				use: [nib, bootstrap],
-				compress: true,
-				'include css': true
-			}) )
+        	.pipe(sass({outputStyle: 'compressed'}))
+        	.on('error', function (err) { console.log(err.message); })
 			.pipe( minifyCSS() )
-			.pipe( gulp.dest( pathUtil.join(outPath+'css/') ) );
+			.pipe( gulp.dest( pathUtil.join(outPath+'css/') ) )
+        	.pipe(livereload())
 	},
 	pages: function() {
-		return gulp.src(paths.html)
-			.pipe( jade( {data: {section: jadeIncludeSection}} ) )
+		return gulp.src('./jade/[!_]*.jade')
+	        .pipe(jade())
 			.pipe( minifyHTML() )
-			.pipe( gulp.dest(outPath) );
+			.pipe( gulp.dest(outPath) )
+	        .pipe(livereload())
 	},
 	static:  function() {
 		return gulp.src(paths.static)
@@ -84,14 +79,15 @@ gulp.task('static', compiler.static);
 
 // Methods
 gulp.task('watch', function() {
-  gulp.watch(paths.js, ['scripts']);
-  gulp.watch(paths.img, ['images']);
-  gulp.watch('css/**/*', ['styles']);
-  gulp.watch('html/**/*', ['pages']);
-  gulp.watch(paths.static, ['static']);
+	gulp.watch(paths.js, ['scripts']);
+	gulp.watch(paths.img, ['images']);
+	gulp.watch('scss/**/*', ['styles']);
+	gulp.watch('jade/**/*', ['pages']);
+	gulp.watch(paths.static, ['static']);
 });
 
 gulp.task('server', ['compile', 'watch'], function() {
+	livereload.listen();
 	connect()
 		.use(connect.static('out'))
 		.listen(9000);
