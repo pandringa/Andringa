@@ -5,9 +5,7 @@ var gulp = require('gulp'),
 	minifyJS = require('gulp-uglify'),
 	minifyCSS = require('gulp-minify-css'),
 	minifyHTML = require('gulp-minify-html'),
-	livereload = require('gulp-livereload'),
-	imagemin = require('gulp-imagemin');
-
+	livereload = require('gulp-livereload');
 
 var connect = require('connect'),
 	jadeCompiler = require('jade'),
@@ -18,7 +16,6 @@ var connect = require('connect'),
 
 var paths = {
   'js': ['js/_*.js', 'js/[!_]*.js'],
-  'img': 'img/**/*',
   'css': 'scss/[!_]*.scss',
   'html': 'jade/[!_]*.jade',
   'static': 'static/**/*'
@@ -33,11 +30,6 @@ var compiler = {
 			.pipe(minifyJS())
 			.pipe( concat('main.js') )
 			.pipe( gulp.dest( pathUtil.join(outPath, 'js/') ) );
-	},
-	images: function() {
-		return gulp.src(paths.img)
-			.pipe( imagemin( {optimizationLevel: 5} ) )
-			.pipe( gulp.dest( pathUtil.join(outPath,'img/') ) );
 	},
 	styles: function() {
 		return gulp.src(paths.css)
@@ -71,7 +63,6 @@ var compiler = {
 	}
 }
 gulp.task('scripts', compiler.scripts);
-gulp.task('images', compiler.images);
 gulp.task('styles', compiler.styles);
 gulp.task('pages', compiler.pages);
 gulp.task('static', compiler.static);
@@ -80,7 +71,6 @@ gulp.task('static', compiler.static);
 // Methods
 gulp.task('watch', function() {
 	gulp.watch(paths.js, ['scripts']);
-	gulp.watch(paths.img, ['images']);
 	gulp.watch('scss/**/*', ['styles']);
 	gulp.watch('jade/**/*', ['pages']);
 	gulp.watch(paths.static, ['static']);
@@ -99,7 +89,6 @@ gulp.task('compile', function(done) {
 	compiler.clean(function(err){
 		compiler.dotfiles();
 		compiler.scripts();
-		compiler.images();
 		compiler.styles();
 		compiler.pages();
 		compiler.static();
