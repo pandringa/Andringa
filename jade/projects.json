@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Test Project",
+    "description": "Test project description would go here.",
+    "image": "/img/projects/test.png",
+    "tags": ["coding"]
+  },
+  {
+    "title": "Test Project",
+    "description": "Test project description would go here.",
+    "image": "/img/projects/test.png",
+    "tags": ["coding", "design"]
+  },
+  {
+    "title": "Test Project",
+    "description": "Test project description would go here.",
+    "image": "/img/projects/test.png",
+    "tags": ["writing"]
+  },
+  {
+    "title": "Test Project",
+    "description": "Test project description would go here.",
+    "image": "/img/projects/test.png",
+    "tags": ["video"]
+  },
+  {
+    "title": "Test Project",
+    "description": "Test project description would go here.",
+    "image": "/img/projects/test.png",
+    "tags": ["photography"]
+  },
+  {
+    "title": "Test Project",
+    "description": "Test project description would go here.",
+    "image": "/img/projects/test.png",
+    "tags": ["coding"]
+  }
+]

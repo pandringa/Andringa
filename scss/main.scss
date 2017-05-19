@@ -3,16 +3,16 @@
 
 body{
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	background: white;
 	color: white;
-	font-family: "Raleway", sans-serif;
-	font-weight: 400;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
 	.background{
 		z-index: -1000;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -26,14 +26,44 @@ body{
 			opacity: 1;
 		}
 	}
+
+	&.show-card{
+		section.card{
+			pointer-events: auto;
+			opacity: 1;
+		}
+		section.projects{
+			pointer-events: none;
+			opacity: 0;
+			.project-container{
+				transform: scale(0);
+				opacity: 0;
+			}
+		}
+	}
+	&.show-projects{
+		section.card{
+			pointer-events: none;
+			opacity: 0;
+		}
+		section.projects{
+			.project-container{
+				transform: none;
+				opacity: 1;
+			}
+			pointer-events: auto;
+			opacity: 1;
+		}
+	}
 }
-.card{
+section.card{
 	z-index: 1;
 	display: block;
 	position: absolute;
 	width: 30%;
 	min-width: 450px;
 	padding: 10px 20px;
+	padding-bottom: 0;
 	border-radius: 2px;
 	@include respond-to("mobile"){
 		width: calc(95% - 30px);
@@ -46,6 +76,7 @@ body{
 	box-shadow: #777 0px 0px 2px;
 	background: white;
 	color: #333;
+	transition: opacity 0.3s;
 	.avatar{
 		width: 150px;
 		height: 150px;
@@ -57,29 +88,72 @@ body{
 		font-weight: 100;
 		text-align: center;
 		margin-top: 10px;
+		font-family: "Raleway", sans-serif;
+		font-weight: 100;
 		&.name{
 			text-transform: uppercase;
 			font-size: 2em;
+			margin-bottom: 0.5rem;
 		}
 		&.sub{
 			font-weight: 100;
 			font-size: 1.2em;
 			line-height: 1.8em;
+			@include respond-to("mobile"){
+				font-size: 1.1em;
+			}
+			margin-bottom: 0;
 		}
 		a{
 			text-decoration: none;
-			color: #333;
 			border-bottom: 1px solid #555;
-			font-weight: 300;
+			font-weight: 400;
 			color: #555;
 		}
+	}
+	button.projects{
+		background: none;
+		color: #555;
+		display: block;
+		font-size: 1.2rem;
+		font-weight: 300;
+		width: calc(100% + 40px);
+		border: none;
+		border-top: 1px solid #555;
+		position: relative;
+		top: 2px;
+		left: -20px;
+		padding: 20px;
+		cursor: pointer;
+		outline: none;
+		@include respond-to("mobile"){
+			width: 80%;
+		}
+		.icon{
+			position: relative;
+			display: inline;
+			top: 2px;
+			margin-left: 6px;
+			left: 0px;
+			transition: left 0.5s;
+		}
+		&:hover{
+			color: #000;
+			border-color: #000;
+			opacity: 0.5;
+			.icon{
+				left: 4px;
+			}
+			transition: opacity 0.3s;
+		}
+		font-family: "Lato", -apple-system, sans-serif;
+		font-weight: 400;
 	}
 	ul.icons{
 		display: block;
 		margin: auto;
 		text-align: center;
-		margin-top: 30px;
-		margin-bottom: 15px;
+		margin: 10px 0;
 		padding-left: 0;
 		li{
 			display: inline-block;
@@ -107,8 +181,8 @@ body{
 			line-height: 60px;
 
 			width: 60px;
-  			height: 60px;
-  			margin: 5px;
+  		height: 60px;
+  		margin: 5px;
  			border-radius: 50%;
  			border: 1px solid rgba(55, 55, 55, 0);
  			text-decoration: none;
@@ -139,6 +213,241 @@ body{
 			&.icon-dribbble:hover{
 				border-color: #EA4C89;
 				color: #EA4C89;
+			}
+		}
+	}
+}
+section.projects{
+	transition: opacity 0.3s;
+	padding: 30px;
+	.detail-overlay{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999;
+		background: #333;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.5s;
+		&.shown{
+			opacity: 0.7;
+			cursor: pointer;
+			pointer-events: auto;
+		}
+	}
+	a.back{
+		cursor: pointer;
+		position: relative;
+		display: block;
+		font-weight: 400;
+		.icon{
+			position: relative;
+			top: 2px;
+			right: 0px;
+			display: inline;
+			margin-right: 8px;
+			transition: right 0.5s;
+		}
+		text-shadow: #777 0px 0px 2px;
+		&:hover{
+			text-shadow: #555 0px 0px 3px;
+			.icon{
+				right: 4px;
+			}
+		}
+		transition: text-shadow 0.5s;
+	}
+	.grid{
+		width: calc(100% + 20px);
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		margin: 10px -20px;
+		// -webkit-perspective: 1500px;
+		// perspective: 1500px;
+		.project-container{
+			position: relative;
+			min-width: 350px;
+			-webkit-flex: 1 1 350px;
+			flex: 1;
+			margin: 20px;
+			cursor: pointer;
+			@include respond-to("mobile"){
+				min-width: 75%;
+			}
+			transform: none;
+			-webkit-transition: transform 0.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+			transition: transform 0.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+			&:hover{
+				// transform: scale(1.03);
+				.project-card{
+					box-shadow: #555 0px 0px 3px;
+				}
+				.project-title{
+					text-shadow: #555 0px 0px 3px;
+				}
+				.project-tag{
+					text-shadow: #555 0px 0px 3px;
+				}
+			}
+			.project-card{
+				z-index: 1000;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background: white;
+				padding: 10px;
+				border-radius: 2px;
+				box-shadow: #777 0px 0px 2px;
+				-webkit-transform-style: preserve-3d;
+		    transform-style: preserve-3d;
+		    -webkit-backface-visibility: hidden;
+			  backface-visibility: hidden;
+				.project-image{
+					position: relative;
+					width: 100%;
+					padding-bottom: 60%;
+					background-color: #555;
+					background-position: center;
+					background-size: cover;
+					border-radius: 2px;
+					-webkit-backface-visibility: hidden;
+			    backface-visibility: hidden;
+				}
+				.project-back{
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background: white;
+					color: #333;
+					-webkit-transform: rotateY(-179.9deg);
+    			transform: rotateY(-179.9deg);
+    			-webkit-backface-visibility: hidden;
+			    backface-visibility: hidden;
+			    .project-content{
+			    	position: absolute;
+			    	width: 100%;
+			    	height: 100%;
+			    	opacity: 0;
+			    	background: white;
+			    	color: #333;
+			    	transition: all 0.5s;
+			    }
+				}
+			}
+			.project-text{
+				width: 100%; 
+				padding: 5px 10px;
+				font-weight: 400;
+				transition: opacity 0.3s;
+				.project-title{
+					font-weight: 100;
+					font-size: 1.2rem;
+					display: block;
+					float: left;
+					text-shadow: #777 0px 0px 2px;
+					transition: text-shadow 0.5s; 
+				}
+				.project-tag{
+					display: block;
+					float: right;
+					text-align: right;
+					background: #333;
+					color: white;
+					font-size: 0.8rem;
+					padding: 0.2rem 0.8rem;
+					border-radius: 100px;
+					font-weight: 400;
+					margin-left: 0.2rem;
+					box-shadow: #777 0 0 2px;
+					transition: box-shadow 0.5s;
+					&.coding{
+						background: #0B1D49;
+					}
+					&.design{
+						background: #A712B7;
+					}
+					&.writing{
+						background: #10C944;
+					}
+					&.video{
+						background: #D61B2E;
+					}
+					&.photography{
+						background: #F78025;
+					}
+				}
+			}
+			&.flipped{
+				z-index: 1000;
+				pointer-events: none;
+				@include respond-to("mobile"){
+					// min-height: 59.75vw;
+				}
+				@include respond-to("tablet"){
+					// min-height: 59.75vw;
+				}
+				.project-card{
+					pointer-events: all;
+					z-index: 9999;
+					position: fixed;
+					top: 5% !important;
+					left: 30% !important;
+					width: 40% !important;
+					height: 90% !important;
+					transform: rotateY(179.9deg);
+				}
+				.project-text{
+					position: absolute;
+					bottom: -5px;
+					width: 100%;
+					opacity: 0;
+				}
+			}
+			&.animated{
+				z-index: 1000;
+				.project-card{
+					z-index: 9999;
+					-webkit-transition: 
+						transform 0.4s ease-out 0.1s,
+						top 0.4s ease-out 0.1s,
+						left 0.4s ease-out 0.1s,
+						width 0.4s ease-out 0.1s,
+						height 0.4s ease;
+    			transition: 
+						transform 0.4s ease-out 0.1s,
+						top 0.4s ease-out 0.1s,
+						left 0.4s ease-out 0.1s,
+						width 0.4s ease-out 0.1s,
+						height 0.4s ease;
+				}
+				&.flipped{
+					.project-card{
+						-webkit-transition: 
+							transform 0.4s ease-in-out,
+							top 0.4s ease-in-out,
+							left 0.4s ease-in-out,
+							width 0.4s ease-in-out,
+							height 0.6s cubic-bezier(0.770, 0.000, 0.175, 1.000) 0.3s;
+	    			transition: 
+							transform 0.4s ease-in-out,
+							top 0.4s ease-in-out,
+							left 0.4s ease-in-out,
+							width 0.4s ease-in-out,
+							height 0.6s cubic-bezier(0.770, 0.000, 0.175, 1.000) 0.3s;
+					}
+				}
 			}
 		}
 	}
