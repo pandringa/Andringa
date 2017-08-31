@@ -220,6 +220,7 @@ section.card{
 section.projects{
 	transition: opacity 0.3s;
 	padding: 30px;
+	padding-bottom: 0;
 	.detail-overlay{
 		position: fixed;
 		top: 0;
@@ -228,7 +229,7 @@ section.projects{
 		bottom: 0;
 		width: 100%;
 		height: 100%;
-		z-index: 999;
+		z-index: 100;
 		background: #333;
 		opacity: 0;
 		pointer-events: none;
@@ -272,6 +273,7 @@ section.projects{
 		-webkit-justify-content: space-between;
 		justify-content: space-between;
 		margin: 10px -20px;
+		margin-bottom: 0px;
 		// -webkit-perspective: 1500px;
 		// perspective: 1500px;
 		.project-container{
@@ -283,6 +285,10 @@ section.projects{
 			cursor: pointer;
 			@include respond-to("mobile"){
 				min-width: 75%;
+				min-height: 59.75vw;
+			}
+			@include respond-to("tablet"){
+				min-height: 59.75vw;
 			}
 			transform: none;
 			-webkit-transition: transform 0.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
@@ -300,7 +306,7 @@ section.projects{
 				}
 			}
 			.project-card{
-				z-index: 1000;
+				z-index: 10;
 				top: 0;
 				left: 0;
 				width: 100%;
@@ -313,6 +319,7 @@ section.projects{
 		    -webkit-backface-visibility: hidden;
 			  backface-visibility: hidden;
 				.project-image{
+					z-index: 50;
 					position: relative;
 					width: 100%;
 					padding-bottom: 60%;
@@ -331,41 +338,64 @@ section.projects{
 					bottom: 0;
 					background: white;
 					color: #333;
-					-webkit-transform: rotateY(-179.9deg);
-    			transform: rotateY(-179.9deg);
+					padding: 0.5rem 1.5rem;
+					overflow-y: scroll;
+					-webkit-transform: rotateY(180deg);
+    			transform: rotateY(180deg);
     			-webkit-backface-visibility: hidden;
 			    backface-visibility: hidden;
-			    .project-content{
-			    	position: absolute;
-			    	width: 100%;
-			    	height: 100%;
-			    	opacity: 0;
-			    	background: white;
-			    	color: #333;
-			    	transition: all 0.5s;
-			    }
+					.project-text{
+						width: auto;
+						opacity: 1;
+						vertical-align: bottom;
+						margin-bottom: 1rem;
+						margin-top: 1rem;
+						.project-title{
+							text-shadow: none;
+							color: #222;
+							font-family: "Raleway", sans-serif;
+							font-size: 2rem;
+							vertical-align: bottom;
+						}
+						.project-tag{
+							box-shadow: none;
+							top: 0.7rem; 
+							position: relative;
+							vertical-align: bottom;
+						}
+					}
+					img{
+						display: block;
+						max-width: 100%;
+						margin: auto;
+					}
 				}
 			}
 			.project-text{
 				width: 100%; 
-				padding: 5px 10px;
 				font-weight: 400;
 				transition: opacity 0.3s;
+				display: -webkit-flex;
+				display: flex;
+				&.outer{
+					padding: 5px 10px;
+				}
 				.project-title{
+					display: inline;
+					-webkit-flex-grow: 1;
+					flex-grow: 1;
 					font-weight: 100;
 					font-size: 1.2rem;
-					display: block;
-					float: left;
 					text-shadow: #777 0px 0px 2px;
-					transition: text-shadow 0.5s; 
+					transition: text-shadow 0.5s;
 				}
 				.project-tag{
-					display: block;
-					float: right;
+					display: inline;
 					text-align: right;
 					background: #333;
 					color: white;
 					font-size: 0.8rem;
+					max-height: 1rem;
 					padding: 0.2rem 0.8rem;
 					border-radius: 100px;
 					font-weight: 400;
@@ -390,35 +420,40 @@ section.projects{
 				}
 			}
 			&.flipped{
-				z-index: 1000;
-				pointer-events: none;
-				@include respond-to("mobile"){
-					// min-height: 59.75vw;
-				}
-				@include respond-to("tablet"){
-					// min-height: 59.75vw;
-				}
+				z-index: 200;
 				.project-card{
-					pointer-events: all;
-					z-index: 9999;
+					pointer-events: auto;
+					z-index: 500;
 					position: fixed;
 					top: 5% !important;
-					left: 30% !important;
-					width: 40% !important;
-					height: 90% !important;
-					transform: rotateY(179.9deg);
-				}
-				.project-text{
-					position: absolute;
-					bottom: -5px;
-					width: 100%;
-					opacity: 0;
+					left: 25% !important;
+					width: calc(50% - 20px) !important;
+					height: calc(90% - 20px) !important;
+					-webkit-perspective: 500px;
+					perspective: 500px;
+					@include respond-to("mobile"){
+						left: 20px !important;
+						top: 20px !important;
+						width: calc(100% - 60px) !important;
+						height: calc(100% - 60px) !important;
+					}
+					@include respond-to("tablet"){
+						top: 50px !important;
+						left: 50px !important;
+						width: calc(100% - 120px) !important;
+						height: calc(100% - 120px) !important;
+					}
+					-webkit-transform: rotate(180deg);
+					transform: rotateY(180deg);
+					.project-back{
+						pointer-events: auto;
+					}
 				}
 			}
 			&.animated{
-				z-index: 1000;
+				z-index: 200;
 				.project-card{
-					z-index: 9999;
+					z-index: 500;
 					-webkit-transition: 
 						transform 0.4s ease-out 0.1s,
 						top 0.4s ease-out 0.1s,
