@@ -9,14 +9,16 @@ html
 		section.card
 			img.avatar(src="img/portrait.jpg")
 			h1.name Peter Andringa
-			h3.sub #[a(href="https://robertsonscholars.org" target="_blank") Robertson Scholar] @ #[a(href="https://unc.edu" target="_blank") UNC - Chapel Hill] #[br] studying #[a(href="http://mejo.unc.edu") Journalism], #[a(href="http://cs.unc.edu") CS], and #[a(href="http://unceminor.org") Entrepreneurship]
+			h3.sub #[a(href="https://robertsonscholars.org" target="_blank") Robertson Scholar] @ #[a(href="https://unc.edu" target="_blank") UNC - Chapel Hill] 
+				| #[br] Innovation Fellow @ #[a(href="http://et-lab.org" target="_blank") Emerging Technologies Lab]
+				| #[br] studying #[a(href="http://mejo.unc.edu") Journalism], #[a(href="http://cs.unc.edu") CS], and #[a(href="http://unceminor.org") Entrepreneurship]
 			ul.icons
 				li: a.icon.icon-email(href="mailto:peter@andrin.ga" target="_blank")
 				li: a.icon.icon-github(href="https://github.com/pandringa" target="_blank")
 				li: a.icon.icon-dribbble(href="https://dribbble.com/pandringa" target="_blank")
 				li: a.icon.icon-linkedin(href="https://linkedin.com/in/PeterAndringa" target="_blank")
 				li: a.icon.icon-twitter(href="https://twitter.com/p_andringa" target="_blank")
-				li: a.icon.icon-resume(href="resume.pdf" target="_blank")
+				li: a.icon.icon-resume(href="PeterAndringa_resume.pdf" target="_blank")
 			button.projects(onclick="showProjects()") 
 				| View Portfolio
 				.icon.icon-forward
@@ -44,9 +46,12 @@ html
 								img(src=project.image)
 								p= project.description
 						.project-text.outer
-							a.project-title= project.title
+							.project-title
+								span= project.title
+								|   (#[a.project-link(href=project.link target="_blank")= project.link_title])
+								
 							each tag in project.tags
-								a.project-tag(class=tag)= tag
+								.project-tag(class=tag)= tag
 
 		.background.one
 		.background.two

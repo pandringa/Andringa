@@ -1,38 +1,50 @@
 [
   {
-    "title": "Test Project 1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/img/projects/test.png",
-    "tags": ["coding"]
+    "title": "Pilot Websites",
+    "description": "In 2014 and 2015, I Designed and built a series of websites for Pilot, a non-profit organization I helped start to increase education and access in Computer Science by hosting approachable hackathon-like events. The organization required a variety of websites on a number of platforms, including event sites (HTML, SASS, JS), an organizer portal (Angular.js) and a backend API and CMS (Python and Flask).",
+    "image": "/img/projects/pilot/cover.png",
+    "tags": ["coding", "design"],
+    "link": "https://github.com/gopilot",
+    "link_title": "Github"
   },
   {
-    "title": "Test Project",
-    "description": "Test project description would go here.",
-    "image": "/img/projects/test.png",
-    "tags": ["coding", "design"]
+    "title": "Joe for SBP",
+    "description": "I worked on communications strategy, digital tools, and online presence for Joe Nail, a Student Body President candidate at UNC. Projects included designing, building, and testing our website, creating internal analytics dashboards and email tools, and using big data (PostgresSQL, Neo4j, and Node.js) to better target messaging to different groups of students across campus.",
+    "image": "/img/projects/joeforsbp/cover.png",
+    "tags": ["design", "video"],
+    "link": "https://joeforsbp.com",
+    "link_title": "View"
   },
   {
-    "title": "Test Project",
-    "description": "Test project description would go here.",
-    "image": "/img/projects/test.png",
-    "tags": ["writing"]
+    "title": "It's Showtime",
+    "description": "At Pennapps Spring 2015, I built It's Showtime, a movie recommendations app that uses Metacritic ratings to help users find critics who share similar movie taste to them. The platform was built using MySQL and a Python (Flask) backend, and jQuery on the frontend to provide a tinder-like interface for users to rate movies and discover critics and new movies.",
+    "image": "/img/projects/itsshowtime/cover.png",
+    "tags": ["coding"],
+    "link": "https://github.com/PennApps15s",
+    "link_title": "Github"
   },
   {
-    "title": "Test Project",
-    "description": "Test project description would go here.",
-    "image": "/img/projects/test.png",
-    "tags": ["video"]
+    "title": "Twittemology",
+    "description": "At Pennapps Fall 2014, I built Twittemology, an app that used the (now-defunct) Topsy Twitter API to parse specific words and phrases on Twitter and map their usage over time. Technolgies used included Node.js, the Topsy API, and three.js to display tweets on the map.",
+    "image": "/img/projects/twittemology/cover.png",
+    "tags": ["coding", "design"],
+    "link": "https://github.com/twittemology/Server",
+    "link_title": "Github"
   },
   {
-    "title": "Test Project",
-    "description": "Test project description would go here.",
-    "image": "/img/projects/test.png",
-    "tags": ["photography"]
+    "title": "nvite Communities",
+    "description": "During Summer 2015 I worked at Nvite and helped build their Communities platform, a centralized hub for all events from each community hosted on the Nvite Platform. I managed the project from start-to-finish, including ideation, feature planning, design, and development across the stack, and it was shortly rolled out soon after I left. In May 2017, nvite was acquired by Eventbrite, who cited the Communities feature as a major reason for the acquision.",
+    "image": "/img/projects/nvite/cover.png",
+    "tags": ["coding"],
+    "link": "https://nvite.com/community/dctech",
+    "link_title": "Demo"
   },
   {
-    "title": "Test Project",
-    "description": "Test project description would go here.",
-    "image": "/img/projects/test.png",
-    "tags": ["coding"]
+    "title": "The Delta Center",
+    "description": "I spent Summer 2017 at The Delta Center, a non-profit center in Cleveland, MS that seeks to preserve and explore the rich cultural heritage of the Mississippi Delta. During my summer there, I took thousands of photos, produced more than a dozen videos, and designed two 70-page printed portfolios for their \"Most Southern Place on Earth\" teacher workshop.",
+    "image": "/img/projects/deltacenter/cover.png",
+    "tags": ["photo", "video", "design"],
+    "link": "https://deltacenterdsu.com/photos-portfolios-and-videos",
+    "link_title": "View"
   }
 ]
