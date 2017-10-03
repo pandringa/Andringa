@@ -3,14 +3,15 @@ html
 	head
 		title Peter Andringa
 		meta(name="viewport" content="width=device-width, user-scalable=0, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0")
-		link(href='https://fonts.googleapis.com/css?family=Raleway:100|Lato:400' rel='stylesheet' type='text/css')
+		link(href='href="https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:100,400"' rel='stylesheet' type='text/css')
 		link(rel="stylesheet" href="/css/main.css")
-	body
-		.num
-		.card
+	body.show-card
+		section.card
 			img.avatar(src="img/portrait.jpg")
 			h1.name Peter Andringa
-			h3.sub #[a(href="https://robertsonscholars.org" target="_blank") Robertson Scholar] @ #[a(href="https://unc.edu" target="_blank") UNC - Chapel Hill] #[br] studying #[a(href="http://mejo.unc.edu") Journalism], #[a(href="http://cs.unc.edu") CS], and #[a(href="http://unceminor.org") Entrepreneurship]
+			h3.sub #[a(href="https://robertsonscholars.org" target="_blank") Robertson Scholar] @ #[a(href="https://unc.edu" target="_blank") UNC - Chapel Hill] 
+				| #[br] Innovation Fellow @ #[a(href="http://et-lab.org" target="_blank") Emerging Technologies Lab]
+				| #[br] studying #[a(href="http://mejo.unc.edu") Journalism], #[a(href="http://cs.unc.edu") CS], and #[a(href="http://unceminor.org") Entrepreneurship]
 			ul.icons
 				li: a.icon.icon-email(href="mailto:peter@andrin.ga" target="_blank")
 				li: a.icon.icon-github(href="https://github.com/pandringa" target="_blank")
@@ -18,14 +19,104 @@ html
 				li: a.icon.icon-linkedin(href="https://linkedin.com/in/PeterAndringa" target="_blank")
 				li: a.icon.icon-twitter(href="https://twitter.com/p_andringa" target="_blank")
 				li: a.icon.icon-resume(href="PeterAndringa_resume.pdf" target="_blank")
+			button.projects(onclick="showProjects()") 
+				| View Portfolio
+				.icon.icon-forward
+
+		section.projects
+			.detail-overlay(onclick="hideDetail()")
+			a.back(onclick="showCard()")
+				.icon.icon-back 
+				| Back to profile
+			.grid
+				- var i = 0;
+				each project in projects
+					- var l = 600 + i*100; // length in s
+					- var d = 100 + i*50; // delay in s
+					- i++;
+					.project-container(style="-webkit-transition: opacity "+l+"ms linear "+d+"ms, transform "+l+"ms cubic-bezier(0.190, 1.000, 0.220, 1.000) "+d+"ms; transition: opacity "+l+"ms linear "+d+"ms, transform "+l+"ms cubic-bezier(0.190, 1.000, 0.220, 1.000) "+d+"ms;" onclick="showDetail(this)")
+						.project-card
+							.project-image(style="background-image: url("+project.image+");")
+							.project-back
+								.close-icon
+								.project-text
+									span.project-title= project.title
+									each tag in project.tags
+										span.project-tag(class=tag)= tag
+								img(src=project.image)
+								p= project.description
+						.project-text.outer
+							.project-title
+								span= project.title
+								|   (#[a.project-link(href=project.link target="_blank")= project.link_title])
+								
+							each tag in project.tags
+								.project-tag(class=tag)= tag
 
 		.background.one
 		.background.two
-		//- script.
-		//- 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		//- 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		//- 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		//- 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		//- 	ga('create', 'UA-45164401-1', 'andrin.ga');
-		//- 	ga('send', 'pageview');
-		script(async src="/js/main.js")
+		script.
+			var gradients = [
+				["#E44D26","#F16529"], ["#0575E6","#021B79"], ["#67B26F","#4ca2cd"], ["#41295a","#2F0743"],
+				["#141E30","#243B55"], ["#3a7bd5","#3a6073"], ["#56ab2f","#a8e063"], ["#42275a","#734b6d"],
+				["#2980b9","#2c3e50"], ["#fd746c","#ff9068"], ["#f46b45","#eea849"], ["#e53935","#e35d5b"],
+				["#136a8a","#267871"], ["#43cea2","#185a9d"], ["#24C6DC","#514A9D"], ["#134E5E","#71B280"],
+				["#FF512F","#F09819"], ["#3CA55C","#B5AC49"], ["#2b5876","#4e4376"], ["#02AAB0","#00CDAC"],
+				["#FF512F","#DD2476"], ["#EB3349","#F45C43"], ["#1FA2FF","#A6FFCB"]
+			]
+			var current = one = document.querySelector('.background.one');
+			var next = two = document.querySelector('.background.two');
+
+			function changeGradient(){
+				var r = Math.floor(Math.random()*gradients.length);
+				console.log(r);
+				next.style.background = "linear-gradient(to right, "+gradients[r].join(",")+")";
+				next.style.opacity = 1;
+				current.style.opacity = 0;
+				
+				var temp = next;
+				next = current;
+				current = temp;
+			}
+			changeGradient();
+			setInterval(changeGradient,10000);
+
+			function showProjects(){
+				document.body.classList.add('show-projects');
+			}
+			function showCard(){
+				document.body.classList.remove('show-projects');
+				document.body.classList.add('show-card');
+			}
+
+			var overlay = document.querySelector('section.projects .detail-overlay');
+			
+			function showDetail(el){
+				if(!overlay.classList.contains('shown')){
+					overlay.classList.add('shown');
+					var card = el.querySelector('.project-card');
+					var d = card.getBoundingClientRect();
+					
+					el.querySelector('.project-text.outer').setAttribute('style', 'position: absolute; bottom: -5px; width: 100%; opacity: 0;');
+
+					card.setAttribute('style', 'position: fixed; top:'+d.top+'px; left:'+d.left+'px; width:'+(d.width-20)+'px; height:'+(d.height-20)+'px;');
+
+					setTimeout(function(){
+						el.classList.add('animated');
+						el.classList.add('flipped');
+					}, 50);
+				}
+			}
+
+			function hideDetail(){
+				overlay.classList.remove('shown');
+				var project = document.querySelector('.project-container.flipped');
+				
+				project.classList.remove('flipped');
+
+				setTimeout(function(){
+					project.classList.remove('animated');
+					project.querySelector('.project-text.outer').setAttribute('style', '');
+					project.querySelector('.project-card').setAttribute('style', 'transform: none;');
+				}, 500);
+			}
