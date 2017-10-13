@@ -279,16 +279,16 @@ section.projects{
 		// perspective: 1500px;
 		.project-container{
 			position: relative;
-			min-width: 350px;
+			min-width: 360px;
 			-webkit-flex: 1 1 350px;
-			flex: 1;
+			flex: 1 1 350px;
 			margin: 20px;
 			cursor: pointer;
+			@include respond-to("xlarge"){
+				min-width: 30%;
+			}
 			@include respond-to("mobile"){
 				min-width: 75%;
-				min-height: 59.75vw;
-			}
-			@include respond-to("tablet"){
 				min-height: 59.75vw;
 			}
 			transform: none;

@@ -1,5 +1,6 @@
 $break-small: 640px;
 $break-large: 1000px;
+$break-xlarge: 1400px;
 
 @mixin respond-to($media) {
   @if $media == mobile {
@@ -10,6 +11,9 @@ $break-large: 1000px;
   }
   @else if $media == desktop {
     @media only screen and (min-width: $break-large) { @content; }
+  }
+  @else if $media == xlarge {
+    @media only screen and (min-width: $break-xlarge) { @content; }
   }
 }
 
