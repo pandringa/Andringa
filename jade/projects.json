@@ -9,7 +9,7 @@
   },
   {
     "title": "nvite Communities",
-    "description": "One summer I worked at Nvite and helped build their Communities platform, a centralized hub for all events from each community hosted on the Nvite Platform. I managed the project from start-to-finish, including ideation, feature planning, design, and development across the stack, and it was shortly rolled out soon after I left. In May 2017, Nvite was acquired by Eventbrite, who cited the Communities feature as a major reason for the acquision.",
+    "description": "One summer I worked at Nvite and helped build their Communities platform, a centralized hub for all events from each community hosted on the Nvite Platform. I managed the project from start-to-finish, including ideation, feature planning, design, and development across the stack, and it was shortly rolled out soon after I left. The platform In May 2017, Nvite was acquired by Eventbrite, who cited the Communities feature as a major reason for the acquision.",
     "image": "/img/projects/nvite/cover.png",
     "tags": ["coding"],
     "link": "https://nvite.com/community/dctech",
@@ -17,7 +17,7 @@
   },
   {
     "title": "It's Showtime",
-    "description": "At Pennapps Spring 2015, I built It's Showtime, a movie recommendations app that uses Metacritic ratings to help users find critics who share similar movie taste to them. The platform was built using MySQL and a Python (Flask) backend, and jQuery on the frontend to provide a tinder-like interface for users to rate movies and discover critics and new movies.",
+    "description": "One year at PennApps, I built It's Showtime, a movie recommendations app that uses Metacritic ratings to help users find critics who share similar movie taste to them. The platform was built using MySQL and a Python (Flask) backend, and jQuery on the frontend to provide a tinder-like interface for users to rate movies and discover critics and new movies.",
     "image": "/img/projects/itsshowtime/cover.png",
     "tags": ["coding"],
     "link": "https://github.com/PennApps15s",
