@@ -16,12 +16,12 @@
     "link_title": "Demo"
   },
   {
-    "title": "It's Showtime",
-    "description": "One year at PennApps, I built It's Showtime, a movie recommendations app that uses Metacritic ratings to help users find critics who share similar movie taste to them. The platform was built using MySQL and a Python (Flask) backend, and jQuery on the frontend to provide a tinder-like interface for users to rate movies and discover critics and new movies.",
-    "image": "/img/projects/itsshowtime/cover.png",
-    "tags": ["coding"],
-    "link": "https://github.com/PennApps15s",
-    "link_title": "Github"
+    "title": "2018 Midterms",
+    "description": "I built this interactive story for an interactive journalism class, which allows the reader to explore potentially interesting 2018 midterm races based on campaign finance data, news relevence, and analyst projections. This interactive used a Node.js server to retrieve data from the FEC api, Bing News, and various analyst websites, and it uses d3.js to display it all in an engaging way.",
+    "image": "/img/projects/midterms/cover.png",
+    "tags": ["coding", "design"],
+    "link": "https://peterandringa.com/2018-midterms",
+    "link_title": "View"
   },
   {
     "title": "Pilot Websites",
