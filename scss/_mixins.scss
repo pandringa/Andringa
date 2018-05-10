@@ -1,6 +1,6 @@
 $break-small: 640px;
 $break-large: 1000px;
-$break-xlarge: 1400px;
+$break-xlarge: 1200px;
 
 @mixin respond-to($media) {
   @if $media == mobile {

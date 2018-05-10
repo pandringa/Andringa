@@ -1,0 +1,156 @@
+{
+  "sections": [
+    {
+      "title": "Education",
+      "items": [
+        {
+          "title": "University of North Carolina at Chapel Hill",
+          "subtitle": "GPA: 3.925",
+          "text": "Majoring in Journalism (with a specialization in Interactive Multimedia) and Computer Science, with a minor in Entrepreneurship. Relevant coursework includes Interactive Journalism, CS Data Structures, News Writing, Multimedia Storytelling, and UX Design.",
+          "location": "Chapel Hill, NC",
+          "date": "Aug. 2016 - May 2020"
+        },
+        {
+          "title": "Robertson Scholars Leadership Program",
+          "text": "The Robertson Scholars Leadership Program gives a selective group of students a full- tuition scholarship and allows them to be “dual citizens” of both the University of North Carolina and Duke University, taking classes and even living at the opposite campus.",
+          "location": "Durham, NC",
+          "date": "Aug. 2016 - May 2020"
+        },
+        {
+          "title": "Thomas Jefferson High School for Science and Technology",
+          "text": "“TJ,” as it is affectionately called, is a magnet high school that draws students from all over Northern Virginia to study science, technology, engineering and mathematics.",
+          "location": "Alexandria, VA",
+          "date": "Sept. 2012 - June 2016"
+        }
+      ]
+    },
+    {
+      "title": "Work Experience",
+      "items": [
+        {
+          "title": "NBC News",
+          "subtitle": "Multimedia Intern",
+          "text": "Worked in NBC's national newsroom, building interactives and reporting data-driven stories for NBC's digital properties.",
+          "location": "New York, NY",
+          "date": "June-Aug. 2018",
+          "link": "https://nbcnews.com"
+        },
+        {
+          "title": "The Delta Center",
+          "subtitle": "Media Intern",
+          "text": "Helped produce multimedia stories for the Delta Center’s “Most Southern Place on Earth” workshops, taking photos, producing video stories, and designing for printed marketing.",
+          "location": "Cleveland, MS",
+          "date": "June-Aug. 2017",
+          "link": "https://deltacenterdsu.com"
+        },
+        {
+          "title": "CustomInk",
+          "subtitle": "Software Engineering Intern",
+          "text": "Worked as a software engineering intern with CustomInk’s eCommerce team, entirely rebuilding a complex internal system with MySQL, MongoDB, Ruby on Rails, and JS.",          
+          "location": "Fairfax, VA",
+          "date": "June-Aug. 2016",
+          "link": "https://customink.com"
+        },
+        {
+          "title": "nvite",
+          "subtitle": "Software Engineering Intern",       
+          "location": "Washington, DC",
+          "date": "June-Aug. 2015",
+          "link": "https://nvite.com"
+        },
+        {
+          "title": "3advance",
+          "subtitle": "Engineering Intern",
+          "location": "Washington, DC",
+          "date": "June-Aug 2014",
+          "link": "https://3advance.com"
+        },
+        {
+          "title": "SocialTables",
+          "subtitle": "Product Intern",
+          "location": "Washington, DC",
+          "date": "June-Aug 2013",
+          "link": "https://socialtables.com"
+        }
+      ]
+    },
+    {
+      "title": "Portfolio",
+      "items": [
+        {
+          "title": "\"Exploring Faceboook's News Landscape\"",
+          "subtitle": "Data Visualization",
+          "text": "This investigative piece analyzes data from the Facebook Pages of 13 top news organizations to better understand the nature of interactions with news content on Facebook. The interactive used a Django and PostgreSQL backend and d3.js visualizations.",
+          "date": "May 2018",
+          "link": "https://peterandringa.com/facebook-news/",
+          "underline": true
+        },
+        {
+          "title": "\"Things Have Got to Change\": Affordable Housing in Chapel Hill",
+          "subtitle": "Writing",
+          "text": "A profile of Yvette Matthews, one of the activists promoting the issue of affordable housing amidst soaring rents in Chapel Hill.",
+          "date": "April 2018",
+          "link": "https://medium.com/@p_andringa",
+          "underline": true
+        },
+        {
+          "title": "\"Most Southern Place on Earth\" Multimedia",
+          "subtitle": "Photo, Video, Writing, Design",
+          "text": "The photos, videos, blog posts, and print portfolios that I created to document the Delta Center's two NEH-funded workshops for K-12 teachers.",
+          "date": "August 2017",
+          "link": "https://deltacenterdsu.com/photos-portfolios-and-videos",
+          "underline": true
+        }
+      ]
+    },
+    {
+      "title": "Research",
+      "items": [
+        {
+          "title": "Duke DeWitt Wallace Center for Media and Democracy",
+          "subtitle": "Online Gatekeeping",
+          "text": "Collaborated with Dr. Phillip Napoli on research on the gatekeeping of news across social media and digital platforms.",
+          "location": "Duke University",
+          "date": "May 2018 - (current)"
+        },
+        {
+          "title": "Media and Journalism Emerging Technologies Lab",
+          "subtitle": "AR Storytelling",
+          "text": "Worked with Prof. Steven King’s Emerging Technologies Lab to create tools and storytelling experiences using new technologies like AR, VR, and AI.",
+          "location": "UNC - Chapel Hill",
+          "date": "Sept 2017 - (current)"
+        }
+      ]
+    },
+    {
+      "title": "Leadership Experience",
+      "items": [
+        {
+          "title": "UNC Faculty Council",
+          "subtitle": "Student Representative",
+          "date": "Sept. 2017 - (current)"
+        },
+        {
+          "title": "Robertson Community Council",
+          "subtitle": "Co-Director",
+          "date": "Sept. 2016 - May 2018"
+        },
+        {
+          "title": "TEDxUNC",
+          "subtitle": "Director of Marketing",
+          "date": "Sept. 2016 - Feb. 2018"
+        },
+        {
+          "title": "UNC Student Government",
+          "subtitle": "Academic Affairs & First Year Council",
+          "date": "Sept. 2016 - May. 2018"
+        },
+        {
+          "title": "Joe for SBP, Garima for SBP",
+          "subtitle": "Director of Strategy",
+          "date": "Nov. 2016 - Feb. 2018"
+        }
+      ]
+    }
+  ]
+}

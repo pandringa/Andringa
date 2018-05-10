@@ -1,0 +1,58 @@
+{
+  "name": "Peter Andringa",
+  "subhead": "Journalist • Developer",
+  "sections": [
+    {
+      "title": "Currently",
+      "items": [
+        {
+          "title": "Multimedia Intern,",
+          "subtitle": "NBC News"
+        },
+        {
+          "title": "Robertson Scholar,",
+          "subtitle": "UNC & Duke"
+        }
+      ]
+    },
+    {
+      "title": "Recent Bylines",
+      "items": [
+        {
+          "title": "\"Exploring Facebook's News Landscape\"",
+          "subtitle": "peterandringa.com",
+          "substyle": "small",
+          "link": "https://peterandringa.com/facebook-news/"
+        },
+        {
+          "title": "NBC Article Here",
+          "subtitle": "nbcnews.com",
+          "substyle": "small",
+          "link": "https://nbcnews.com/"
+        }
+      ]
+    }
+  ],
+  "social": [
+    {
+      "name": "email",
+      "link": "mailto:peter.andringa@unc.edu"
+    },
+    {
+      "name": "twitter",
+      "link": "https://twitter.com/p_andringa"
+    },
+    {
+      "name": "github",
+      "link": "https://github.com/pandringa"
+    },
+    {
+      "name": "dribbble",
+      "link": "https://dribbble.com/pandringa"
+    },
+    {
+      "name": "linkedin",
+      "link": "https://linkedin.com/in/PeterAndringa"
+    }
+  ]
+}

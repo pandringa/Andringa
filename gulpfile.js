@@ -23,8 +23,6 @@ var paths = {
 var outPath = pathUtil.join( __dirname, "out/" );
 var deployRepo = "https://github.com/pandringa/pandringa.github.io";
 
-var projectData = require('./jade/projects.json');
-
 //Components
 var compiler = {
 	scripts: function() {
@@ -42,10 +40,14 @@ var compiler = {
         	.pipe(livereload())
 	},
 	pages: function() {
+		var resumeData = require('./jade/resume.json'),
+			bioData = require('./jade/bio.json');
+		
 		return gulp.src('./jade/[!_]*.jade')
 	        .pipe(jade({
 	        		locals: {
-	        			projects: projectData
+	        			resume: resumeData,
+	        			bio: bioData
 	        		}
 	        	}))
 			.pipe( minifyHTML() )
