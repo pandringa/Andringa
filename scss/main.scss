@@ -4,6 +4,7 @@
 $serifs: "Quattrocento", "Georgia", serif;
 $sans-serifs: "Source Sans Pro", "Helvetica", sans-serif;
 $blue: #2980b9;
+$gray: #DEDEDE;
 $padding: 35px;
 
 body{
@@ -38,18 +39,27 @@ a {
 
 section.bio {
 	position: fixed; 
-	background: #DEDEDE;
-	height: 100%;
-	width: 250px;
-	top: 0;
-	left: 0;
+	background: $gray;
 	padding: $padding;
+	box-sizing: border-box;
+	text-align: center;
+	top: calc(50% - 230px);
+	left: calc(50% - 325px);
+	height: 460px;
+	width: 650px;
+	z-index: 2;
+	box-shadow: 0px 1px 4px #AAA;
+	padding-bottom: 0;
+	transition: height 1s, width 0.7s, top 1s, left 1s;
+	overflow: hidden;
+	white-space: nowrap;
 
 	img {
-		margin: 50px 25px 0;
+		margin: 0 auto;
 		width: 200px;
 		border-radius: 100px;
 		box-shadow: 0px 0px 2px #aaa;
+		transition: margin-top 0.5s;
 	}
 
 	h1 {
@@ -66,7 +76,12 @@ section.bio {
 	}
 
 	.bio-section {
-		margin: 3em 0;
+		box-sizing: border-box;
+		text-align: left;
+		margin: 2em 0;
+		max-width: 270px;
+		padding-right: 20px;
+		white-space: normal;
 		p {
 			margin: 0.7em 0;
 			position: relative;
@@ -92,10 +107,7 @@ section.bio {
 		}
 
 		&.bottom {
-			position: absolute;
-			bottom: $padding;
-			left: $padding;
-			right: $padding;
+			margin-bottom: 0;
 		}
 	}
 
@@ -112,11 +124,63 @@ section.bio {
 			text-align: center;
 		}
 	}
+
+	.bio-header-group {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		max-width: 320px;
+		transition: width 0.8s;
+	}
+
+	.bio-section-group {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		transition: opacity 0.5s;
+	}
+
+	a.expand-button {
+		display: block;
+		box-sizing: border-box;
+		min-width: 100%;
+		width: calc(100% + 70px);
+		margin-top: 1em;
+		margin-left: -$padding;
+		margin-right: -$padding;
+		padding: 25px;
+		margin-bottom: 0;
+		text-align: center;
+		background: $gray;
+		border-top: 1px solid white;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		font-size: 1.2em;
+		transition: opacity 0s;
+		h3, h3 > .icon-forward {
+			display: inline;
+		}
+		.icon-forward {
+			position: relative;
+			top: 0.1em;
+			left: 0.25em;
+			transition: left 0.5s;
+		}
+		&:hover {
+			.icon-forward{
+				left: 0.5em;
+			}
+		}
+	}
 }
 
 section.resume {
 	margin-left: 320px;
 	padding: $padding;
+	opacity: 0;
+
+	transition: opacity 1s 0.5s;
 
 	.section-head {
 		color: #777;
@@ -153,6 +217,8 @@ section.resume {
 			.body {
 				margin-top: 0.25em;
 				margin-bottom: 0;
+				font-size: 0.95em;
+				color: #555;
 			}
 		}
 		.item-right{
@@ -163,12 +229,80 @@ section.resume {
 			font-family: $sans-serifs;
 			font-size: 0.75em;
 			letter-spacing: 0.025em;
+			color: #444;
 			.location {
 				font-weight: bold;
 			}
 			&.two-lines{
 				align-self: flex-end;
 			}
+		}
+	}
+}
+
+body.sidebar {
+	section.resume {
+		opacity: 1; 
+		display: block;
+	}
+	section.bio {
+		// display: block;
+		height: 100%;
+		width: 320px;
+		top: 0;
+		left: 0;
+		transform: none;
+		padding-bottom: 100px;
+		white-space: normal;
+
+		img {
+			margin-top: 50px;
+		}
+
+		.bio-section {
+			max-width: none;
+			margin: 3em 0;
+			&.bottom {
+				position: absolute;
+				bottom: $padding;
+				left: $padding;
+				right: $padding;
+				margin-bottom: 0;
+			}
+			&:first-of-type {
+				margin-top: 0;
+			}
+		}
+		
+		.bio-header-group {
+			width: 100%;
+		}
+
+		.bio-section-group {
+			margin-left: 0;
+			width: 100%;
+		}
+
+		.expand-button {
+			display: none;
+			opacity: 0;
+		}
+	}
+}
+
+body.animate {
+	section.bio {
+		width: 320px;
+		.bio-header-group {
+			width: 100%;
+			height: 600px;
+		}
+		.bio-section-group {
+			opacity: 0;
+			transition: opacity 0s;
+		}
+		.expand-button {
+			opacity: 0;
 		}
 	}
 }
@@ -204,5 +338,10 @@ section.resume {
 			flex: 0 0 650px;
 			width: 650px;
 		}
+	}
+}
+@include respond-to("mobile"){
+	.hide-mobile {
+		display: none;
 	}
 }

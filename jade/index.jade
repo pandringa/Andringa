@@ -7,25 +7,30 @@ html
 		link(rel="stylesheet" href="/css/main.css")
 	body
 		section.bio
-			img(src="img/portrait.jpg" alt=bio.name)
-			h1= bio.name
-			h3= bio.subhead
-			for section in bio.sections
-				.bio-section
-					h6= section.title
-					for i in section.items
-						if i.link
-							p 
-								a(href=i.link target="_blank")= i.title+" "
+			.bio-header-group
+				img(src="img/portrait.jpg" alt=bio.name)
+				h1= bio.name
+				h3= bio.subhead
+			.bio-section-group.hide-mobile
+				for section in bio.sections
+					.bio-section
+						h6= section.title
+						for i in section.items
+							if i.link
+								p 
+									a(href=i.link target="_blank")= i.title+" "
+										b(class=i.substyle)= i.subtitle
+							else
+								p= i.title+" "
 									b(class=i.substyle)= i.subtitle
-						else
-							p= i.title+" "
-								b(class=i.substyle)= i.subtitle
-			.bio-section.bottom
-				h6= "Get in touch"
-				p.social-icons
-					for i in bio.social
-						a(class="icon-"+i.name href=i.link target="_blank")
+				.bio-section.bottom
+					h6= "Get in touch"
+					p.social-icons
+						for i in bio.social
+							a(class="icon-"+i.name href=i.link target="_blank")
+			a.expand-button(onclick="toggleCard()" href="#") 
+				h3 Full Resume
+					.icon-forward
 								
 		section.resume
 			for section in resume.sections
@@ -45,7 +50,17 @@ html
 							.item-right(class=(i.location && !i.text ? 'two-lines': ''))
 								.location= i.location
 								.date= i.date
-
+		script.
+			const toggleCard = () => {
+				const bodyClass = document.querySelector('body').classList
+				setTimeout(() => {
+					bodyClass.remove('animate');
+				}, 1000)
+				bodyClass.add('sidebar');
+				bodyClass.add('animate');
+			} 
+				
+			
 
 
 
