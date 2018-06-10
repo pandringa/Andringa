@@ -28,9 +28,9 @@
       "title": "Work Experience",
       "items": [
         {
-          "title": "NBC News",
-          "subtitle": "Multimedia Intern",
-          "text": "Worked in NBC's national newsroom, building interactives and reporting data-driven stories for NBC's digital properties.",
+          "title": "NBC",
+          "subtitle": "Multimedia Journalism Intern",
+          "text": "Worked in NBC's national newsroom in the Owned Stations division, reporting national stories and creating videos, graphics, and interactives for NBC's digital platforms.",
           "location": "New York, NY",
           "date": "June-Aug. 2018",
           "link": "https://nbcnews.com"
@@ -80,7 +80,7 @@
         {
           "title": "\"Exploring Faceboook's News Landscape\"",
           "subtitle": "Data Visualization",
-          "text": "This investigative piece analyzes data from the Facebook Pages of 13 top news organizations to better understand the nature of interactions with news content on Facebook. The interactive used a Django and PostgreSQL backend and d3.js visualizations.",
+          "text": "This interactive piece uses data visualizations to analyze data from the Facebook Pages of top news organizations to better understand how people interact with news content on Facebook.",
           "date": "May 2018",
           "link": "https://peterandringa.com/facebook-news/",
           "underline": true
@@ -88,9 +88,9 @@
         {
           "title": "\"Things Have Got to Change\": Affordable Housing in Chapel Hill",
           "subtitle": "Writing",
-          "text": "A profile of Yvette Matthews, one of the activists promoting the issue of affordable housing amidst soaring rents in Chapel Hill.",
+          "text": "a profile of Yvette Matthews, one of the activists promoting the issue of affordable housing amidst soaring rents in Chapel Hill. Published in IndyWeek May 30, 2018",
           "date": "April 2018",
-          "link": "https://medium.com/@p_andringa",
+          "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663",
           "underline": true
         },
         {
@@ -111,14 +111,16 @@
           "subtitle": "Online Gatekeeping",
           "text": "Collaborated with Dr. Phillip Napoli on research on the gatekeeping of news across social media and digital platforms.",
           "location": "Duke University",
-          "date": "May 2018 - (current)"
+          "date": "May 2018 - (current)",
+          "link": "http://dewitt.sanford.duke.edu"
         },
         {
           "title": "Media and Journalism Emerging Technologies Lab",
           "subtitle": "AR Storytelling",
           "text": "Worked with Prof. Steven King’s Emerging Technologies Lab to create tools and storytelling experiences using new technologies like AR, VR, and AI.",
           "location": "UNC - Chapel Hill",
-          "date": "Sept 2017 - (current)"
+          "date": "Sept 2017 - (current)",
+          "link": "http://et-lab.org"
         }
       ]
     },

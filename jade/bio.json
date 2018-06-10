@@ -6,8 +6,8 @@
       "title": "Currently",
       "items": [
         {
-          "title": "Multimedia Intern,",
-          "subtitle": "NBC News"
+          "title": "Multimedia Desk Intern,",
+          "subtitle": "NBC"
         },
         {
           "title": "Robertson Scholar,",
@@ -25,10 +25,10 @@
           "link": "https://peterandringa.com/facebook-news/"
         },
         {
-          "title": "NBC Article Here",
-          "subtitle": "nbcnews.com",
+          "title": "\"On the Front Lines of the Affordable Housing Fight\"",
+          "subtitle": "indyweek.com",
           "substyle": "small",
-          "link": "https://nbcnews.com/"
+          "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663"
         }
       ]
     }
