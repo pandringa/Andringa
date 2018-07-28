@@ -1,10 +1,10 @@
 @import "mixins";
 @import "icons/icons";
 
-$serifs: "Tinos", "Georgia", serif;
+$serifs: "Quattrocento", "Helvetica", sans-serif;
 $sans-serifs: "Source Sans Pro", "Helvetica", sans-serif;
 $blue: #2980b9;
-$gray: #DEDEDE;
+$gray: #e9eaec;
 $padding: 35px;
 
 body{
@@ -17,7 +17,7 @@ body{
 	font-family: $serifs;
 }
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: $sans-serifs;
 }
 h5, h6 {
@@ -48,7 +48,6 @@ section.bio {
 	min-height: 460px;
 	width: 650px;
 	z-index: 2;
-	box-shadow: 0px 1px 4px #AAA;
 	padding-bottom: 0;
 	transition: height 1s, width 0.7s, top 1s, left 1s;
 	overflow: hidden;
@@ -67,12 +66,18 @@ section.bio {
 		text-align: center;
 		margin-bottom: 0;
 		letter-spacing: 0.04em;
+		color: black;
+		font-weight: bold;
 	}
 	h3 {
-		margin-top: 0.5em;
+		margin-top: 0.25em;
 		font-weight: normal;
 		text-align: center;
 		letter-spacing: 0.03em;
+		
+		&:not(.full-link){
+			color: #777;
+		}
 	}
 
 	.bio-section {
@@ -85,11 +90,23 @@ section.bio {
 		&:first-of-type {
 			margin-top: 0;
 		}
+
+		h6 {
+			letter-spacing: 0.07em;
+			margin-top: 0;
+		}
+
 		p {
 			margin: 0.7em 0;
+			line-height: 1.2em;
 			position: relative;
-			.small {
+			&.link{
+				padding-right: 1em;
+			}
+			b {
 				font-family: $sans-serifs;
+			}
+			.small {
 				font-size: 0.7em;
 
 				&::after {
@@ -104,7 +121,7 @@ section.bio {
 			}
 
 			a:hover .small::after {
-				right: 0;
+				right: 0px;
 				color: $blue;
 			}
 		}
@@ -116,7 +133,6 @@ section.bio {
 
 	p.social-icons {
 		position: relative;
-		width: 100%;
 		display: flex;
 		justify-content: center;
 		margin-left: -0.5em;
@@ -169,12 +185,12 @@ section.bio {
 		.icon-forward {
 			position: relative;
 			top: 0.1em;
-			left: 0.25em;
+			left: 0.4em;
 			transition: left 0.5s;
 		}
 		&:hover {
 			.icon-forward{
-				left: 0.5em;
+				left: 0.6em;
 			}
 		}
 	}
@@ -188,11 +204,12 @@ section.resume {
 	transition: opacity 1s 0.5s;
 
 	.section-head {
-		color: #777;
+		color: #78797a;
 		&:first-of-type {
 			margin-top: 0;
 		}
-		letter-spacing: 0.05em;
+		letter-spacing: 0.06em;
+		margin-top: 1.5em;
 	}
 
 	.indented {
@@ -204,7 +221,10 @@ section.resume {
 		flex-flow: row nowrap;
 		justify-content: left;
 		align-items: baseline;
-		margin: 0.7em 0;
+		margin: 1.5em 0;
+		&:first-of-type{
+			margin-top: 0.75em;
+		}
 		.item-left{
 			flex: 1 1 auto;
 			.header {
@@ -213,17 +233,17 @@ section.resume {
 					font-family: $serifs;
 					font-size: 0.75em;
 					margin-left: 0.5em;
-					color: #777;
+					color: #78797a;
 					font-weight: normal;
 				}
 				margin: 0;
 				line-height: 1.1em;
 			}
 			.body {
-				margin-top: 0.25em;
+				margin-top: 0.2em;
 				margin-bottom: 0;
 				font-size: 0.95em;
-				line-height: 1.2em;
+				line-height: 1.3em;
 				color: #555;
 			}
 		}
@@ -252,7 +272,6 @@ body.sidebar {
 		display: block;
 	}
 	section.bio {
-		// display: block;
 		height: 100% !important;
 		width: 320px;
 		top: 0;
@@ -352,20 +371,36 @@ body.animate {
 		display: block;
 		position: relative;
 		box-shadow: none;
+		padding-top: 30px;
 		.bio-header-group{
 			max-width: none;
 			margin-right: none;
 			img {
 				margin-top: 0 !important;
 			}
+			h1 {
+				margin-top: 0.25em;
+			}
+			h3 {
+				margin-top: 0;
+			}
 		}
 		.bio-section {
 			padding-right: 0;
+			&:first-of-type {
+				margin-top: 1em !important;
+			}
+			&.bottom {
+				position: relative;
+			}
 			p {
-				font-size: 1.2rem;
+				// font-size: 1.1rem;
 				&.social-icons {
 					margin-left: 0;
 					margin-right: 0;
+				}
+				.small {
+					display: block;
 				}
 			}
 		}
@@ -380,7 +415,7 @@ body.animate {
 		.section-head {
 			color: black;
 			font-size: 1.5em;
-			background: #dedede;
+			background: $gray;
 			margin: 2rem -2rem 0;
 			padding: 0.5rem 2rem;
 			&:first-of-type{
@@ -393,9 +428,12 @@ body.animate {
 				order: 2;
 				.header{
 					line-height: 1.3em;
-				}
-				.body {
-					// width: calc(200% - 7rem);
+					.subtitle {
+						display: block;
+						margin-left: 0;
+						color: #8a8b8c;
+						font-size: 0.8em;
+					}
 				}
 			}
 			&:first-of-type{
