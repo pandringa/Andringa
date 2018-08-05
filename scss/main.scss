@@ -440,6 +440,7 @@ body.animate {
 			flex-direction: column;
 			.item-left {
 				order: 2;
+				align-self: left;
 				.header{
 					line-height: 1.3em;
 					.subtitle {
