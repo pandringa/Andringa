@@ -15,6 +15,9 @@ $break-xlarge: 1200px;
   @else if $media == xlarge {
     @media only screen and (min-width: $break-xlarge) { @content; }
   }
+  @else if $media == print {
+    @media only print { @content; }
+  }
 }
 
 @mixin box-shadow($params) {

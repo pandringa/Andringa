@@ -4,6 +4,7 @@
   "sections": [
     {
       "title": "Currently",
+      "hide_print": true,
       "items": [
         {
           "title": "Multimedia Desk Intern,",
@@ -17,6 +18,7 @@
     },
     {
       "title": "Recent Bylines",
+      "hide_print": true,
       "items": [
         {
           "title": "\"Facebook, the New Frontier of Political Ads\"",
@@ -35,24 +37,36 @@
   ],
   "social": [
     {
+      "name": "website",
+      "link": "https://peterandringa.com",
+      "print_text": "peterandringa.com",
+      "hide_web": true
+    },
+    {
       "name": "email",
-      "link": "mailto:peter.j.andringa@gmail.com"
+      "link": "mailto:peter.j.andringa@gmail.com",
+      "print_text": "peter.j.andringa@gmail.com"
     },
     {
       "name": "twitter",
-      "link": "https://twitter.com/p_andringa"
+      "link": "https://twitter.com/p_andringa",
+      "hide_print": true
     },
     {
       "name": "github",
-      "link": "https://github.com/pandringa"
+      "link": "https://github.com/pandringa",
+      "print_text": "/pandringa",
+      "hide_print": true
     },
     {
       "name": "dribbble",
-      "link": "https://dribbble.com/pandringa"
+      "link": "https://dribbble.com/pandringa",
+      "hide_print": true
     },
     {
       "name": "linkedin",
-      "link": "https://linkedin.com/in/PeterAndringa"
+      "link": "https://linkedin.com/in/PeterAndringa",
+      "print_text": "/in/PeterAndringa"
     }
   ]
 }

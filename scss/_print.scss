@@ -1,0 +1,118 @@
+@media print {
+  @page { 
+    margin: 0;
+    padding-top: 1.5in;
+  }
+  body {
+    font-size: 0.8em;
+    color: #111;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact;
+    padding: 0 !important;
+    width: 100%;
+  }
+  a {
+    border-bottom: 1px solid $blue !important;
+  }
+  .hide-print {
+    display: none !important;
+  }
+  body section.bio {
+    display: block;
+    position: fixed !important;
+    top: 0in !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100%;
+    flex-direction: row;
+    background: #eee;
+    height: auto !important;
+    min-height: 0.5in !important;
+    margin: 0 0 0.5em !important;
+    padding: 0.25in !important;
+    text-align: left;
+    align-items: top;
+    h1, h3 {
+      text-align: left;
+      margin: 0;
+    }
+    img, a.expand-button {
+      display: none !important;
+    }
+    .print-text {
+      position: relative;
+      display: inline-block !important;
+      font-family: $sans-serifs;
+      line-height: 1.5em !important;
+      top: 0.25em;
+    }
+    .bio-header-group {
+      width: 30% !important;
+      min-width: 0;
+      margin: 0;
+      vertical-align: middle;
+    }
+    .bio-section-group {
+      position: relative;
+      width: 70% !important;
+      max-width: none;
+      min-width: 0;
+      margin: 0;
+      vertical-align: middle;
+    }
+    .bio-section {
+      position: relative;
+      max-width: none;
+      padding: 0 !important;
+      margin: 0 !important;
+      vertical-align: baseline;
+      h6 {
+        display: none;
+      }
+    }
+    .social-icons {
+      width: 100% !important;
+      align-items: left;
+      vertical-align: bottom;
+      flex-direction: row;
+      font-size: 0.9em;
+      margin-left: 0 !important;
+      margin-right: 0!important;
+      a {
+        border-bottom: none !important;
+        .print-text {
+          border-bottom: 1px solid $blue;
+        }
+      }
+    }
+  }
+  section.resume {
+    display: block;
+    opacity: 1;
+    margin: 0;
+    padding: 0.25in;
+    margin-top: 0.9in;
+    .section-head,  {
+      color: $dark-gray;
+      margin-top: 1.4em;
+    }
+    .indented {
+      padding-left: 3em;
+    }
+    .resume-item {
+      margin: 0.5em 0 0;
+      .item-left {
+        .header .subtitle {
+          color: $dark-gray;
+        }
+        .body {
+          color: #111;
+        }
+      }
+      .item-right {
+        flex: 0 0 12em;
+        color: #111;
+      }
+    }
+  }
+}

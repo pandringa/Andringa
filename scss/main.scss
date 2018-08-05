@@ -5,6 +5,8 @@ $serifs: "Quattrocento", "Helvetica", sans-serif;
 $sans-serifs: "Source Sans Pro", "Helvetica", sans-serif;
 $blue: #2980b9;
 $gray: #f1f2f3;
+$medium-gray: #78797a;
+$dark-gray: #444648;
 $padding: 35px;
 
 body{
@@ -141,6 +143,17 @@ section.bio {
 			flex-grow: 1;
 			font-size: 2em;
 			text-align: center;
+			.print-text {
+				vertical-align: top;
+				font-size: 0.5em;
+				line-height: 2em;
+				margin: 0 0.5em;
+				display: none;
+			}
+			&.icon-linkedin:before {
+				position: relative;
+				top: -0.1em;
+			}
 		}
 	}
 
@@ -204,7 +217,7 @@ section.resume {
 	transition: opacity 1s 0.5s;
 
 	.section-head {
-		color: #78797a;
+		color: $medium-gray;
 		&:first-of-type {
 			margin-top: 0;
 		}
@@ -227,13 +240,14 @@ section.resume {
 		}
 		.item-left{
 			flex: 1 1 auto;
+			align-self: center;
 			.header {
 				.subtitle{
 					display: inline;
 					font-family: $serifs;
 					font-size: 0.75em;
 					margin-left: 0.5em;
-					color: #78797a;
+					color: $medium-gray;
 					font-weight: normal;
 				}
 				margin: 0;
@@ -452,3 +466,11 @@ body.animate {
 		}
 	}
 }
+
+@media screen {
+	.hide-web {
+		display: none !important;
+	}
+}
+
+@import 'print';

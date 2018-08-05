@@ -78,6 +78,14 @@
       "title": "Portfolio",
       "items": [
         {
+          "title": "\"Facebook, the New Frontier of Political Ads\"",
+          "subtitle": "Writing, Interactive",
+          "text": "An investigative story and interactive about the habits of political advertisers on Facebook that allowed readers to see what ads were targeted towards them, published on NBC station websites across the country.",
+          "date": "July 2018",
+          "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
+          "underline": true
+        },
+        {
           "title": "\"Exploring Faceboook's News Landscape\"",
           "subtitle": "Data Visualization",
           "text": "This interactive piece uses data visualizations to analyze data from the Facebook Pages of top news organizations to better understand how people interact with news content on Facebook.",
@@ -109,7 +117,7 @@
         {
           "title": "Duke DeWitt Wallace Center for Media and Democracy",
           "subtitle": "Online Gatekeeping",
-          "text": "Collaborated with Dr. Phillip Napoli on research on the gatekeeping of news across social media and digital platforms.",
+          "text": "Collaborated with Dr. Phillip Napoli on research on the gatekeeping of news across social media.",
           "location": "Duke University",
           "date": "May 2018 - (current)",
           "link": "http://dewitt.sanford.duke.edu"
@@ -126,6 +134,7 @@
     },
     {
       "title": "Other Experience",
+      "hide_print": true,
       "items": [
         {
           "title": "UNC Faculty Council",
