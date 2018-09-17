@@ -27,9 +27,9 @@
     flex-direction: row;
     background: #eee;
     height: auto !important;
-    min-height: 0.5in !important;
+    min-height: 0.4in !important;
     margin: 0 0 0.5em !important;
-    padding: 0.25in !important;
+    padding: 0.2in !important;
     text-align: left;
     align-items: top;
     h1, h3 {
@@ -91,7 +91,7 @@
     opacity: 1;
     margin: 0;
     padding: 0.25in;
-    margin-top: 0.9in;
+    margin-top: 0.8in;
     .section-head,  {
       color: $dark-gray;
       margin-top: 1.4em;
@@ -100,7 +100,7 @@
       padding-left: 3em;
     }
     .resume-item {
-      margin: 0.5em 0 0;
+      margin: 0.5em 0 0 !important;
       .item-left {
         .header .subtitle {
           color: $dark-gray;
