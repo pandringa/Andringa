@@ -28,6 +28,14 @@
       "title": "Work Experience",
       "items": [
         {
+          "title": "The Guardian",
+          "subtitle": "Visuals Intern",
+          "text": "Covered the 2018 midterm elections for the Guardian's Visuals team, building election-related interactives, contributing to data-driven analysis, and developing the Guardian's live election results page.",
+          "location": "London, UK",
+          "date": "Sept-Dec. 2018",
+          "link": "https://theguardian.com/interactive"
+        },
+        {
           "title": "NBC",
           "subtitle": "Multimedia Journalism Intern",
           "text": "Worked in NBC's national newsroom for the Owned Stations division, reporting national stories and creating videos, graphics, and interactives for NBC's digital platforms.",
