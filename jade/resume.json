@@ -1,30 +1,6 @@
 {
   "sections": [
     {
-      "title": "Education",
-      "items": [
-        {
-          "title": "University of North Carolina at Chapel Hill",
-          "subtitle": "GPA: 3.91",
-          "text": "Majoring in journalism (with a specialization in interactive multimedia) and computer science, with a minor in entrepreneurship. Relevant coursework includes Interactive Journalism, CS Data Structures, News Writing, Multimedia Storytelling, and UX Design.",
-          "location": "Chapel Hill, NC",
-          "date": "Aug. 2016 - May 2020"
-        },
-        {
-          "title": "Robertson Scholars Leadership Program",
-          "text": "The Robertson Scholars Leadership Program gives a selective group of students a full- tuition scholarship and allows them to be “dual citizens” of both the University of North Carolina and Duke University, taking classes and even living at the opposite campus.",
-          "location": "Durham, NC",
-          "date": "Aug. 2016 - May 2020"
-        },
-        {
-          "title": "Thomas Jefferson High School for Science and Technology",
-          "text": "“TJ,” as it is affectionately called, is a magnet high school that draws students from all over Northern Virginia to study science, technology, engineering and mathematics.",
-          "location": "Alexandria, VA",
-          "date": "Sept. 2012 - June 2016"
-        }
-      ]
-    },
-    {
       "title": "Work Experience",
       "items": [
         {
@@ -116,6 +92,30 @@
           "date": "August 2017",
           "link": "https://web.archive.org/web/20180101123353/deltacenterdsu.com/photos-portfolios-and-videos",
           "underline": true
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "items": [
+        {
+          "title": "University of North Carolina at Chapel Hill",
+          "subtitle": "GPA: 3.91",
+          "text": "Majoring in journalism (with a specialization in interactive multimedia) and computer science, with a minor in entrepreneurship. Relevant coursework includes Interactive Journalism, CS Data Structures, News Writing, Multimedia Storytelling, and UX Design.",
+          "location": "Chapel Hill, NC",
+          "date": "Aug. 2016 - May 2020"
+        },
+        {
+          "title": "Robertson Scholars Leadership Program",
+          "text": "The Robertson Scholars Leadership Program gives a selective group of students a full- tuition scholarship and allows them to be “dual citizens” of both the University of North Carolina and Duke University, taking classes and even living at the opposite campus.",
+          "location": "Durham, NC",
+          "date": "Aug. 2016 - May 2020"
+        },
+        {
+          "title": "Thomas Jefferson High School for Science and Technology",
+          "text": "“TJ,” as it is affectionately called, is a magnet high school that draws students from all over Northern Virginia to study science, technology, engineering and mathematics.",
+          "location": "Alexandria, VA",
+          "date": "Sept. 2012 - June 2016"
         }
       ]
     },
