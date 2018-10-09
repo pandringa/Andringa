@@ -70,6 +70,14 @@
           "underline": true
         },
         {
+          "title": "\"2020 New Hampshire Primary Candidate Tracker\"",
+          "subtitle": "Interactive, Data",
+          "text": "An application I designed and developed that allows repoters at NBC's owned-and-operated station in New England to track how often 2020 presidential candidates visit New Hampshire.",
+          "date": "July 2018",
+          "link": "https://www.necn.com/multimedia/2020-Presidential-Primaries-Which-Candidates-Visited-New-Hampshire-490729011.html",
+          "underline": true
+        },
+        {
           "title": "\"Exploring Faceboook's News Landscape\"",
           "subtitle": "Data Visualization",
           "text": "This interactive piece uses data visualizations to analyze data from the Facebook Pages of top news organizations to better understand how people interact with news content on Facebook.",
@@ -80,17 +88,9 @@
         {
           "title": "\"Things Have Got to Change\": Affordable Housing in Chapel Hill",
           "subtitle": "Writing",
-          "text": "A profile of Yvette Matthews, one of the activists promoting the issue of affordable housing amidst soaring rents in Chapel Hill. Published in IndyWeek May 30, 2018",
+          "text": "A profile I wrote of Yvette Matthews, one of the activists promoting the issue of affordable housing amidst soaring rents in Chapel Hill. Published in IndyWeek May 30, 2018",
           "date": "April 2018",
           "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663",
-          "underline": true
-        },
-        {
-          "title": "\"Most Southern Place on Earth\" Multimedia",
-          "subtitle": "Photo, Video, Writing, Design",
-          "text": "The photos, videos, blog posts, and print portfolios that I created to document the Delta Center's two NEH-funded workshops for K-12 teachers.",
-          "date": "August 2017",
-          "link": "https://web.archive.org/web/20180101123353/deltacenterdsu.com/photos-portfolios-and-videos",
           "underline": true
         }
       ]
