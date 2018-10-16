@@ -49,7 +49,7 @@
     .bio-header-group {
       width: 30% !important;
       min-width: 0;
-      margin: 0;
+      margin: 0 0 0 0.4em;
       vertical-align: middle;
     }
     .bio-section-group {
@@ -97,7 +97,7 @@
       margin-top: 1.4em;
     }
     .indented {
-      padding-left: 3em;
+      padding-left: 2em;
     }
     .resume-item {
       margin: 0.5em 0 0 !important;
@@ -110,7 +110,8 @@
         }
       }
       .item-right {
-        flex: 0 0 12em;
+        flex: 0 0 14em;
+        padding-right: 2em;
         color: #111;
       }
     }
