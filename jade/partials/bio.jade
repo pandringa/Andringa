@@ -1,0 +1,26 @@
+mixin bio(bio_data)
+	.bio-header-group
+		img(src="img/portrait.jpg" alt=bio_data.name)
+		h1= bio_data.name
+		h3= bio_data.subhead
+
+	.bio-section-group.hide-mobile
+		for section in bio_data.sections
+			.bio-section(class=(section.hide_print ? "hide-print" : ""))
+				h6= section.title
+				for i in section.items
+					if i.link
+						p.link
+							a(href=i.link target="_blank")= i.title+" "
+								b(class=i.substyle)= i.subtitle
+					else
+						p= i.title+" "
+							b(class=i.substyle)= i.subtitle
+		
+		.bio-section.bottom
+			h6= "Get in touch"
+			p.social-icons
+				for i in bio_data.social
+					a(class="icon-"+i.name+( i.hide_print ? ' hide-print' : '' )+( i.hide_web ? ' hide-web' : '' ) href=i.link target="_blank")
+						if i.print_text
+							span.print-text=i.print_text

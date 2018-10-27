@@ -1,0 +1,168 @@
+{
+  "sections": [
+    {
+      "title": "Work Experience",
+      "items": [
+        {
+          "title": "The Guardian",
+          "subtitle": "Visuals Intern",
+          "text": "Covered the 2018 midterm elections for the Guardian's Visuals team, building election-related interactives, contributing to data analysis, and developing the backend and UI of the Guardian's live election results page.",
+          "location": "London, UK",
+          "date": "Sept-Dec. 2018",
+          "link": "https://theguardian.com/interactive"
+        },
+        {
+          "title": "NBC",
+          "subtitle": "Multimedia Journalism Intern",
+          "text": "Worked in NBC's national newsroom for the Owned Stations division, reporting national stories and developing videos, graphics, and interactives for NBC's digital platforms.",
+          "location": "New York, NY",
+          "date": "June-Aug. 2018",
+          "link": "https://nbcnews.com"
+        },
+        {
+          "title": "The Delta Center",
+          "subtitle": "Media Intern",
+          "text": "Helped produce multimedia stories for the Delta Center’s “Most Southern Place on Earth” workshops, taking photos, producing video stories, and designing for printed marketing.",
+          "location": "Cleveland, MS",
+          "date": "June-Aug. 2017",
+          "link": "https://deltacenterdsu.com"
+        },
+        {
+          "title": "CustomInk",
+          "subtitle": "Software Engineering Intern",
+          "text": "Worked as a software engineering intern with CustomInk’s eCommerce team, entirely rebuilding a complex internal system with MySQL, MongoDB, Ruby on Rails, and JS.",          
+          "location": "Fairfax, VA",
+          "date": "June-Aug. 2016",
+          "link": "https://customink.com"
+        },
+        {
+          "title": "nvite",
+          "subtitle": "Software Engineering Intern",
+          "text": "Built and launched their a new “communities” platform for nvite, an event-tech startup, and assisted with a homepage redesign and numerous internal improvements in Node.js, Angluar.js and more.",
+          "location": "Washington, DC",
+          "date": "June-Aug. 2015",
+          "link": "https://nvite.com"
+        },
+        {
+          "title": "3advance",
+          "subtitle": "Engineering Intern",
+          "location": "Washington, DC",
+          "date": "June-Aug 2014",
+          "link": "https://3advance.com"
+        },
+        {
+          "title": "SocialTables",
+          "subtitle": "Product Intern",
+          "location": "Washington, DC",
+          "date": "June-Aug 2013",
+          "link": "https://socialtables.com"
+        }
+      ]
+    },
+    {
+      "title": "Portfolio",
+      "items": [
+        {
+          "title": "\"Facebook, the New Frontier of Political Ads\"",
+          "subtitle": "Writing, Interactive",
+          "text": "An investigative story and interactive about the habits of political advertisers on Facebook that allowed readers to see what ads were targeted towards them. Published on NBC station websites across the country.",
+          "date": "July 2018",
+          "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
+          "underline": true
+        },
+        {
+          "title": "\"2020 New Hampshire Primary Candidate Tracker\"",
+          "subtitle": "Interactive, Data",
+          "text": "An application I designed and developed that allows repoters at NBC's owned-and-operated station in New England to track how often 2020 presidential candidates visit New Hampshire.",
+          "date": "July 2018",
+          "link": "https://www.necn.com/multimedia/2020-Presidential-Primaries-Which-Candidates-Visited-New-Hampshire-490729011.html",
+          "underline": true
+        },
+        {
+          "title": "\"Exploring Faceboook's News Landscape\"",
+          "subtitle": "Data Visualization",
+          "text": "This interactive piece uses data visualizations to analyze the Facebook posts of top news organizations to better understand how people interact with news content on Facebook.",
+          "date": "May 2018",
+          "link": "https://peterandringa.com/facebook-news/",
+          "underline": true
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "items": [
+        {
+          "title": "University of North Carolina at Chapel Hill",
+          "subtitle": "GPA: 3.91",
+          "text": "Majoring in journalism (with a specialization in interactive multimedia) and computer science, with a minor in entrepreneurship. Relevant coursework includes Interactive Journalism, Politics and Media, Algorithmic Journalism, CS Data Structures, Profile Writing, News Writing, Multimedia Storytelling, and UX Design.",
+          "location": "Chapel Hill, NC",
+          "date": "Aug. 2016 - May 2020"
+        },
+        {
+          "title": "Robertson Scholars Leadership Program",
+          "text": "The Robertson Scholars Leadership Program gives a selective group of students a full- tuition scholarship and allows them to be “dual citizens” of both the University of North Carolina and Duke University, taking classes and even living at the opposite campus.",
+          "location": "Durham, NC",
+          "date": "Aug. 2016 - May 2020"
+        },
+        {
+          "title": "Thomas Jefferson High School for Science and Technology",
+          "text": "“TJ,” as it is affectionately called, is a magnet high school that draws students from all over Northern Virginia to study science, technology, engineering and mathematics.",
+          "location": "Alexandria, VA",
+          "date": "Sept. 2012 - June 2016"
+        }
+      ]
+    },
+    {
+      "title": "Research",
+      "items": [
+        {
+          "title": "Duke DeWitt Wallace Center for Media and Democracy",
+          "subtitle": "Online Gatekeeping",
+          "text": "Collaborated with Dr. Phillip Napoli on research on the gatekeeping of news across social media.",
+          "location": "Duke University",
+          "date": "May 2018 - (current)",
+          "link": "http://dewitt.sanford.duke.edu"
+        },
+        {
+          "title": "Media and Journalism Emerging Technologies Lab",
+          "subtitle": "AR Storytelling",
+          "text": "Worked with Prof. Steven King’s Emerging Technologies Lab to create tools and storytelling experiences using new technologies like AR, VR, and AI.",
+          "location": "UNC - Chapel Hill",
+          "date": "Sept 2017 - (current)",
+          "link": "http://et-lab.org"
+        }
+      ]
+    },
+    {
+      "title": "Other Experience",
+      "hide_print": true,
+      "items": [
+        {
+          "title": "UNC Faculty Council",
+          "subtitle": "Student Representative",
+          "date": "Sept. 2017 - (current)"
+        },
+        {
+          "title": "Robertson Community Council",
+          "subtitle": "Co-Director",
+          "date": "Sept. 2016 - May 2018"
+        },
+        {
+          "title": "TEDxUNC",
+          "subtitle": "Director of Marketing",
+          "date": "Sept. 2016 - Feb. 2018"
+        },
+        {
+          "title": "UNC Student Government",
+          "subtitle": "Academic Affairs & First Year Council",
+          "date": "Sept. 2016 - May. 2018"
+        },
+        {
+          "title": "Joe for SBP, Garima for SBP",
+          "subtitle": "Director of Strategy",
+          "date": "Nov. 2016 - Feb. 2018"
+        }
+      ]
+    }
+  ]
+}

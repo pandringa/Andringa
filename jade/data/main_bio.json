@@ -1,0 +1,72 @@
+{
+  "name": "Peter Andringa",
+  "subhead": "Journalist • Developer",
+  "sections": [
+    {
+      "title": "Currently",
+      "hide_print": true,
+      "items": [
+        {
+          "title": "Visuals Intern,",
+          "subtitle": "The Guardian"
+        },
+        {
+          "title": "Robertson Scholar,",
+          "subtitle": "UNC & Duke"
+        }
+      ]
+    },
+    {
+      "title": "Recent Bylines",
+      "hide_print": true,
+      "items": [
+        {
+          "title": "\"Facebook, the New Frontier of Political Ads\"",
+          "subtitle": "NBC Stations",
+          "substyle": "small",
+          "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html"
+        },
+        {
+          "title": "\"On the Front Lines of the Affordable Housing Fight\"",
+          "subtitle": "indyweek.com",
+          "substyle": "small",
+          "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663"
+        }
+      ]
+    }
+  ],
+  "social": [
+    {
+      "name": "website",
+      "link": "https://peterandringa.com",
+      "print_text": "peterandringa.com",
+      "hide_web": true
+    },
+    {
+      "name": "email",
+      "link": "mailto:peter.j.andringa@gmail.com",
+      "print_text": "peter.j.andringa@gmail.com"
+    },
+    {
+      "name": "twitter",
+      "link": "https://twitter.com/p_andringa",
+      "hide_print": true
+    },
+    {
+      "name": "github",
+      "link": "https://github.com/pandringa",
+      "print_text": "/pandringa",
+      "hide_print": true
+    },
+    {
+      "name": "dribbble",
+      "link": "https://dribbble.com/pandringa",
+      "hide_print": true
+    },
+    {
+      "name": "linkedin",
+      "link": "https://linkedin.com/in/PeterAndringa",
+      "print_text": "/in/PeterAndringa"
+    }
+  ]
+}

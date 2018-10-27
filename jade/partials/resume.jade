@@ -1,0 +1,18 @@
+mixin resume(data)
+	for section in data.sections
+		h5.section-head(class=(section.hide_print ? 'hide-print' : ''))= section.title
+		.indented(class=(section.hide_print ? 'hide-print' : ''))
+			for i in section.items
+				.resume-item(class=(i.hide_print ? "hide-print" : ""))
+					.item-left
+						h3.header
+							if i.link
+								a(href=i.link target="_blank" class=(i.underline ? "underline" : ""))= i.title 
+							else
+								span= i.title
+							.subtitle= i.subtitle
+						if i.text
+							p.body= i.text
+					.item-right(class=(i.location && !i.text ? 'two-lines': ''))
+						.location= i.location
+						.date= i.date

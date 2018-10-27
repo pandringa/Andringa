@@ -1,3 +1,6 @@
+include ./partials/bio.jade
+include ./partials/resume.jade
+
 doctype
 html
 	head
@@ -7,51 +10,14 @@ html
 		link(rel="stylesheet" href="css/main.css")
 	body
 		section.bio
-			.bio-header-group
-				img(src="img/portrait.jpg" alt=bio.name)
-				h1= bio.name
-				h3= bio.subhead
-			.bio-section-group.hide-mobile
-				for section in bio.sections
-					.bio-section(class=(section.hide_print ? "hide-print" : ""))
-						h6= section.title
-						for i in section.items
-							if i.link
-								p.link
-									a(href=i.link target="_blank")= i.title+" "
-										b(class=i.substyle)= i.subtitle
-							else
-								p= i.title+" "
-									b(class=i.substyle)= i.subtitle
-				.bio-section.bottom
-					h6= "Get in touch"
-					p.social-icons
-						for i in bio.social
-							a(class="icon-"+i.name+( i.hide_print ? ' hide-print' : '' )+( i.hide_web ? ' hide-web' : '' ) href=i.link target="_blank")
-								if i.print_text
-									span.print-text=i.print_text
+			+bio(main_bio)
 			a.expand-button(onclick="toggleCard()" href="#") 
 				h3.full-link Full Resume
 					.icon-forward
-								
+
 		section.resume
-			for section in resume.sections
-				h5.section-head(class=(section.hide_print ? 'hide-print' : ''))= section.title
-				.indented(class=(section.hide_print ? 'hide-print' : ''))
-					for i in section.items
-						.resume-item(class=(i.hide_print ? "hide-print" : ""))
-							.item-left
-								h3.header
-									if i.link
-										a(href=i.link target="_blank" class=(i.underline ? "underline" : ""))= i.title 
-									else
-										span= i.title
-									.subtitle= i.subtitle
-								if i.text
-									p.body= i.text
-							.item-right(class=(i.location && !i.text ? 'two-lines': ''))
-								.location= i.location
-								.date= i.date
+			+resume(main_resume)
+
 		script.
 			const bodyClass = document.querySelector('body').classList
 			const toggleCard = () => {
