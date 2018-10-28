@@ -1,7 +1,7 @@
 @media print {
   @page { 
     margin: 0;
-    padding-top: 1.5in;
+    padding-top: 1.2in;
   }
   body {
     font-size: 0.8em;
@@ -47,7 +47,7 @@
       top: 0.25em;
     }
     .bio-header-group {
-      width: 30% !important;
+      width: 30%;
       min-width: 0;
       margin: 0 0 0 0.4em;
       vertical-align: middle;
