@@ -21,16 +21,16 @@
       "hide_print": true,
       "items": [
         {
-          "title": "\"Facebook, the New Frontier of Political Ads\"",
+          "title": "Blue wave? A visual guide to the Democrats' gains in the midterms",
+          "subtitle": "The Guardian",
+          "substyle": "small",
+          "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/07/blue-wave-or-blue-ripple-a-visual-guide-to-the-democrats-gains"
+        },
+        {
+          "title": "Facebook, the New Frontier of Political Ads",
           "subtitle": "NBC Stations",
           "substyle": "small",
           "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html"
-        },
-        {
-          "title": "\"On the Front Lines of the Affordable Housing Fight\"",
-          "subtitle": "indyweek.com",
-          "substyle": "small",
-          "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663"
         }
       ]
     }
