@@ -6,7 +6,7 @@
         {
           "title": "The Guardian",
           "subtitle": "Visuals Intern",
-          "text": "Covered the 2018 midterm elections for the Guardian's Visuals team, building election-related interactives, contributing to data-driven analysis, and developing the Guardian's live election results page.",
+          "text": "Covered the 2018 midterm elections for the Guardian's Visuals team, building election-related interactives, contributing to data analysis, and developing the backend and UI of the Guardian's live election results.",
           "location": "London, UK",
           "date": "Sept-Dec. 2018",
           "link": "https://theguardian.com/interactive"
@@ -14,7 +14,7 @@
         {
           "title": "NBC",
           "subtitle": "Multimedia Journalism Intern",
-          "text": "Worked in NBC's national newsroom for the Owned Stations division, reporting national stories and creating videos, graphics, and interactives for NBC's digital platforms.",
+          "text": "Worked in NBC's national newsroom in the Owned Stations division, producing videos, designing graphics, developing interactives, and building digital tools for NBC's 15 local station websites.",
           "location": "New York, NY",
           "date": "June-Aug. 2018",
           "link": "https://nbcnews.com"
@@ -22,7 +22,7 @@
         {
           "title": "The Delta Center",
           "subtitle": "Media Intern",
-          "text": "Helped produce multimedia stories for the Delta Center’s “Most Southern Place on Earth” workshops, taking photos, producing video stories, and designing for printed marketing.",
+          "text": "Assisted with the Delta Center’s “Most Southern Place on Earth” workshops by planning logistics, taking photos and video, producing multimedia stories, and designing printed marketing.",
           "location": "Cleveland, MS",
           "date": "June-Aug. 2017",
           "link": "https://deltacenterdsu.com"
@@ -30,7 +30,7 @@
         {
           "title": "CustomInk",
           "subtitle": "Software Engineering Intern",
-          "text": "Worked as a software engineering intern with CustomInk’s eCommerce team, entirely rebuilding a complex internal system with MySQL, MongoDB, Ruby on Rails, and JS.",          
+          "text": "Worked on the eCommerce technology team, entirely rebuilding an internal inventory management system with MySQL, MongoDB, Ruby on Rails, and JS.",          
           "location": "Fairfax, VA",
           "date": "June-Aug. 2016",
           "link": "https://customink.com"
@@ -64,7 +64,8 @@
         {
           "title": "\"Facebook, the New Frontier of Political Ads\"",
           "subtitle": "Writing, Interactive",
-          "text": "An investigative story and interactive about the habits of political advertisers on Facebook that allowed readers to see what ads were targeted towards them. Published on NBC station websites across the country.",
+          "text": "An investigative story and interactive about the habits of political advertisers on Facebook that allowed readers to see what ads were targeted towards them.",
+          "location": "NBC Stations",
           "date": "July 2018",
           "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
           "underline": true
@@ -72,7 +73,8 @@
         {
           "title": "\"2020 New Hampshire Primary Candidate Tracker\"",
           "subtitle": "Interactive, Data",
-          "text": "An application I designed and developed that allows repoters at NBC's owned-and-operated station in New England to track how often 2020 presidential candidates visit New Hampshire.",
+          "text": "An application that allows repoters at NBC to track 2020 presidential candidates visiting New Hampshire.",
+          "location": "necn.com",
           "date": "July 2018",
           "link": "https://www.necn.com/multimedia/2020-Presidential-Primaries-Which-Candidates-Visited-New-Hampshire-490729011.html",
           "underline": true
@@ -80,7 +82,7 @@
         {
           "title": "\"Exploring Faceboook's News Landscape\"",
           "subtitle": "Data Visualization",
-          "text": "This interactive piece uses data visualizations to analyze the Facebook posts of top news organizations to better understand how people interact with news content on Facebook.",
+          "text": "A data visualization to look at how people interact with posts from news pages on Facebook.",
           "date": "May 2018",
           "link": "https://peterandringa.com/facebook-news/",
           "underline": true
@@ -88,9 +90,18 @@
         {
           "title": "\"Things Have Got to Change\": Affordable Housing in Chapel Hill",
           "subtitle": "Writing",
-          "text": "A profile I wrote of Yvette Matthews, one of the activists promoting the issue of affordable housing amidst soaring rents in Chapel Hill. Published in IndyWeek May 30, 2018",
+          "text": "A profile of Yvette Matthews, an activist promoting affordable housing amidst soaring rents in Chapel Hill.",
+          "location": "IndyWeek",
           "date": "April 2018",
           "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663",
+          "underline": true
+        },
+        {
+          "title": "\"Viewing World Trade through the Lens of History\"",
+          "subtitle": "Data Visualization",
+          "text": "A data visualization exploring the patterns of imports/exports throughout history.",
+          "date": "October 2017",
+          "link": "https://peterandringa.com/world-trade/",
           "underline": true
         }
       ]
@@ -100,20 +111,22 @@
       "items": [
         {
           "title": "University of North Carolina at Chapel Hill",
-          "subtitle": "GPA: 3.91",
-          "text": "Majoring in journalism (with a specialization in interactive multimedia) and computer science, with a minor in entrepreneurship. Relevant coursework includes Interactive Journalism, Politics and Media, Algorithmic Journalism, CS Data Structures, Profile Writing, News Writing, Multimedia Storytelling, and UX Design.",
+          "subtitle": "B.A. Journalism, B.A. Computer Science",
+          "text": "Double-majoring in journalism and CS, with a minor in entrepreneurship. Relevant coursework includes Interactive Journalism, Big Data Ethics, Data Structures, UX design, and Multimedia Storytelling. GPA: 3.91",
           "location": "Chapel Hill, NC",
           "date": "Aug. 2016 - May 2020"
         },
         {
-          "title": "Robertson Scholars Leadership Program",
-          "text": "The Robertson Scholars Leadership Program gives a selective group of students a full- tuition scholarship and allows them to be “dual citizens” of both the University of North Carolina and Duke University, taking classes and even living at the opposite campus.",
+          "title": "Duke University",
+          "subtitle": "Robertson Scholar",
+          "text": "Accepted into a selective scholarship program to be a “dual citizen” of both UNC and Duke, studying and living at both schools. Coursework includes Algorithmic Journalism, Politics and Media, and Profile Writing.",
           "location": "Durham, NC",
           "date": "Aug. 2016 - May 2020"
         },
         {
           "title": "Thomas Jefferson High School for Science and Technology",
-          "text": "“TJ,” as it is affectionately called, is a magnet high school that draws students from all over Northern Virginia to study science, technology, engineering and mathematics.",
+          "subtitle": "Concentration: software engineering",
+          "text": "Attended a selective magnet high school for science, technology, engineering and mathematics.",
           "location": "Alexandria, VA",
           "date": "Sept. 2012 - June 2016"
         }
@@ -125,7 +138,7 @@
         {
           "title": "Duke DeWitt Wallace Center for Media and Democracy",
           "subtitle": "Online Gatekeeping",
-          "text": "Collaborated with Dr. Phillip Napoli on research on the gatekeeping of news across social media.",
+          "text": "Collaborated with Dr. Phillip Napoli on research on the spread of news content on social media, which was selected for the Association of Internet Researchers conference and is pending publication.",
           "location": "Duke University",
           "date": "May 2018 - (current)",
           "link": "http://dewitt.sanford.duke.edu"
@@ -133,7 +146,7 @@
         {
           "title": "Media and Journalism Emerging Technologies Lab",
           "subtitle": "AR Storytelling",
-          "text": "Worked with Prof. Steven King’s Emerging Technologies Lab to create tools and storytelling experiences using new technologies like AR, VR, and AI.",
+          "text": "Developed new storytelling technologies in Prof. Steven King's lab, including a photogrammetry tool and a scavenger hunt app. Responsibilities included product management, research, design, and development.",
           "location": "UNC - Chapel Hill",
           "date": "Sept 2017 - (current)",
           "link": "http://et-lab.org"
