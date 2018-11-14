@@ -2,7 +2,7 @@
   {
     "title": "Blue Wave? A Visual Guide to the Democrats' Gains",
     "subtitle": "Data",
-    "text": "As the 2018 midterm election results came in, I contributed to The Guardian's visual analysis story by looking at night's results alongside demographic information.",
+    "text": "As the 2018 midterm election results were coming in, I was busy preparing The Guardian's post-election visual analysis; helping with the swing map and comparing the night's results to demographic information about the districts.",
     "location": "The Guardian",
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/07/blue-wave-or-blue-ripple-a-visual-guide-to-the-democrats-gains",
@@ -12,7 +12,7 @@
   {
     "title": "2018 US Midterms: Live Results",
     "subtitle": "Interactive, Data",
-    "text": "Designed and built portions of The Guardian's midterm elections page, including both back-end data parsing, front-end React components, and the innovative ticker.",
+    "text": "Designed and built portions of The Guardian's midterm elections page, including both back-end data parsing, testing infrastructure, front-end React components, and the ticker of recently-called races.",
     "location": "The Guardian",
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats",
