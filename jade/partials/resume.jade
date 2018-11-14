@@ -16,3 +16,7 @@ mixin resume(data)
 					.item-right(class=(i.location && !i.text ? 'two-lines': ''))
 						.location= i.location
 						.date= i.date
+			if section.more_link
+				h5.header.more-link
+					a.underline(href=section.more_link) More
+						span.icon-forward(style="position: relative; left: 2px; top: 2px;")

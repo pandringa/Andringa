@@ -278,6 +278,10 @@ section.resume, section.projects {
 			}
 		}
 	}
+
+	.more-link {
+		margin: 0 0 2em;
+	}
 }
 
 section.projects {
@@ -290,9 +294,7 @@ section.projects {
 		margin: 1rem 0;
 	}
 
-	& > a {
-		font-family: $sans-serifs;
-		font-size: 1.1em;
+	a.back-link {
 		border-bottom: 1px solid #aaa;
 		.icon-back {
 			position: relative;

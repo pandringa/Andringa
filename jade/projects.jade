@@ -7,9 +7,10 @@ html
     link(rel="stylesheet" href="/css/main.css")
   body
     section.projects
-      a(href="/") 
-        span.icon-back 
-        span Back to full resume
+      h5.header
+        a.back-link(href="/") 
+          span.icon-back 
+          span Back to full resume
       h1 Recent Projects
       for project in projects
             .item-content

@@ -60,6 +60,7 @@
     },
     {
       "title": "Portfolio",
+      "more_link": "/projects",
       "items": [
         {
           "title": "Blue Wave or Ripple? A Visual Guide to the Democrats' Gains",
