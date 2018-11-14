@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Blue Wave? A Visual Guide to the Democrats' Gains",
+    "subtitle": "Data",
+    "text": "As the 2018 midterm election results came in, I contributed to The Guardian's visual analysis story by looking at night's results alongside demographic information.",
+    "location": "The Guardian",
+    "date": "Nov. 2018",
+    "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/07/blue-wave-or-blue-ripple-a-visual-guide-to-the-democrats-gains",
+    "image": "/img/midterms-analysis.png",
+    "underline": true
+  },
+  {
+    "title": "2018 US Midterms: Live Results",
+    "subtitle": "Interactive, Data",
+    "text": "Designed and built portions of The Guardian's midterm elections page, including both back-end data parsing, front-end React components, and the innovative ticker.",
+    "location": "The Guardian",
+    "date": "Nov. 2018",
+    "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats",
+    "image": "/img/midterms-live.png",
+    "underline": true
+  },
+  {
+    "title": "Facebook, the New Frontier of Political Ads",
+    "subtitle": "Writing, Interactive",
+    "text": "This investigative story, based on an NYU dataset and Facebook’s new Ad Archive, explored the ways political groups use Facebook to target advertising, sometimes deceptively. After pitching the story, I conducted the data analysis, did original reporting and built an interactive that allowed readers to see what political ads were most often targeted at them.",
+    "location": "NBC Stations",
+    "date": "July 2018",
+    "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
+    "image": "/img/facebook-ads.png",
+    "underline": true
+  },
+  {
+    "title": "2020 New Hampshire Primary Candidate Tracker",
+    "subtitle": "Interactive, Data",
+    "text": "I built this interactive news app that allowed viewers of NBC’s NECN station to track which potential presidential hopefuls were visiting New Hampshire, even two years out from the next presidential election. In the process, I also developed a new Python build tool that allows the team to more effectively deploy interactives that use Google spreadsheets.",
+    "location": "NBC Stations",
+    "date": "July 2018",
+    "link": "https://www.necn.com/multimedia/2020-Presidential-Primaries-Which-Candidates-Visited-New-Hampshire-490729011.html",
+    "image": "/img/candidate-tracker.png",
+    "underline": true
+  },
+  {
+    "title": "See How Big the Mendocino Fire Would Be in Your City",
+    "subtitle": "Interactive",
+    "text": "This is one of a number of quick-turnaround news interactives I did for NBC this past summer, where I’d have a few hours to put together a modular interactive to go inside multiple stories on a topic. This interactive scrapes wildfire data from the US Geological Service and plots it on OpenStreetMap, allowing readers to compare the size of California’s biggest-ever wildfire to their own city.",
+    "location": "NBC Stations",
+    "date": "July 2018",
+    "link": "https://www.nbcnewyork.com/news/national-international/See-How-Big-the-Mendocino-Fire-Is-490287341.html",
+    "image": "/img/mendocino-fire.png",
+    "underline": true
+  },
+  {
+    "title": "Family Separation at the Border, Explained",
+    "subtitle": "Interactive",
+    "text": "This is another quick-turnaround interactive I developed for NBC, based on one of my colleagues’ reporting about the thousands of migrant children being held in ICE detainment centers.",
+    "location": "NBC Stations",
+    "date": "June 2018",
+    "link": "https://www.nbcwashington.com/news/politics/Advocates-Against-Detaining-Migrant-Families-Children-486080741.html",
+    "image": "/img/family-separation.png",
+    "underline": true
+  },
+  {
+    "title": "Exploring Facebook’s News Landscape",
+    "subtitle": "Interactive, Data, Writing",
+    "text": "Using Facebook’s public page content API, I collected a dataset to track how Facebook users respond to the Facebook posts of many large news outlets. This story explores some of that data, using interactives and data visualizations to help illustrate some trends in how Facebook affects the news people consume. The data is also part of an upcoming research paper I co-authored with Phil Napoli, a professor at Duke, for the Association of Internet Researchers.",
+    "location": "School Project",
+    "date": "May 2018",
+    "link": "https://peterandringa.com/facebook-news",
+    "image": "/img/facebook-news.png",
+    "underline": true
+  },
+  {
+    "title": "2018 Midterms: Races to Watch",
+    "subtitle": "Interactive, Data",
+    "text": "This news app, created in December 2017 for a class assignment, allows viewers to explore races in the upcoming midterm elections through campaign spending, news coverage, and race ratings. The Node.js backend integrates data from multiple APIs and web scrapers, to help readers notice where they should be paying attention on November 6.",
+    "location": "School Project",
+    "date": "Dec. 2017",
+    "link": "https://peterandringa.com/2018-midterms",
+    "image": "/img/midterms-preview.png",
+    "underline": true
+  },
+  {
+    "title": "World Trade Through the Lens of History",
+    "subtitle": "Interactive",
+    "text": "An interactive I created for a class assignment that uses a WTO dataset to illustrate patterns and changes in world trade over the last 50 years.",
+    "location": "School Project",
+    "date": "Oct. 2017",
+    "link": "https://peterandringa.com/world-trade",
+    "image": "/img/world-trade.png",
+    "underline": true
+  },
+  {
+    "title": "On the Front Lines: Affordable Housing in Chapel Hill",
+    "subtitle": "Writing",
+    "text": "While much of my work is in interactives and data visualization, I also enjoy longer-form narrative stories. In May, I wrote this profile of a local housing activist for IndyWeek, an alt-weekly in North Carolina.",
+    "location": "IndyWeek",
+    "date": "April 2018",
+    "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663",
+    "image": "/img/indyweek.png",
+    "underline": true
+  }
+]

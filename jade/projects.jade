@@ -1,0 +1,33 @@
+doctype
+html
+  head
+    title Peter Andringa
+    meta(name="viewport" content="width=device-width, user-scalable=0, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0")
+    link(href='https://fonts.googleapis.com/css?family=Quattrocento:400,600|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href="/css/main.css")
+  body
+    section.projects
+      a(href="/") 
+        span.icon-back 
+        span Back to full resume
+      h1 Recent Projects
+      for project in projects
+            .item-content
+              a.item-image(href=project.link target="_blank" style="background-image: url("+project.image+");")
+              .resume-item
+                .item-left
+                  h3.header
+                    if project.link
+                      a(href=project.link target="_blank" class=(project.underline ? "underline" : ""))= project.title 
+                    else
+                      span= project.title
+                    .subtitle= project.subtitle
+                  if project.text
+                    p.body= project.text
+                .item-right(class=(project.location && !project.text ? 'two-lines': ''))
+                  .location= project.location
+                  .date= project.date
+      
+
+
+

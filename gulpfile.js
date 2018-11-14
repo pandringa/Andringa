@@ -55,12 +55,18 @@ var compiler = {
     glob.sync(paths.data).forEach(file => {
       data[ file.match(/\/(\w+)\.json$/)[1] ] = JSON.parse(fs.readFileSync(file))
     })
-    
+
     return Async(gulp.src(paths.html)
           .pipe(jade({
               locals: data
             }))
       .pipe( minifyHTML() )
+      .pipe( rename(path => {
+        if(path.basename != 'index'){
+          path.dirname += '/'+path.basename;
+          path.basename = 'index'
+        }
+      }))
       .pipe( gulp.dest(outPath) )
         .pipe(livereload())
     )
@@ -82,12 +88,12 @@ var compiler = {
     });
   },
   resume: function(inputName, outputName) {
-    inputName = inputName || 'index'
+    inputName = inputName || 'index.html'
     if(!outputName) outputName = inputName;
 
     return puppeteer.launch().then(async browser => {
       const page = await browser.newPage();
-      await page.goto('file://'+pathUtil.join(outPath, inputName+'.html'), {waitUntil: 'networkidle2'});
+      await page.goto('file://'+pathUtil.join(outPath, inputName), {waitUntil: 'networkidle2'});
       await page.pdf({path: './resumes/'+outputName+'.pdf', pageRanges: '1'});
       await browser.close();
     });
@@ -127,8 +133,8 @@ gulp.task('compile', () =>
 );
 
 gulp.task('resumes', ['compile'], () =>
-  compiler.resume('index', 'resume')
-    .then(() => compiler.resume('tech_resume'))
+  compiler.resume('index.html', 'resume')
+    .then(() => compiler.resume('tech_resume/index.html', 'tech_resume'))
     .then(() => gulp.src('./resumes/resume.pdf').pipe(gulp.dest(outPath)) )
 );
 
