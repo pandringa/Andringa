@@ -17,7 +17,7 @@
           "text": "Worked in NBC's national newsroom in the Owned Stations division, producing videos, designing graphics, developing interactives, and building digital tools for NBC's 15 local station websites.",
           "location": "New York, NY",
           "date": "June-Aug. 2018",
-          "link": "https://nbcnewyork.com"
+          "link": "https://www.nbcnewyork.com/results/?keywords=%22Peter+Andringa%22&byline=y&sort=date"
         },
         {
           "title": "The Delta Center",
@@ -25,7 +25,7 @@
           "text": "Assisted with the Delta Center’s “Most Southern Place on Earth” workshops by planning logistics, taking photos and video, producing multimedia stories, and designing printed marketing.",
           "location": "Cleveland, MS",
           "date": "June-Aug. 2017",
-          "link": "https://deltacenterdsu.com"
+          "link": "https://deltacenterdsu.com/photos-portfolios-and-videos"
         },
         {
           "title": "CustomInk",
@@ -112,6 +112,15 @@
       "title": "Projects",
       "items": [
         {
+          "title": "2018 US Midterms: Live Results",
+          "subtitle": "Interactive, Data",
+          "text": "Designed and built portions of The Guardian's midterm elections page, including both back-end data parsing, front-end React components, and the innovative ticker.",
+          "location": "The Guardian",
+          "date": "November 2018",
+          "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats",
+          "underline": true
+        },
+        {
           "title": "2020 New Hampshire Primary Candidate Tracker",
           "subtitle": "Interactive, Data",
           "text": "An application that allows repoters at NBC to track 2020 presidential candidates visiting New Hampshire.",
@@ -127,15 +136,6 @@
           "location": "NBC Stations",
           "date": "July 2018",
           "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
-          "underline": true
-        },
-        {
-          "title": "\"Exploring Faceboook's News Landscape\"",
-          "subtitle": "Data Visualization",
-          "text": "A data visualization to look at how people interact with news on Facebook.",
-          "location": "peterandringa.com",
-          "date": "May 2018",
-          "link": "https://peterandringa.com/facebook-news/",
           "underline": true
         },
         {
