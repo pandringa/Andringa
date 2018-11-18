@@ -1,5 +1,15 @@
 [
   {
+    "title": "Can you get May's Brexit deal through parliament?",
+    "subtitle": "Interactive",
+    "text": "During one particularly crazy news day after British Prime Minister Theresa May announced her proposed Brexit deal, I worked with political writers and analysts, at the Guardian to illustrate the challenge she will face with an interactive game. The piece gained significant traction on social media, and remained on the homepage for two days.",
+    "location": "The Guardian",
+    "date": "Nov. 2018",
+    "link": "https://www.theguardian.com/politics/ng-interactive/2018/nov/15/can-you-get-mays-brexit-deal-through-parliament",
+    "image": "/img/brexit-votes.png",
+    "underline": true
+  },
+  {
     "title": "Blue Wave? A Visual Guide to the Democrats' Gains",
     "subtitle": "Data",
     "text": "As the 2018 midterm election results were coming in, I was busy preparing The Guardian's post-election visual analysis; helping with the swing map and comparing the night's results to demographic information about the districts.",
@@ -42,7 +52,7 @@
   {
     "title": "See How Big the Mendocino Fire Would Be in Your City",
     "subtitle": "Interactive",
-    "text": "This is one of a number of quick-turnaround news interactives I did for NBC this past summer, where I’d have a few hours to put together a modular interactive to go inside multiple stories on a topic. This interactive scrapes wildfire data from the US Geological Service and plots it on OpenStreetMap, allowing readers to compare the size of California’s biggest-ever wildfire to their own city.",
+    "text": "This is one of a number of quick-turnaround projects I worked on for NBC, building a breaking-news interactive in just a few hours. This map scrapes wildfire data from the US Geological Service and plots it on OpenStreetMap, allowing readers to compare the size of California’s biggest-ever wildfire to their own city.",
     "location": "NBC Stations",
     "date": "July 2018",
     "link": "https://www.nbcnewyork.com/news/national-international/See-How-Big-the-Mendocino-Fire-Is-490287341.html",
