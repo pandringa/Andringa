@@ -60,14 +60,23 @@
     },
     {
       "title": "Portfolio",
-      "more_link": "/projects",
+      "more_link": "https://peterandringa.com/projects",
       "items": [
+        {
+          "title": "Can you get May's Brexit deal through parliament?",
+          "subtitle": "Interactive",
+          "text": "I led the design and development of this game about the difficult path ahead for Theresa May's deal. It was popular with readers, gaining traction on social media and remaining on the homepage for two days.",
+          "location": "The Guardian",
+          "date": "Nov. 2018",
+          "link": "https://www.theguardian.com/politics/ng-interactive/2018/nov/15/can-you-get-mays-brexit-deal-through-parliament",
+          "underline": true
+        },
         {
           "title": "Blue Wave or Ripple? A Visual Guide to the Democrats' Gains",
           "subtitle": "Data Visualization",
           "text": "As the 2018 midterm election results came in, I contributed to The Guardian's visual analysis story by looking at night's results alongside demographic information.",
           "location": "The Guardian",
-          "date": "November 2018",
+          "date": "Nov. 2018",
           "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/07/blue-wave-or-blue-ripple-a-visual-guide-to-the-democrats-gains",
           "underline": true
         },
@@ -76,7 +85,7 @@
           "subtitle": "Interactive, Data",
           "text": "Designed and built portions of The Guardian's midterm elections page, including both back-end data parsing, front-end React components, and the innovative ticker.",
           "location": "The Guardian",
-          "date": "November 2018",
+          "date": "Nov. 2018",
           "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats",
           "underline": true
         },
@@ -87,15 +96,6 @@
           "location": "NBC Stations",
           "date": "July 2018",
           "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
-          "underline": true
-        },
-        {
-          "title": "2020 New Hampshire Primary Candidate Tracker",
-          "subtitle": "Interactive, Data",
-          "text": "An application that tracks the early 2020 presidential candidates visiting New Hampshire.",
-          "location": "NBC Stations",
-          "date": "July 2018",
-          "link": "https://www.necn.com/multimedia/2020-Presidential-Primaries-Which-Candidates-Visited-New-Hampshire-490729011.html",
           "underline": true
         },
         {
@@ -114,8 +114,8 @@
       "items": [
         {
           "title": "University of North Carolina at Chapel Hill",
-          "subtitle": "B.A. Journalism, B.A. Computer Science",
-          "text": "Double-majoring in journalism and CS, with a minor in entrepreneurship. Relevant coursework includes Interactive Journalism, Big Data Ethics, Data Structures, UX design, and Multimedia Storytelling. GPA: 3.91",
+          "subtitle": "B.A. Journalism, Computer Science",
+          "text": "Double-majoring in journalism and CS, with a minor in entrepreneurship. Relevant coursework includes Interactive Journalism, Big Data Ethics, Data Structures, UX design, and Multimedia Storytelling. GPA: 3.92",
           "location": "Chapel Hill, NC",
           "date": "Aug. 2016 - May 2020"
         },
