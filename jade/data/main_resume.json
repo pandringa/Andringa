@@ -4,6 +4,14 @@
       "title": "Work Experience",
       "items": [
         {
+          "title": "The Wall Street Journal",
+          "subtitle": "Graphics Intern",
+          "text": "Analyzed data, built interactives, and designed graphics for The Wall Street Journal's Business & Finance section, both in print and online.",
+          "location": "New York, NY",
+          "date": "June-Aug. 2019",
+          "link": "https://wsj.com/"
+        },
+        {
           "title": "The Guardian",
           "subtitle": "Visuals Intern",
           "text": "Covered the 2018 midterm elections for the Guardian's Visuals team, building election-related interactives, contributing to data analysis, and developing the Guardian's live election results.",

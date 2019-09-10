@@ -7,8 +7,8 @@
       "hide_print": true,
       "items": [
         {
-          "title": "Visuals Intern,",
-          "subtitle": "The Guardian"
+          "title": "Fellow,",
+          "subtitle": "UNC Journalism Emerging Technology Lab"
         },
         {
           "title": "Robertson Scholar,",
@@ -21,16 +21,16 @@
       "hide_print": true,
       "items": [
         {
-          "title": "Can you get May's Brexit deal through parliament?",
-          "subtitle": "The Guardian",
+          "title": "To Rock the Charts in 2019, Bands Need a Little Help",
+          "subtitle": "The Wall Street Journal",
           "substyle": "small",
-          "link": "https://www.theguardian.com/politics/ng-interactive/2018/nov/15/can-you-get-mays-brexit-deal-through-parliament"
+          "link": "https://www.wsj.com/articles/for-albums-the-stairway-to-heaven-goes-via-ticket-sales-11565343003"
         },
         {
-          "title": "2018 US Midterms: Live Results",
+          "title": "Gun violence has sharply declined in the Bay Area. What happened?",
           "subtitle": "The Guardian",
           "substyle": "small",
-          "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats"
+          "link": "https://www.theguardian.com/us-news/ng-interactive/2019/jun/03/gun-violence-bay-area-drop-30-percent-why-investigation"
         }
       ]
     }
