@@ -6,7 +6,7 @@
         {
           "title": "The Wall Street Journal",
           "subtitle": "Graphics Intern",
-          "text": "Analyzed data, built interactives, and designed graphics for The Wall Street Journal's Business & Finance section, both in print and online.",
+          "text": "Scraped + analyzed data, built interactives, and designed graphics for The Wall Street Journal's Business & Finance section in both print and online.",
           "location": "New York, NY",
           "date": "June-Aug. 2019",
           "link": "https://wsj.com/"
@@ -14,7 +14,7 @@
         {
           "title": "The Guardian",
           "subtitle": "Visuals Intern",
-          "text": "Covered the 2018 midterm elections for the Guardian's Visuals team, building election-related interactives, contributing to data analysis, and developing the Guardian's live election results.",
+          "text": "Covered the 2018 midterm elections for the Guardian's Visuals team, building much of our election backend and live results page. Additionally, produced post-election analysis and other visual stories.",
           "location": "London, UK",
           "date": "Sept-Dec. 2018",
           "link": "https://theguardian.com/profile/peter-andringa"
@@ -22,7 +22,7 @@
         {
           "title": "NBC",
           "subtitle": "Multimedia Journalism Intern",
-          "text": "Worked in NBC's national newsroom in the Owned Stations division, producing videos, designing graphics, developing interactives, and building digital tools for NBC's 15 local station websites.",
+          "text": "Produced videos, graphics, and interactives for NBC’s national newsroom, creating digital tools and experiences across NBC’s 15 local websites.",
           "location": "New York, NY",
           "date": "June-Aug. 2018",
           "link": "https://www.nbcnewyork.com/results/?keywords=%22Peter+Andringa%22&byline=y&sort=date"
@@ -30,39 +30,43 @@
         {
           "title": "The Delta Center",
           "subtitle": "Media Intern",
-          "text": "Assisted with the Delta Center’s “Most Southern Place on Earth” workshops by planning logistics, taking photos and video, producing multimedia stories, and designing printed marketing.",
+          "text": "Helped run the Delta Center’s “Most Southern Place on Earth” NEH workshops by coordinating logistics, taking photos and video, producing multimedia stories, and designing printed marketing.",
           "location": "Cleveland, MS",
           "date": "June-Aug. 2017",
           "link": "https://deltacenterdsu.com"
         },
         {
           "title": "CustomInk",
-          "subtitle": "Software Engineering Intern",
-          "text": "Worked on the eCommerce technology team, entirely rebuilding an internal inventory management system with MySQL, MongoDB, Ruby on Rails, and JS.",          
+          "subtitle": "Software Engineering Intern, eCommerce",
+          "text": "Entirely rebuilt an inventory management system, improving load times and reliability of the system using MySQL, MongoDB, Ruby on Rails, and Javascript.",          
           "location": "Fairfax, VA",
           "date": "June-Aug. 2016",
           "link": "https://customink.com"
         },
         {
           "title": "nvite",
-          "subtitle": "Software Engineering Intern",       
+          "subtitle": "Software Engineering Intern", 
+          "text": "Architected, built, and launched a new “communities” feature for the start-up events platform, a key part of their eventual acquisition by Eventbrite in 2017.",      
           "location": "Washington, DC",
           "date": "June-Aug. 2015",
-          "link": "https://nvite.com"
+          "link": "https://nvite.com",
+          "hide_print": true
         },
         {
           "title": "3advance",
           "subtitle": "Engineering Intern",
           "location": "Washington, DC",
           "date": "June-Aug 2014",
-          "link": "https://3advance.com"
+          "link": "https://3advance.com",
+          "hide_print": true
         },
         {
           "title": "SocialTables",
-          "subtitle": "Product Intern",
+          "subtitle": "Product Engineering Intern",
           "location": "Washington, DC",
           "date": "June-Aug 2013",
-          "link": "https://socialtables.com"
+          "link": "https://socialtables.com",
+          "hide_print": true
         }
       ]
     },
@@ -71,27 +75,27 @@
       "more_link": "https://peterandringa.com/projects",
       "items": [
         {
-          "title": "Can you get May's Brexit deal through parliament?",
-          "subtitle": "Interactive",
-          "text": "I led the design and development of this game about the difficult path ahead for Theresa May's deal. It was popular with readers, gaining traction on social media and remaining on the homepage for two days.",
-          "location": "The Guardian",
-          "date": "Nov. 2018",
-          "link": "https://www.theguardian.com/politics/ng-interactive/2018/nov/15/can-you-get-mays-brexit-deal-through-parliament",
+          "title": "To Rock the Charts in 2019, Bands Need a Little Help",
+          "subtitle": "Data, Interactive",
+          "text": "Contributed data and visuals to a story showing how bands are gaming the Billboard charts — scraping data, building an interactive, and designing a full-width graphic for print.",
+          "location": "The Wall Street Journal",
+          "date": "August 2019",
+          "link": "https://www.wsj.com/articles/for-albums-the-stairway-to-heaven-goes-via-ticket-sales-11565343003",
           "underline": true
         },
         {
-          "title": "Blue Wave or Ripple? A Visual Guide to the Democrats' Gains",
-          "subtitle": "Data Visualization",
-          "text": "As the 2018 midterm election results came in, I contributed to The Guardian's visual analysis story by looking at night's results alongside demographic information.",
+          "title": "Gun violence has sharply declined in the's Bay Area. What happened?",
+          "subtitle": "Interactive",
+          "text": "Led design, development, and data visualization for the first story in The Guardian's series about gun violence in the San Francisco Bay Area.",
           "location": "The Guardian",
-          "date": "Nov. 2018",
-          "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/07/blue-wave-or-blue-ripple-a-visual-guide-to-the-democrats-gains",
+          "date": "June 2019",
+          "link": "https://www.theguardian.com/us-news/ng-interactive/2019/jun/03/gun-violence-bay-area-drop-30-percent-why-investigation",
           "underline": true
         },
         {
           "title": "2018 US Midterms: Live Results",
           "subtitle": "Interactive, Data",
-          "text": "Designed and built portions of The Guardian's midterm elections page, including both back-end data parsing, front-end React components, and the innovative ticker.",
+          "text": "Designed and built portions of The Guardian's elections stack, including backend data parsing, a staging environment, front-end React components, the ticker, and post-election graphics analyzing results.",
           "location": "The Guardian",
           "date": "Nov. 2018",
           "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats",
@@ -100,7 +104,7 @@
         {
           "title": "Facebook, the New Frontier of Political Ads",
           "subtitle": "Writing, Interactive",
-          "text": "An investigative story and interactive about the habits of political advertisers on Facebook.",
+          "text": "An investigative story and interactive about the habits of political advertisers on Facebook, before the release of the company's Ad Archive API.",
           "location": "NBC Stations",
           "date": "July 2018",
           "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
@@ -113,7 +117,8 @@
           "location": "IndyWeek",
           "date": "April 2018",
           "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663",
-          "underline": true
+          "underline": true,
+          "hide_print": true
         }
       ]
     },
@@ -122,22 +127,22 @@
       "items": [
         {
           "title": "University of North Carolina at Chapel Hill",
-          "subtitle": "B.A. Journalism, Computer Science",
-          "text": "Double-majoring in journalism and CS, with a minor in entrepreneurship. Relevant coursework includes Interactive Journalism, Big Data Ethics, Data Structures, UX design, and Multimedia Storytelling. GPA: 3.92",
+          "subtitle": "B.A. Journalism, Computer Science (GPA: 3.93)",
+          "text": "Double-major in journalism and computer science, minor in entrepreneurship. Relevant coursework includes Interactive Journalism, Big Data Ethics, Data Structures, UX design, and Multimedia Storytelling. Currently writing a thesis about news data visualization in AR.",
           "location": "Chapel Hill, NC",
           "date": "Aug. 2016 - May 2020"
         },
         {
           "title": "Duke University",
           "subtitle": "Robertson Scholar",
-          "text": "Accepted into a selective scholarship program to be a “dual citizen” of both UNC and Duke, studying and living at both schools. Coursework includes Algorithmic Journalism, Politics and Media, and Profile Writing.",
+          "text": "Member of a selective scholarship program as a “dual citizen” of both UNC and Duke, studying and living at both schools. Coursework: Algorithmic Journalism, Politics and Media, Fact-Checking, and Profile Writing.",
           "location": "Durham, NC",
           "date": "Aug. 2016 - May 2020"
         },
         {
           "title": "Thomas Jefferson High School for Science and Technology",
-          "subtitle": "Concentration: Software Engineering",
-          "text": "Attended a selective magnet high school for science, technology, engineering and mathematics.",
+          "subtitle": "Software Engineering",
+          "text": "Attended a selective STEM high school, graduating with a concentration in software engineering.",
           "location": "Alexandria, VA",
           "date": "Sept. 2012 - June 2016"
         }
@@ -149,7 +154,7 @@
         {
           "title": "Duke DeWitt Wallace Center for Media and Democracy",
           "subtitle": "Online Gatekeeping",
-          "text": "Collaborated with Dr. Phillip Napoli on research on the spread of news content on social media, which was selected for the Association of Internet Researchers conference and is pending publication.",
+          "text": "Collaborated with Dr. Phillip Napoli on research on the spread of local news content on Facebook, through exclusive data-sharing partnerships with the company.",
           "location": "Duke University",
           "date": "May 2018 - (current)",
           "link": "http://dewitt.sanford.duke.edu"
@@ -157,7 +162,7 @@
         {
           "title": "Media and Journalism Emerging Technologies Lab",
           "subtitle": "AR Storytelling",
-          "text": "Developed new storytelling technologies in Prof. Steven King's lab, including a photogrammetry tool and a scavenger hunt app. Responsibilities included product management, research, design, and development.",
+          "text": "Developed new storytelling technologies in Prof. Steven King's lab, including a photogrammetry tool, AR experiences, and a scavenger hunt app. Responsibilities included product management, research, design, and development.",
           "location": "UNC - Chapel Hill",
           "date": "Sept 2017 - (current)",
           "link": "http://et-lab.org"

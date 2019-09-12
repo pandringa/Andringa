@@ -94,13 +94,14 @@
     margin-top: 0.8in;
     .section-head,  {
       color: $dark-gray;
-      margin-top: 1em;
+      margin-top: 1.4em;
+      margin-bottom: 0.6em;
     }
     .indented {
       padding-left: 2em;
     }
     .resume-item {
-      margin: 0.48em 0 0 !important;
+      margin: 0.56em 0 0 !important;
       .item-left {
         .header .subtitle {
           color: $dark-gray;

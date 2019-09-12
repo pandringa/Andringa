@@ -41,8 +41,6 @@ a {
 
 section.bio {
 	position: fixed; 
-	background: $gray;
-	padding: $padding;
 	box-sizing: border-box;
 	text-align: center;
 	top: calc(50% - 230px);
@@ -52,8 +50,13 @@ section.bio {
 	z-index: 2;
 	padding-bottom: 0;
 	transition: height 1s, width 0.7s, top 1s, left 1s;
-	overflow: hidden;
+	// overflow: hidden;
 	white-space: nowrap;
+
+		background: $gray;
+		padding: $padding;
+		padding-bottom: $padding / 2;
+	
 
 	img {
 		margin: 0 auto;
@@ -110,6 +113,7 @@ section.bio {
 			}
 			.small {
 				font-size: 0.7em;
+				white-space: nowrap;
 
 				&::after {
 					content: "\ea3c";
@@ -178,20 +182,21 @@ section.bio {
 		display: block;
 		box-sizing: border-box;
 		min-width: 100%;
-		width: calc(100% + 70px);
-		margin-top: 1em;
+		// width: calc(100% + 70px);
 		margin-left: -$padding;
 		margin-right: -$padding;
 		padding: 25px;
+		padding-bottom: 12.5px;
+		border-top: 2px solid white;
 		margin-bottom: 0;
 		text-align: center;
 		background: $gray;
-		border-top: 1px solid white;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		font-size: 1.2em;
-		transition: opacity 0s;
+		transition: opacity 0s, border-top-width 0.3s;
+
 		h3, h3 > .icon-forward {
 			display: inline;
 		}
@@ -205,6 +210,7 @@ section.bio {
 			.icon-forward{
 				left: 0.6em;
 			}
+			border-top-width: 4px;
 		}
 	}
 }
@@ -223,6 +229,7 @@ section.resume, section.projects {
 		}
 		letter-spacing: 0.06em;
 		margin-top: 1.5em;
+		margin-bottom: 0.75em;
 	}
 
 	.indented {
@@ -242,13 +249,16 @@ section.resume, section.projects {
 			flex: 1 1 auto;
 			align-self: center;
 			.header {
+				a, span {
+					margin-right: 0.3em;
+				}
 				.subtitle{
-					display: inline;
-					font-family: $serifs;
+					display: inline-block;
+					font-family: $sans-serifs;
 					font-size: 0.75em;
-					margin-left: 0.5em;
 					color: $medium-gray;
-					font-weight: normal;
+					font-weight: 400;
+					white-space: nowrap;
 				}
 				margin: 0;
 				line-height: 1.1em;
@@ -269,7 +279,7 @@ section.resume, section.projects {
 			font-family: $sans-serifs;
 			font-size: 0.75em;
 			letter-spacing: 0.025em;
-			color: #444;
+			color: #333;
 			.location {
 				font-weight: bold;
 			}
