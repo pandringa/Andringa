@@ -6,7 +6,7 @@
         {
           "title": "The Wall Street Journal",
           "subtitle": "Graphics Intern",
-          "text": "Scraped + analyzed data, built interactives, and designed graphics for The Wall Street Journal's Business & Finance section in both print and online.",
+          "text": "Scraped and analyzed data, built interactives, and designed graphics for The Wall Street Journal's Business & Finance section, in both print and online.",
           "location": "New York, NY",
           "date": "June-Aug. 2019",
           "link": "https://wsj.com/"
@@ -14,7 +14,7 @@
         {
           "title": "The Guardian",
           "subtitle": "Visuals Intern",
-          "text": "Covered the 2018 midterm elections for the Guardian's Visuals team, building much of our election backend and live results page. Additionally, produced post-election analysis and other visual stories.",
+          "text": "Covered the 2018 midterm elections for the Guardian's Visuals team, building much of the election backend and live results page. Additionally, produced post-election analyses and other visual stories.",
           "location": "London, UK",
           "date": "Sept-Dec. 2018",
           "link": "https://theguardian.com/profile/peter-andringa"
@@ -22,7 +22,7 @@
         {
           "title": "NBC",
           "subtitle": "Multimedia Journalism Intern",
-          "text": "Produced videos, graphics, and interactives for NBC’s national newsroom, creating digital tools and experiences across NBC’s 15 local websites.",
+          "text": "Produced videos, graphics, and interactives for NBC’s national newsroom, creating reusable digital tools and new reader experiences across NBC’s 15 local websites.",
           "location": "New York, NY",
           "date": "June-Aug. 2018",
           "link": "https://www.nbcnewyork.com/results/?keywords=%22Peter+Andringa%22&byline=y&sort=date"
@@ -30,7 +30,7 @@
         {
           "title": "The Delta Center",
           "subtitle": "Media Intern",
-          "text": "Helped run the Delta Center’s “Most Southern Place on Earth” NEH workshops by coordinating logistics, taking photos and video, producing multimedia stories, and designing printed marketing.",
+          "text": "Helped run the Delta Center’s “Most Southern Place on Earth” teacher-training workshops by coordinating logistics, taking photos and video, producing multimedia stories, and designing printed marketing.",
           "location": "Cleveland, MS",
           "date": "June-Aug. 2017",
           "link": "https://deltacenterdsu.com"
@@ -73,6 +73,7 @@
     {
       "title": "Portfolio",
       "more_link": "https://peterandringa.com/projects",
+      "display_link": "peterandringa.com/projects",
       "items": [
         {
           "title": "To Rock the Charts in 2019, Bands Need a Little Help",

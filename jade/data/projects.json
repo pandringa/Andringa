@@ -1,8 +1,48 @@
 [
   {
+    "title": "To Rock the Charts in 2019, Bands Need a Little Help From Concert Goers",
+    "subtitle": "Data, Interactive, Print",
+    "text": "I assisted with data analysis for this story, which highlights how bands are gaming the Billboard charts by bundling albums with ticket sales. I scraped data from Billboard and Spotify, built an interactive, and designed a full-width print graphic for the Journal's weekend Exchange section.", 
+    "location": "The Wall Street Journal",
+    "date": "Aug. 2019",
+    "link": "https://www.wsj.com/articles/for-albums-the-stairway-to-heaven-goes-via-ticket-sales-11565343003",
+    "image": "/img/rock-albums.png",
+    "underline": true
+  },
+  {
+    "title": "We Tested 5G Across America. It’s Crazy Fast—and a Hot Mess",
+    "subtitle": "Data, Print",
+    "text": "I worked with Joanna Stern, the Journal's personal tech columnist, to do a test of 5G networks in four cities across the country. I helped analyze her data, produced online graphics and explainers to accompany the column, and designed a print centerpiece for the cover of the Business & Finance section.", 
+    "location": "The Wall Street Journal",
+    "date": "July 2019",
+    "link": "https://www.wsj.com/articles/all-the-reasons-not-to-buy-a-5g-phone-right-now-11563467389",
+    "image": "/img/stern-5g.png",
+    "underline": true
+  },
+  {
+    "title": "Gun violence has sharply declined in California's Bay Area. What happened?",
+    "subtitle": "Design, Data",
+    "text": "To launch The Guardian's new series, \"Guns and lies in America,\" I created an immersive, data-driven story looking at the decline in gun violence in the San Francisco Bay Area. I worked with The Guardian's reporters for the series to find and analyze data, design the visual identity, and build the data visualizations and custom article layout.", 
+    "location": "The Guardian",
+    "date": "June 2019",
+    "link": "https://www.theguardian.com/us-news/ng-interactive/2019/jun/03/gun-violence-bay-area-drop-30-percent-why-investigation",
+    "image": "/img/bay-guns.png",
+    "underline": true
+  },
+  {
+    "title": "Deadly Weather: The Human Cost of 2018's Climate Disasters",
+    "subtitle": "Design, Data",
+    "text": "Towards the end of 2018, there was a general sentiment that the year was a particularly bad one for natural disasters. I conceptualized, designed, and built this data visualization to examine the real human cost of those events, and offer a deeper look at how climate change might be affecting the scale of weather-related disasters.",
+    "location": "The Guardian",
+    "date": "Dec. 2018",
+    "link": "https://www.theguardian.com/environment/ng-interactive/2018/dec/21/deadly-weather-the-human-cost-of-2018s-climate-disasters-visual-guide",
+    "image": "/img/deadly-weather.png",
+    "underline": true
+  },
+  {
     "title": "Can you get May's Brexit deal through parliament?",
     "subtitle": "Interactive",
-    "text": "During one particularly crazy news day after British Prime Minister Theresa May announced her proposed Brexit deal, I worked with political writers and analysts, at the Guardian to illustrate the challenge she will face with an interactive game. The piece gained significant traction on social media, and remained on the homepage for two days.",
+    "text": "During one particularly busy day after British Prime Minister Theresa May announced her proposed Brexit deal, I worked with political writers and analysts, at the Guardian to illustrate the challenge she will face with an interactive game. The piece gained significant traction on social media, and remained on the homepage for two days.",
     "location": "The Guardian",
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/politics/ng-interactive/2018/nov/15/can-you-get-mays-brexit-deal-through-parliament",
@@ -12,7 +52,7 @@
   {
     "title": "Blue Wave? A Visual Guide to the Democrats' Gains",
     "subtitle": "Data",
-    "text": "As the 2018 midterm election results were coming in, I was busy preparing The Guardian's post-election visual analysis; helping with the swing map and comparing the night's results to demographic information about the districts.",
+    "text": "As the 2018 midterm election results were trickling in, I was busy preparing The Guardian's post-election visual analysis; helping build a swing map and comparing the night's results to US Census Bureau demographic information about the districts. Those quick-turn graphics ended up in this online story, as well as The Guardian's UK print edition.",
     "location": "The Guardian",
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/07/blue-wave-or-blue-ripple-a-visual-guide-to-the-democrats-gains",
@@ -22,7 +62,7 @@
   {
     "title": "2018 US Midterms: Live Results",
     "subtitle": "Interactive, Data",
-    "text": "Designed and built portions of The Guardian's midterm elections page, including both back-end data parsing, testing infrastructure, front-end React components, and the ticker of recently-called races.",
+    "text": "For the fall of 2018, The Guardian's UK-based Visuals team hired me to improve their midterm elections coverage. I built much of our back-end parsing of election data from AP, built a replayable staging environment, invented the live ticker of results, and designed and developed other React front-end components.",
     "location": "The Guardian",
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats",

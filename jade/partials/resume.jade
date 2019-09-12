@@ -18,5 +18,5 @@ mixin resume(data)
 						.date= i.date
 			if section.more_link
 				h5.header.more-link
-					a.underline(href=section.more_link) More
+					a.underline(href=section.more_link) More #[span.hide-web (#[span= section.display_link])]
 						span.icon-forward(style="position: relative; left: 2px; top: 2px;")

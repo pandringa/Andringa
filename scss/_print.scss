@@ -13,6 +13,7 @@
   }
   a {
     border-bottom: 1px solid $blue !important;
+    margin-bottom: 1px;
   }
   .hide-print {
     display: none !important;
@@ -95,7 +96,7 @@
     .section-head,  {
       color: $dark-gray;
       margin-top: 1.4em;
-      margin-bottom: 0.6em;
+      margin-bottom: 0.5em;
     }
     .indented {
       padding-left: 2em;
@@ -119,6 +120,10 @@
     .more-link {
       margin-top: 0.5em;
       margin-bottom: 1em;
+      .hide-web {
+        font-weight: 400;
+        text-transform: none;
+      }
     }
   }
 }
