@@ -365,12 +365,12 @@ body.sidebar {
 		white-space: normal;
 
 		img {
-			margin-top: 50px;
+			margin-top: 0;
 		}
 
 		.bio-section {
 			max-width: none;
-			margin: 2em 0;
+			margin: 1em 0;
 			&.bottom {
 				position: absolute;
 				bottom: $padding;
