@@ -511,7 +511,7 @@ body.animate {
 			flex-direction: column;
 			.item-left {
 				order: 2;
-				align-self: left;
+				align-self: start;
 				.header{
 					line-height: 1.3em;
 					.subtitle {
