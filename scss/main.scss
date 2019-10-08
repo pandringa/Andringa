@@ -318,7 +318,7 @@ section.projects {
 		}
 
 		a {
-			border-bottom: 1px solid #999;
+			border-bottom: 1px solid #444;
 			transition: color 0.3s, border-color 0.3s;
 			&:hover {
 				color: $blue;
@@ -343,6 +343,16 @@ section.projects {
 
 		&.hidden {
 			display: none;
+		}
+
+		.body a {
+			// color: $blue;
+			border-bottom: 1px solid #444;
+			transition: color 0.3s, border-color 0.3s;
+			&:hover {
+				color: $blue;
+				border-color: $blue;
+			}
 		}
 	}
 
@@ -574,8 +584,17 @@ body.animate {
 			margin-top: 1rem;
 		}
 
-		.item-content {
+		.item-content, .title-row {
 			flex-direction: column;
+		}
+		.title-row h1 {
+			margin-bottom: 0;
+		}
+		.filter-title {
+			margin-left: 0;
+		}
+		.title-row {
+			margin-bottom: 2em;
 		}
 
 		.item-image {

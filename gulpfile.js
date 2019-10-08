@@ -58,7 +58,7 @@ var compiler = {
 
     return Async(gulp.src(paths.html)
           .pipe(jade({
-              locals: {...data, md: marked}
+              locals: {...data, md: s => marked.inlineLexer(s,[]) }
             }))
       .pipe( minifyHTML() )
       .pipe( rename(path => {
