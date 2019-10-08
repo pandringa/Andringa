@@ -11,9 +11,11 @@ html
         a.back-link(href="/") 
           span.icon-back 
           span Back to full resume
-      h1 Recent Projects
+      .title-row
+        h1.projects-title Recent Projects 
+        .filter-title.hidden Showing #[span.filter-count 5] (#[a.filter-all(href='/projects/') View all])
       for project in projects
-            .item-content
+            .item-content(data-priority=project.priority)
               a.item-image(href=project.link target="_blank" style="background-image: url("+project.image+");")
               .resume-item
                 .item-left
@@ -24,10 +26,26 @@ html
                       span= project.title
                     .subtitle= project.subtitle
                   if project.text
-                    p.body= project.text
+                    p.body !{md(project.text)}
                 .item-right(class=(project.location && !project.text ? 'two-lines': ''))
                   .location= project.location
                   .date= project.date
+    script.
+      const total = !{projects.length};
+      var count = window.location.search.match(/selected=(\d+)/)
+      if(count[0] && count[1]) filter(+count[1]);
+
+      function filter(n){
+        if(n >= total) return;
+        document.querySelector('.projects-title').innerText = 'Selected Projects';
+        document.querySelector('.filter-title').classList.remove('hidden');
+        document.querySelector('.filter-count').innerText = n;
+        for(const el of document.querySelectorAll('[data-priority]')){
+          const priority = +el.getAttribute('data-priority');
+          if(priority > n)
+            el.classList.add('hidden');
+        }
+      }
       
 
 

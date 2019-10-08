@@ -299,9 +299,32 @@ section.projects {
 	margin: auto;
 	opacity: 1;
 
+	.title-row {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+	}
+
 	h1 {
 		font-size: 3em;
 		margin: 1rem 0;
+	}
+
+	.filter-title {
+		margin-left: 1em;
+		font-family: $sans-serifs;
+		&.hidden {
+			display: none;
+		}
+
+		a {
+			border-bottom: 1px solid #999;
+			transition: color 0.3s, border-color 0.3s;
+			&:hover {
+				color: $blue;
+				border-color: $blue;
+			}
+		}
 	}
 
 	a.back-link {
@@ -317,6 +340,10 @@ section.projects {
 		display: flex;
 		flex-direction: row;
 		margin: 1em 0;
+
+		&.hidden {
+			display: none;
+		}
 	}
 
 	.item-image {

@@ -2,41 +2,56 @@
   {
     "title": "To Rock the Charts in 2019, Bands Need a Little Help From Concert Goers",
     "subtitle": "Data, Interactive, Print",
-    "text": "I assisted with data analysis for this story, which highlights how bands are gaming the Billboard charts by bundling albums with ticket sales. I scraped data from Billboard and Spotify, built an interactive, and designed a full-width print graphic for the Journal's weekend Exchange section.", 
+    "text": "I assisted with data analysis for this story, which highlights how bands are gaming the Billboard charts by bundling albums with ticket sales. I scraped data from Billboard and Spotify, built an interactive, and designed [a full-width print graphic](/img/rockalbums_print.jpg) for the Journal's weekend Exchange section.", 
     "location": "The Wall Street Journal",
     "date": "Aug. 2019",
     "link": "https://www.wsj.com/articles/for-albums-the-stairway-to-heaven-goes-via-ticket-sales-11565343003",
     "image": "/img/rock-albums.png",
+    "priority": 1,
     "underline": true
   },
   {
     "title": "We Tested 5G Across America. It’s Crazy Fast—and a Hot Mess",
-    "subtitle": "Data, Print",
-    "text": "I worked with Joanna Stern, the Journal's personal tech columnist, to do a test of 5G networks in four cities across the country. I helped analyze her data, produced online graphics and explainers to accompany the column, and designed a print centerpiece for the cover of the Business & Finance section.", 
+    "subtitle": "Data, Design, Print",
+    "text": "I worked with Joanna Stern, the Journal's personal tech columnist, to do a test of 5G networks in four cities across the country. I helped analyze her data, produced online graphics and explainers to accompany the column, and designed [a print centerpiece](/img/5g_print.jpg) for the cover of the Business & Finance section.", 
     "location": "The Wall Street Journal",
     "date": "July 2019",
     "link": "https://www.wsj.com/articles/all-the-reasons-not-to-buy-a-5g-phone-right-now-11563467389",
     "image": "/img/stern-5g.png",
+    "priority": 8,
+    "underline": true
+  },
+  {
+    "title": "Farmers Stockpiling Corn in Response to Tough Growing Conditions",
+    "subtitle": "Data, Design, Print",
+    "text": "For this quick-turnaround graphic, I worked with The Journal's agriculture reporters to understand how farmers were responding to poor growing conditions. I collected data from NOAA and the USDA, processed it, and designed the web graphics and [a B1 cover for the story](/img/cornhoard_print.jpg) for the story.",
+    "location": "The Wall Street Journal",
+    "date": "July 2019",
+    "link": "https://www.wsj.com/articles/farmers-stockpiling-corn-in-response-to-tough-growing-conditions-11562857931",
+    "image": "/img/corn-hoard.png",
+    "priority": 7,
     "underline": true
   },
   {
     "title": "Gun violence has sharply declined in California's Bay Area. What happened?",
-    "subtitle": "Design, Data",
+    "subtitle": "Data, Design",
     "text": "To launch The Guardian's new series, \"Guns and lies in America,\" I created an immersive, data-driven story looking at the decline in gun violence in the San Francisco Bay Area. I worked with The Guardian's reporters for the series to find and analyze data, design the visual identity, and build the data visualizations and custom article layout.", 
     "location": "The Guardian",
     "date": "June 2019",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2019/jun/03/gun-violence-bay-area-drop-30-percent-why-investigation",
     "image": "/img/bay-guns.png",
+    "priority": 2,
     "underline": true
   },
   {
     "title": "Deadly Weather: The Human Cost of 2018's Climate Disasters",
-    "subtitle": "Design, Data",
+    "subtitle": "Data, Design",
     "text": "Towards the end of 2018, there was a general sentiment that the year was a particularly bad one for natural disasters. I conceptualized, designed, and built this data visualization to examine the real human cost of those events, and offer a deeper look at how climate change might be affecting the scale of weather-related disasters.",
     "location": "The Guardian",
     "date": "Dec. 2018",
     "link": "https://www.theguardian.com/environment/ng-interactive/2018/dec/21/deadly-weather-the-human-cost-of-2018s-climate-disasters-visual-guide",
     "image": "/img/deadly-weather.png",
+    "priority": 4,
     "underline": true
   },
   {
@@ -47,26 +62,29 @@
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/politics/ng-interactive/2018/nov/15/can-you-get-mays-brexit-deal-through-parliament",
     "image": "/img/brexit-votes.png",
-    "underline": true
-  },
-  {
-    "title": "Blue Wave? A Visual Guide to the Democrats' Gains",
-    "subtitle": "Data",
-    "text": "As the 2018 midterm election results were trickling in, I was busy preparing The Guardian's post-election visual analysis; helping build a swing map and comparing the night's results to US Census Bureau demographic information about the districts. Those quick-turn graphics ended up in this online story, as well as The Guardian's UK print edition.",
-    "location": "The Guardian",
-    "date": "Nov. 2018",
-    "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/07/blue-wave-or-blue-ripple-a-visual-guide-to-the-democrats-gains",
-    "image": "/img/midterms-analysis.png",
+    "priority": 6,
     "underline": true
   },
   {
     "title": "2018 US Midterms: Live Results",
     "subtitle": "Interactive, Data",
-    "text": "For the fall of 2018, The Guardian's UK-based Visuals team hired me to improve their midterm elections coverage. I built much of our back-end parsing of election data from AP, built a replayable staging environment, invented the live ticker of results, and designed and developed other React front-end components.",
+    "text": "In the fall of 2018, The Guardian's UK-based Visuals team hired me to improve their midterm elections coverage. I built much of our back-end parsing of election data from AP, built a replayable staging environment, invented the live ticker of results, and designed and developed other React front-end components.",
     "location": "The Guardian",
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats",
     "image": "/img/midterms-live.png",
+    "priority": 3,
+    "underline": true
+  },
+  {
+    "title": "Blue Wave? A Visual Guide to the Democrats' Gains",
+    "subtitle": "Data, Design, Print",
+    "text": "As the 2018 midterm election results were trickling in, I was busy preparing The Guardian's post-election visual analysis; helping build a swing map and comparing the night's results to US Census Bureau demographic information about the districts. Those quick-turn graphics ended up in this online story, as well as [The Guardian's UK print edition](/img/guardian_print.jpg).",
+    "location": "The Guardian",
+    "date": "Nov. 2018",
+    "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/07/blue-wave-or-blue-ripple-a-visual-guide-to-the-democrats-gains",
+    "image": "/img/midterms-analysis.png",
+    "priority": 10,
     "underline": true
   },
   {
@@ -77,6 +95,7 @@
     "date": "July 2018",
     "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
     "image": "/img/facebook-ads.png",
+    "priority": 5,
     "underline": true
   },
   {
@@ -87,6 +106,7 @@
     "date": "July 2018",
     "link": "https://www.necn.com/multimedia/2020-Presidential-Primaries-Which-Candidates-Visited-New-Hampshire-490729011.html",
     "image": "/img/candidate-tracker.png",
+    "priority": 11,
     "underline": true
   },
   {
@@ -97,6 +117,7 @@
     "date": "July 2018",
     "link": "https://www.nbcnewyork.com/news/national-international/See-How-Big-the-Mendocino-Fire-Is-490287341.html",
     "image": "/img/mendocino-fire.png",
+    "priority": 12,
     "underline": true
   },
   {
@@ -107,6 +128,7 @@
     "date": "June 2018",
     "link": "https://www.nbcwashington.com/news/politics/Advocates-Against-Detaining-Migrant-Families-Children-486080741.html",
     "image": "/img/family-separation.png",
+    "priority": 14,
     "underline": true
   },
   {
@@ -117,6 +139,7 @@
     "date": "May 2018",
     "link": "https://peterandringa.com/facebook-news",
     "image": "/img/facebook-news.png",
+    "priority": 13,
     "underline": true
   },
   {
@@ -127,6 +150,7 @@
     "date": "Dec. 2017",
     "link": "https://peterandringa.com/2018-midterms",
     "image": "/img/midterms-preview.png",
+    "priority": 15,
     "underline": true
   },
   {
@@ -137,6 +161,7 @@
     "date": "Oct. 2017",
     "link": "https://peterandringa.com/world-trade",
     "image": "/img/world-trade.png",
+    "priority": 16,
     "underline": true
   },
   {
@@ -147,6 +172,7 @@
     "date": "April 2018",
     "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663",
     "image": "/img/indyweek.png",
+    "priority": 9,
     "underline": true
   }
 ]

@@ -4,6 +4,7 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   concat = require('gulp-concat'),
   minifyJS = require('gulp-uglify'),
+  marked = require('marked'),
   rename = require('gulp-rename'),
   minifyCSS = require('gulp-minify-css'),
   minifyHTML = require('gulp-minify-html'),
@@ -11,7 +12,6 @@ var gulp = require('gulp'),
   livereload = require('gulp-livereload');
 
 var connect = require('connect'),
-  jadeCompiler = require('jade'),
   rimraf = require('rimraf'),
   pathUtil = require('path'),
   fs = require('fs'),
@@ -58,7 +58,7 @@ var compiler = {
 
     return Async(gulp.src(paths.html)
           .pipe(jade({
-              locals: data
+              locals: {...data, md: marked}
             }))
       .pipe( minifyHTML() )
       .pipe( rename(path => {
