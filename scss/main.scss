@@ -48,14 +48,14 @@ section.bio {
 	min-height: 460px;
 	width: 650px;
 	z-index: 2;
-	padding-bottom: 0;
 	transition: height 1s, width 0.7s, top 1s, left 1s;
 	// overflow: hidden;
 	white-space: nowrap;
 
-		background: $gray;
-		padding: $padding;
-		padding-bottom: $padding / 2;
+	background: $gray;
+	padding: $padding;
+	padding-bottom: 0;
+	// padding-bottom: $padding / 2;
 	
 
 	img {
@@ -178,16 +178,23 @@ section.bio {
 		margin-left: 1em
 	}
 
-	a.expand-button {
-		display: block;
-		box-sizing: border-box;
+	.buttons-container {
+		display: flex;
+		flex-direction: row;
 		min-width: 100%;
-		// width: calc(100% + 70px);
 		margin-left: -$padding;
 		margin-right: -$padding;
+		box-sizing: border-box;
+		align-items: flex-start;
+	}
+
+	a.expand-button {
+		flex: 1 1 auto;
+		display: block;
 		padding: 25px;
-		padding-bottom: 12.5px;
 		border-top: 2px solid white;
+		border-left: 1px solid white;
+		border-right: 1px solid white;
 		margin-bottom: 0;
 		text-align: center;
 		background: $gray;

@@ -11,9 +11,13 @@ html
 	body
 		section.bio
 			+bio(main_bio)
-			a.expand-button(onclick="toggleCard()" href="#") 
-				h3.full-link Full Resume
-					span.icon-forward
+			.buttons-container
+				a.expand-button(onclick="toggleCard()" href="#") 
+					h3.full-link Full Resume
+						span.icon-forward
+				a.expand-button(href="/projects?selected=12")
+					h3.full-link Portfolio
+						span.icon-forward
 
 		section.resume
 			+resume(main_resume)
