@@ -1,5 +1,16 @@
 [
   {
+    "title": "Super Tuesday Results: Follow the Votes Live",
+    "subtitle": "Interactive, Design",
+    "text": "As one of the news developers building The Guardian's 2020 primary live coverage, I styled the state results embeds to fit our house style, designed and built the summary view on the top of the Super Tuesday page, and created embeddable views for our homepage and live blogs.", 
+    "location": "The Guardian",
+    "date": "March 2020",
+    "link": "https://www.theguardian.com/us-news/ng-interactive/2020/mar/03/super-tuesday-results-primaries-democratic-delegates-live",
+    "image": "/img/super-tuesday.png",
+    "priority": 2,
+    "underline": true
+  },
+  {
     "title": "Teachers for Bernie, CEOs for Buttigieg, retirees for Trump – who's backing whom in 2020",
     "subtitle": "Data, Design",
     "text": "I built a database system that let Guardian reporters analyze the latest FEC filings from 2020 candidates — then used that database to write this story, looking at donors by occupation.", 
@@ -7,7 +18,7 @@
     "date": "Oct. 2019",
     "link": "https://www.theguardian.com/us-news/2019/oct/20/bernie-sanders-pete-buttigieg-donald-trump-voters",
     "image": "/img/campaign-finance.png",
-    "priority": 4,
+    "priority": 5,
     "underline": true
   },
   {
@@ -29,7 +40,7 @@
     "date": "July 2019",
     "link": "https://www.wsj.com/articles/all-the-reasons-not-to-buy-a-5g-phone-right-now-11563467389",
     "image": "/img/stern-5g.png",
-    "priority": 9,
+    "priority": 10,
     "underline": true
   },
   {
@@ -40,7 +51,7 @@
     "date": "July 2019",
     "link": "https://www.wsj.com/articles/farmers-stockpiling-corn-in-response-to-tough-growing-conditions-11562857931",
     "image": "/img/corn-hoard.png",
-    "priority": 8,
+    "priority": 9,
     "underline": true
   },
   {
@@ -51,7 +62,7 @@
     "date": "June 2019",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2019/jun/03/gun-violence-bay-area-drop-30-percent-why-investigation",
     "image": "/img/bay-guns.png",
-    "priority": 2,
+    "priority": 3,
     "underline": true
   },
   {
@@ -62,7 +73,7 @@
     "date": "Dec. 2018",
     "link": "https://www.theguardian.com/environment/ng-interactive/2018/dec/21/deadly-weather-the-human-cost-of-2018s-climate-disasters-visual-guide",
     "image": "/img/deadly-weather.png",
-    "priority": 5,
+    "priority": 6,
     "underline": true
   },
   {
@@ -73,7 +84,7 @@
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/politics/ng-interactive/2018/nov/15/can-you-get-mays-brexit-deal-through-parliament",
     "image": "/img/brexit-votes.png",
-    "priority": 7,
+    "priority": 8,
     "underline": true
   },
   {
@@ -84,7 +95,7 @@
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats",
     "image": "/img/midterms-live.png",
-    "priority": 3,
+    "priority": 4,
     "underline": true
   },
   {
@@ -95,7 +106,7 @@
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/07/blue-wave-or-blue-ripple-a-visual-guide-to-the-democrats-gains",
     "image": "/img/midterms-analysis.png",
-    "priority": 11,
+    "priority": 12,
     "underline": true
   },
   {
@@ -106,7 +117,7 @@
     "date": "July 2018",
     "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
     "image": "/img/facebook-ads.png",
-    "priority": 6,
+    "priority": 7,
     "underline": true
   },
   {
@@ -117,7 +128,7 @@
     "date": "July 2018",
     "link": "https://www.necn.com/multimedia/2020-Presidential-Primaries-Which-Candidates-Visited-New-Hampshire-490729011.html",
     "image": "/img/candidate-tracker.png",
-    "priority": 12,
+    "priority": 13,
     "underline": true
   },
   {
@@ -128,7 +139,7 @@
     "date": "July 2018",
     "link": "https://www.nbcnewyork.com/news/national-international/See-How-Big-the-Mendocino-Fire-Is-490287341.html",
     "image": "/img/mendocino-fire.png",
-    "priority": 13,
+    "priority": 14,
     "underline": true
   },
   {
@@ -139,7 +150,7 @@
     "date": "June 2018",
     "link": "https://www.nbcwashington.com/news/politics/Advocates-Against-Detaining-Migrant-Families-Children-486080741.html",
     "image": "/img/family-separation.png",
-    "priority": 15,
+    "priority": 16,
     "underline": true
   },
   {
@@ -150,7 +161,7 @@
     "date": "May 2018",
     "link": "https://peterandringa.com/facebook-news",
     "image": "/img/facebook-news.png",
-    "priority": 14,
+    "priority": 15,
     "underline": true
   },
   {
@@ -161,7 +172,7 @@
     "date": "Dec. 2017",
     "link": "https://peterandringa.com/2018-midterms",
     "image": "/img/midterms-preview.png",
-    "priority": 16,
+    "priority": 17,
     "underline": true
   },
   {
@@ -172,7 +183,7 @@
     "date": "Oct. 2017",
     "link": "https://peterandringa.com/world-trade",
     "image": "/img/world-trade.png",
-    "priority": 17,
+    "priority": 18,
     "underline": true
   },
   {
@@ -183,7 +194,7 @@
     "date": "April 2018",
     "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663",
     "image": "/img/indyweek.png",
-    "priority": 10,
+    "priority": 11,
     "underline": true
   }
 ]
