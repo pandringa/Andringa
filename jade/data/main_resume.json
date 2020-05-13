@@ -6,7 +6,7 @@
         {
           "title": "The Wall Street Journal",
           "subtitle": "Graphics Intern",
-          "text": "Scraped and analyzed data, built interactives and designed graphics for The Journal's Business & Finance section in both print and online, including multiple front-page graphics on both platforms.",
+          "text": "Scraped and analyzed data, built interactives and designed graphics for The Journal's Business & Finance section in both print and online, including graphics for front-page stories on both platforms.",
           "location": "New York, NY",
           "date": "June-Aug. 2019",
           "link": "https://wsj.com/"
@@ -14,7 +14,7 @@
         {
           "title": "The Guardian",
           "subtitle": "Visuals Intern",
-          "text": "Covered the 2018 midterm elections for the Guardian's Visuals team, building parts of the election backend and live results page. Also produced post-election analyses and other visual stories.",
+          "text": "Covered the 2018 midterm elections for the Guardian, building parts of the election backend and results page. Later produced post-election analyses and visual stories, then freelanced for the paper in 2019-20.",
           "location": "London, UK",
           "date": "Sept-Dec. 2018",
           "link": "https://theguardian.com/profile/peter-andringa"
@@ -76,6 +76,15 @@
       "display_link": "peterandringa.com/projects",
       "items": [
         {
+          "title": "Visualizing Data Beyond Flatland",
+          "subtitle": "Research, Design",
+          "text": "Completed an honors thesis studying the user experience of augmented reality data visualizations, building and user-testing my own graphics in AR to produce guidelines for future design.",
+          "location": "Reese Innovation Lab",
+          "date": "April 2020",
+          "link": "https://medium.com/reese-innovate/visualizing-data-beyond-flatland-e6c5e81850de",
+          "underline": true
+        },
+        {
           "title": "To Rock the Charts in 2019, Bands Need a Little Help",
           "subtitle": "Data, Interactive",
           "text": "Contributed to this story showing how bands are gaming the Billboard album charts — scraping data, building an interactive and designing a full-width graphic for print.",
@@ -109,7 +118,8 @@
           "location": "NBC Stations",
           "date": "July 2018",
           "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
-          "underline": true
+          "underline": true,
+          "hide_print": true
         },
         {
           "title": "\"Things Have Got to Change\": Affordable Housing in Chapel Hill",
@@ -128,8 +138,8 @@
       "items": [
         {
           "title": "University of North Carolina at Chapel Hill",
-          "subtitle": "B.A. Media and Journalism; Computer Science (GPA: 3.93)",
-          "text": "Graduating Phi Beta Kappa with a double-major in journalism and computer science, and a minor in entrepreneurship. Relevant coursework includes Interactive Journalism, Big Data Ethics, UX design and Multimedia Storytelling. Currently writing an honors thesis about news data visualization in AR.",
+          "subtitle": "B.A. Journalism (honors); Computer Science",
+          "text": "Graduated with Highest Distinction, double-majoring in journalism and computer science with a minor in entrepreneurship. Relevant coursework includes Software Architecture, Interactive Journalism, Big Data Ethics, UX design, Multimedia Storytelling, and Emerging Technologies.",
           "location": "Chapel Hill, NC",
           "date": "Aug. 2016 - May 2020"
         },
@@ -155,18 +165,18 @@
         {
           "title": "Duke DeWitt Wallace Center for Media and Democracy",
           "subtitle": "Online Gatekeeping, Local News",
-          "text": "Worked with Dr. Phillip Napoli on research on the consumption of local news on Facebook, using exclusive data agreements with the company. Published in Nieman Lab and the Association of Internet Researchers.",
+          "text": "Worked with Dr. Phillip Napoli on research on the consumption of local news on Facebook, using computational methods and exclusive datasets. Published in Nieman Lab and the Association of Internet Researchers, and recieved the center's award for Outstanding Journalism and Media Research.",
           "location": "Duke University",
-          "date": "May 2018 - (current)",
+          "date": "May 2018 - May 2020",
           "link": "http://dewitt.sanford.duke.edu"
         },
         {
-          "title": "Media and Journalism Emerging Technologies Lab",
+          "title": "Reese Innovation Lab",
           "subtitle": "AR Storytelling",
-          "text": "Developed new storytelling technologies in Prof. Steven King's lab, including a photogrammetry tool, AR experiences and a scavenger hunt app. Responsibilities included product management, research, design and development.",
+          "text": "Developed new storytelling technologies in Prof. Steven King's lab, including a photogrammetry tool, AR experiences and a prototype of scavenger hunt app which went on to win a $75,000 grant. Responsibilities included product management, research, design and development.",
           "location": "UNC - Chapel Hill",
-          "date": "Sept 2017 - (current)",
-          "link": "http://et-lab.org"
+          "date": "Sept 2017 - May 2020",
+          "link": "https://reeseinnovate.org"
         }
       ]
     },
@@ -177,7 +187,7 @@
         {
           "title": "UNC Faculty Council",
           "subtitle": "Student Representative",
-          "date": "Sept. 2017 - (current)"
+          "date": "Sept. 2017 - May 2020"
         },
         {
           "title": "Robertson Community Council",
