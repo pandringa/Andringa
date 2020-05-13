@@ -38,7 +38,7 @@
         {
           "title": "CustomInk",
           "subtitle": "Software Engineering Intern, eCommerce",
-          "text": "Entirely rebuilt the inventory management system, improving load times and reliability of the system using MySQL, MongoDB, Ruby on Rails and Javascript.",          
+          "text": "Entirely rebuilt the internal inventory management website, improving load times and reliability of the system using MySQL, MongoDB, Ruby on Rails and Javascript.",          
           "location": "Fairfax, VA",
           "date": "June-Aug. 2016",
           "link": "https://customink.com"
@@ -78,7 +78,7 @@
         {
           "title": "Visualizing Data Beyond Flatland",
           "subtitle": "Research, Design",
-          "text": "Completed an honors thesis studying the user experience of augmented reality data visualizations, building and user-testing my own graphics in AR to produce guidelines for future design.",
+          "text": "Completed an honors thesis studying the user experience of augmented reality data visualizations, designing my own AR graphics and conducting user tests to create guidelines for future design.",
           "location": "Reese Innovation Lab",
           "date": "April 2020",
           "link": "https://medium.com/reese-innovate/visualizing-data-beyond-flatland-e6c5e81850de",
@@ -87,7 +87,7 @@
         {
           "title": "To Rock the Charts in 2019, Bands Need a Little Help",
           "subtitle": "Data, Interactive",
-          "text": "Contributed to this story showing how bands are gaming the Billboard album charts — scraping data, building an interactive and designing a full-width graphic for print.",
+          "text": "Contributed to this story showing how bands are gaming the Billboard album charts, by scraping data, building an interactive and designing a full-width graphic for print.",
           "location": "The Wall Street Journal",
           "date": "August 2019",
           "link": "https://www.wsj.com/articles/for-albums-the-stairway-to-heaven-goes-via-ticket-sales-11565343003",
