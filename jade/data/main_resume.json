@@ -78,7 +78,7 @@
         {
           "title": "Visualizing Data Beyond Flatland",
           "subtitle": "Research, Design",
-          "text": "Completed an honors thesis studying the user experience of augmented reality data visualizations, designing my own AR graphics and conducting user tests to create guidelines for future design.",
+          "text": "Completed an honors thesis studying the user experience of augmented reality data visualizations, designing my own AR graphics and conducting user tests to create guidelines for future designs.",
           "location": "Reese Innovation Lab",
           "date": "April 2020",
           "link": "https://medium.com/reese-innovate/visualizing-data-beyond-flatland-e6c5e81850de",
@@ -139,7 +139,7 @@
         {
           "title": "University of North Carolina at Chapel Hill",
           "subtitle": "B.A. Journalism (honors); Computer Science",
-          "text": "Graduated with Highest Distinction, double-majoring in journalism and computer science with a minor in entrepreneurship. Relevant coursework includes Software Architecture, Interactive Journalism, Big Data Ethics, UX design, Multimedia Storytelling, and Emerging Technologies.",
+          "text": "Graduated with Highest Distinction, double-majoring in journalism and computer science with a minor in entrepreneurship. Relevant coursework includes Software Architecture, Interactive Journalism, Big Data Ethics, UX design, Multimedia Storytelling and Emerging Technologies.",
           "location": "Chapel Hill, NC",
           "date": "Aug. 2016 - May 2020"
         },
@@ -173,10 +173,10 @@
         {
           "title": "Reese Innovation Lab",
           "subtitle": "AR Storytelling",
-          "text": "Developed new storytelling technologies in Prof. Steven King's lab, including a photogrammetry tool, AR experiences and a prototype of scavenger hunt app which went on to win a $75,000 grant. Responsibilities included product management, research, design and development.",
+          "text": "Developed new storytelling technologies in Prof. Steven King's lab, including a photogrammetry tool, AR experiences and a prototype of scavenger hunt app which won a $75,000 grant. Responsibilities included product management, research, design and development.",
           "location": "UNC - Chapel Hill",
           "date": "Sept 2017 - May 2020",
-          "link": "https://reeseinnovate.org"
+          "link": "https://reeseinnovate.com"
         }
       ]
     },
