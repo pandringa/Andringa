@@ -6,7 +6,7 @@
         {
           "title": "The Washington Post",
           "subtitle": "Newsroom Engineering Intern",
-          "text": "Helped build the Post's elections infrastructure for the 2020 presidential race, including UX design, data visualization, and frontend development. Also worked on the data pipeline and new features for the Post's Coronavirus trackers.",
+          "text": "Helped build the Post's elections infrastructure for the 2020 presidential race, including UX design, data visualization, and frontend development; along with work on data pipelines for the Post's COVID trackers.",
           "location": "Washington DC (remote)",
           "date": "May 2020-current",
           "link": "https://washingtonpost.com/elections/"
@@ -41,7 +41,8 @@
           "text": "Helped run the Delta Center’s “Most Southern Place on Earth” teacher-training workshops by coordinating logistics, taking photos and video, producing multimedia stories and designing printed marketing.",
           "location": "Cleveland, MS",
           "date": "June-Aug. 2017",
-          "link": "https://deltacenterdsu.com"
+          "link": "https://deltacenterdsu.com",
+          "hide_print": true
         },
         {
           "title": "CustomInk",
