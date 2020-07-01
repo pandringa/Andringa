@@ -26,7 +26,7 @@ var paths = {
 };
 var staticPath = pathUtil.join( __dirname, "static/" );
 var outPath = pathUtil.join( __dirname, "out/" );
-var deployRepo = "https://github.com/pandringa/pandringa.github.io";
+var deployRepo = "git@github.com:pandringa/pandringa.github.io.git";
 
 function Async(p) {
    return new Promise((res, rej) => p.on('error', err => rej(err)).on('end', () => res()));
