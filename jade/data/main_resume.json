@@ -4,6 +4,14 @@
       "title": "Work Experience",
       "items": [
         {
+          "title": "The Washington Post",
+          "subtitle": "Newsroom Engineering Intern",
+          "text": "Helped build the Post's elections infrastructure for the 2020 presidential race, including UX design, data visualization, and frontend development. Also worked on the data pipeline and new features for the Post's Coronavirus trackers.",
+          "location": "Washington DC (remote)",
+          "date": "May 2020-current",
+          "link": "https://washingtonpost.com/elections/"
+        },
+        {
           "title": "The Wall Street Journal",
           "subtitle": "Graphics Intern",
           "text": "Scraped and analyzed data, built interactives and designed graphics for The Journal's Business & Finance section in both print and online, including graphics for front-page stories on both platforms.",
