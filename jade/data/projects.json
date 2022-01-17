@@ -1,5 +1,27 @@
 [
   {
+    "title": "2020 Elections: Live Results",
+    "subtitle": "Data, Interactive",
+    "text": "On the Washington Post's Elections Engineering team, I worked to ensure the functionality and effective storytelling on our 2020 election results pages, contributing to the entire stack from scraping and data processing all the way to visualization.",
+    "location": "The Washington Post",
+    "date": "November 2020",
+    "link": "https://www.washingtonpost.com/elections/election-results/virginia-2020/",
+    "underline": true,
+    "image": "/img/2020-elex.png",
+    "priority":  21
+  },
+  {
+    "title": "2020 Elections: Tracking the Early Vote",
+    "subtitle": "Data, Engineering",
+    "text": "Built a system to aggregate early voting and turnout data from all 50 states, then analyzed and visualized results for this live tracker that ran for a month ahead of the 2020 election, gaining millions of readers and front-page placement in print and digital.",
+    "location": "The Washington Post",
+    "date": "October 2020",
+    "link": "https://www.washingtonpost.com/graphics/2020/elections/early-voting-numbers-so-far/",
+    "underline": true,
+    "image": "/img/early-votes.png",
+    "priority": 20 
+  },
+  {
     "title": "Visualizing Data Beyond Flatland",
     "subtitle": "Research, Design",
     "text": "For my honors thesis in journalism, I conducted user-experience research to examine graphics in augmented reality, creating a series of AR data visualizations about fundraising in the 2020 primary race. Using feedback and observations of participants in a user-testing study, I created some guidelines for designing better graphics in augmented reality.", 
@@ -7,7 +29,7 @@
     "date": "April 2020",
     "link": "https://medium.com/reese-innovate/visualizing-data-beyond-flatland-e6c5e81850de?source=friends_link&sk=5f0dd1edbc481346261ebcf707fd69b3",
     "image": "/img/thesis-research.png",
-    "priority": 7,
+    "priority": 13,
     "underline": true
   },
   {
@@ -18,7 +40,7 @@
     "date": "March 2020",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2020/mar/03/super-tuesday-results-primaries-democratic-delegates-live",
     "image": "/img/super-tuesday.png",
-    "priority": 2,
+    "priority": 19,
     "underline": true
   },
   {
@@ -29,7 +51,7 @@
     "date": "Oct. 2019",
     "link": "https://www.theguardian.com/us-news/2019/oct/20/bernie-sanders-pete-buttigieg-donald-trump-voters",
     "image": "/img/campaign-finance.png",
-    "priority": 5,
+    "priority": 15,
     "underline": true
   },
   {
@@ -40,7 +62,7 @@
     "date": "Aug. 2019",
     "link": "https://www.wsj.com/articles/for-albums-the-stairway-to-heaven-goes-via-ticket-sales-11565343003",
     "image": "/img/rock-albums.png",
-    "priority": 1,
+    "priority": 18,
     "underline": true
   },
   {
@@ -51,7 +73,7 @@
     "date": "July 2019",
     "link": "https://www.wsj.com/articles/all-the-reasons-not-to-buy-a-5g-phone-right-now-11563467389",
     "image": "/img/stern-5g.png",
-    "priority": 11,
+    "priority": 9,
     "underline": true
   },
   {
@@ -73,7 +95,7 @@
     "date": "June 2019",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2019/jun/03/gun-violence-bay-area-drop-30-percent-why-investigation",
     "image": "/img/bay-guns.png",
-    "priority": 3,
+    "priority": 17,
     "underline": true
   },
   {
@@ -84,7 +106,7 @@
     "date": "Dec. 2018",
     "link": "https://www.theguardian.com/environment/ng-interactive/2018/dec/21/deadly-weather-the-human-cost-of-2018s-climate-disasters-visual-guide",
     "image": "/img/deadly-weather.png",
-    "priority": 6,
+    "priority": 14,
     "underline": true
   },
   {
@@ -95,7 +117,7 @@
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/politics/ng-interactive/2018/nov/15/can-you-get-mays-brexit-deal-through-parliament",
     "image": "/img/brexit-votes.png",
-    "priority": 9,
+    "priority": 11,
     "underline": true
   },
   {
@@ -106,7 +128,7 @@
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats",
     "image": "/img/midterms-live.png",
-    "priority": 4,
+    "priority": 16,
     "underline": true
   },
   {
@@ -117,7 +139,7 @@
     "date": "Nov. 2018",
     "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/07/blue-wave-or-blue-ripple-a-visual-guide-to-the-democrats-gains",
     "image": "/img/midterms-analysis.png",
-    "priority": 13,
+    "priority": 7,
     "underline": true
   },
   {
@@ -128,7 +150,7 @@
     "date": "July 2018",
     "link": "https://www.nbcnewyork.com/news/tech/New-Data-Reveal-Wide-Range-Political-Actors-Facebook-469600273.html",
     "image": "/img/facebook-ads.png",
-    "priority": 8,
+    "priority": 12,
     "underline": true
   },
   {
@@ -139,7 +161,7 @@
     "date": "July 2018",
     "link": "https://www.necn.com/multimedia/2020-Presidential-Primaries-Which-Candidates-Visited-New-Hampshire-490729011.html",
     "image": "/img/candidate-tracker.png",
-    "priority": 14,
+    "priority": 6,
     "underline": true
   },
   {
@@ -150,7 +172,7 @@
     "date": "July 2018",
     "link": "https://www.nbcnewyork.com/news/national-international/See-How-Big-the-Mendocino-Fire-Is-490287341.html",
     "image": "/img/mendocino-fire.png",
-    "priority": 15,
+    "priority": 5,
     "underline": true
   },
   {
@@ -161,7 +183,7 @@
     "date": "June 2018",
     "link": "https://www.nbcwashington.com/news/politics/Advocates-Against-Detaining-Migrant-Families-Children-486080741.html",
     "image": "/img/family-separation.png",
-    "priority": 17,
+    "priority": 3,
     "underline": true
   },
   {
@@ -172,7 +194,7 @@
     "date": "May 2018",
     "link": "https://peterandringa.com/facebook-news",
     "image": "/img/facebook-news.png",
-    "priority": 16,
+    "priority": 4,
     "underline": true
   },
   {
@@ -183,7 +205,7 @@
     "date": "Dec. 2017",
     "link": "https://peterandringa.com/2018-midterms",
     "image": "/img/midterms-preview.png",
-    "priority": 18,
+    "priority": 2,
     "underline": true
   },
   {
@@ -194,7 +216,7 @@
     "date": "Oct. 2017",
     "link": "https://peterandringa.com/world-trade",
     "image": "/img/world-trade.png",
-    "priority": 19,
+    "priority": 1,
     "underline": true
   },
   {
@@ -205,7 +227,7 @@
     "date": "May 2018",
     "link": "https://www.indyweek.com/indyweek/a-decade-ago-yvette-matthews-was-unemployed-and-struggling-now-shes-a-key-advocate-for-affordable-housing-in-chapel-hill/Content?oid=14651663",
     "image": "/img/indyweek.png",
-    "priority": 12,
+    "priority": 8,
     "underline": true
   }
 ]

@@ -42,7 +42,7 @@ html
         document.querySelector('.filter-count').innerText = n;
         for(const el of document.querySelectorAll('[data-priority]')){
           const priority = +el.getAttribute('data-priority');
-          if(priority > n)
+          if( priority <= (total-n) )
             el.classList.add('hidden');
         }
       }

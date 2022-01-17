@@ -1,14 +1,48 @@
 {
   "sections": [
     {
-      "title": "Work Experience",
+      "title": "Education",
+      "items": [
+        {
+          "title": "Oxford Internet Institute",
+          "subtitle": "Rhodes Scholar; MSc Social Science of the Internet",
+          "text": "Pursuing a Masters focusing on online journalism, funded by the Rhodes Trust. My thesis research will look at email newsletters as a source of news, exploring their audience and understanding normative implications of the trend.",
+          "location": "Oxford, UK",
+          "date": "Sept. 2021 - August 2022"
+        },
+        {
+          "title": "University of North Carolina at Chapel Hill",
+          "subtitle": "B.A. Journalism (honors); Computer Science",
+          "text": "Graduated with Highest Distinction, double-majoring in journalism and computer science with a minor in entrepreneurship. Relevant coursework includes Software Architecture, Interactive Journalism, Big Data Ethics, UX design, Multimedia Storytelling and Emerging Technologies.",
+          "location": "Chapel Hill, NC",
+          "date": "Aug. 2016 - May 2020"
+        },
+        {
+          "title": "Duke University",
+          "subtitle": "Robertson Scholar",
+          "text": "Member of a selective scholarship program as a “dual citizen” of both UNC and Duke, studying and living at both schools. Coursework: Algorithmic Journalism, Politics and Media, Fact-Checking and Profile Writing.",
+          "location": "Durham, NC",
+          "date": "Aug. 2016 - May 2020"
+        },
+        {
+          "title": "Thomas Jefferson High School for Science and Technology",
+          "subtitle": "Software Engineering",
+          "text": "Attended a selective STEM high school, graduating with a concentration in software engineering.",
+          "location": "Alexandria, VA",
+          "date": "Sept. 2012 - June 2016",
+          "hide_print": true
+        }
+      ]
+    },
+    {
+      "title": "Experience",
       "items": [
         {
           "title": "The Washington Post",
           "subtitle": "Newsroom Engineer, Elections",
           "text": "Helped build the Post's elections infrastructure for the 2020 presidential race, including UX design, data visualization, and frontend development; along with work on data pipelines for the Post's COVID trackers.",
-          "location": "Washington DC (remote)",
-          "date": "May 2020-current",
+          "location": "Washington DC",
+          "date": "May 2020-Sept. 2021",
           "link": "https://washingtonpost.com/elections/"
         },
         {
@@ -50,7 +84,8 @@
           "text": "Entirely rebuilt the internal inventory management website, improving load times and reliability of the system using MySQL, MongoDB, Ruby on Rails and Javascript.",          
           "location": "Fairfax, VA",
           "date": "June-Aug. 2016",
-          "link": "https://customink.com"
+          "link": "https://customink.com",
+          "hide_print": true
         },
         {
           "title": "nvite",
@@ -85,22 +120,33 @@
       "display_link": "peterandringa.com/projects",
       "items": [
         {
-          "title": "Visualizing Data Beyond Flatland",
-          "subtitle": "Research, Design",
-          "text": "Completed an honors thesis studying the user experience of augmented reality data visualizations, designing my own AR graphics and conducting user tests to create guidelines for future designs.",
-          "location": "Reese Innovation Lab",
-          "date": "April 2020",
-          "link": "https://medium.com/reese-innovate/visualizing-data-beyond-flatland-e6c5e81850de",
+          "title": "2020 Elections: Live Results",
+          "subtitle": "Data, Interactive",
+          "text": "On the Washington Post's Elections Engineering team, I worked to ensure the functionality and effective storytelling on our 2020 election results pages, contributing to the entire stack from scraping and data processing all the way to visualization.",
+          "location": "The Washington Post",
+          "date": "November 2020",
+          "link": "https://www.washingtonpost.com/elections/election-results/virginia-2020/",
+          "underline": true,
+          "hide_print": true
+        },
+        {
+          "title": "2020 Elections: Tracking the Early Vote",
+          "subtitle": "Data, Engineering",
+          "text": "Built a system to aggregate early voting and turnout data from all 50 states, then used it to analyze and visualize results for this live tracker that ran for a month ahead of the 2020 election.",
+          "location": "The Washington Post",
+          "date": "October 2020",
+          "link": "https://www.washingtonpost.com/graphics/2020/elections/early-voting-numbers-so-far/",
           "underline": true
         },
         {
-          "title": "To Rock the Charts in 2019, Bands Need a Little Help",
+          "title": "Teachers for Bernie, Retirees for Trump: Who's backing whom in 2020",
           "subtitle": "Data, Interactive",
-          "text": "Contributed to this story showing how bands are gaming the Billboard album charts, by scraping data, building an interactive and designing a full-width graphic for print.",
-          "location": "The Wall Street Journal",
-          "date": "August 2019",
-          "link": "https://www.wsj.com/articles/for-albums-the-stairway-to-heaven-goes-via-ticket-sales-11565343003",
-          "underline": true
+          "text": "Built a database to help Guardian reporters analyze the campaign finance filings from presidential hopefuls, then used that data to write multiple stories about donor demographics.",
+          "location": "The Guardian",
+          "date": "October 2019",
+          "link": "https://www.theguardian.com/us-news/2019/oct/20/bernie-sanders-pete-buttigieg-donald-trump-voters",
+          "underline": true,
+          "hide_print": true
         },
         {
           "title": "Gun violence has sharply declined in the's Bay Area. What happened?",
@@ -143,34 +189,17 @@
       ]
     },
     {
-      "title": "Education",
-      "items": [
-        {
-          "title": "University of North Carolina at Chapel Hill",
-          "subtitle": "B.A. Journalism (honors); Computer Science",
-          "text": "Graduated with Highest Distinction, double-majoring in journalism and computer science with a minor in entrepreneurship. Relevant coursework includes Software Architecture, Interactive Journalism, Big Data Ethics, UX design, Multimedia Storytelling and Emerging Technologies.",
-          "location": "Chapel Hill, NC",
-          "date": "Aug. 2016 - May 2020"
-        },
-        {
-          "title": "Duke University",
-          "subtitle": "Robertson Scholar",
-          "text": "Member of a selective scholarship program as a “dual citizen” of both UNC and Duke, studying and living at both schools. Coursework: Algorithmic Journalism, Politics and Media, Fact-Checking and Profile Writing.",
-          "location": "Durham, NC",
-          "date": "Aug. 2016 - May 2020"
-        },
-        {
-          "title": "Thomas Jefferson High School for Science and Technology",
-          "subtitle": "Software Engineering",
-          "text": "Attended a selective STEM high school, graduating with a concentration in software engineering.",
-          "location": "Alexandria, VA",
-          "date": "Sept. 2012 - June 2016"
-        }
-      ]
-    },
-    {
       "title": "Research",
       "items": [
+        {
+          "title": "Visualizing Data Beyond Flatland",
+          "subtitle": "Digital Journalism, UX/UI",
+          "text": "Completed an honors thesis studying the user experience of augmented reality data visualizations, designing my own AR graphics and conducting user tests to create guidelines for future designs.",
+          "location": "Reese Innovation Lab",
+          "date": "April 2020",
+          "link": "https://medium.com/reese-innovate/visualizing-data-beyond-flatland-e6c5e81850de",
+          "underline": true
+        },
         {
           "title": "Duke DeWitt Wallace Center for Media and Democracy",
           "subtitle": "Online Gatekeeping, Local News",
@@ -212,11 +241,6 @@
           "title": "UNC Student Government",
           "subtitle": "Academic Affairs & First Year Council",
           "date": "Sept. 2016 - May. 2018"
-        },
-        {
-          "title": "Joe for SBP, Garima for SBP",
-          "subtitle": "Director of Strategy",
-          "date": "Nov. 2016 - Feb. 2018"
         }
       ]
     }

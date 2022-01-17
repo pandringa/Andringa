@@ -1,14 +1,14 @@
 {
   "name": "Peter Andringa",
-  "subhead": "Journalist • Developer",
+  "subhead": "News • Tech • Social Science",
   "sections": [
     {
       "title": "Currently",
       "hide_print": true,
       "items": [
         {
-          "title": "Newsroom Engineer for Elections,",
-          "subtitle": "The Washington Post"
+          "title": "Rhodes Scholar,",
+          "subtitle": "The Oxford Internet Institute"
         }
       ]
     },
@@ -17,10 +17,10 @@
       "hide_print": true,
       "items": [
         {
-          "title": "To Rock the Charts, Bands Need a Little Help",
-          "subtitle": "The Wall Street Journal",
+          "title": "Election 2020: Early Voting Numbers",
+          "subtitle": "The Washington Post",
           "substyle": "small",
-          "link": "https://www.wsj.com/articles/for-albums-the-stairway-to-heaven-goes-via-ticket-sales-11565343003"
+          "link": "https://www.washingtonpost.com/graphics/2020/elections/early-voting-numbers-so-far/"
         },
         {
           "title": "Gun violence has declined in the Bay Area. What happened?",
