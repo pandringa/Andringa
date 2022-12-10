@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
   glob = require('glob'),
   jade = require('gulp-jade'),
-  sass = require('gulp-sass'),
+  sass = require('gulp-sass')(require('sass')),
   concat = require('gulp-concat'),
   minifyJS = require('gulp-uglify'),
   marked = require('marked'),
@@ -74,10 +74,11 @@ var compiler = {
   static:  function() {
     return Async(gulp.src(paths.static).pipe( gulp.dest(outPath) ));
   },
-  dotfiles: function() {
+  dotfiles: function(done) {
     fs.mkdirSync( pathUtil.join(outPath) );
     fs.writeFileSync( pathUtil.join(outPath)+'.gitignore', '.DS_Store');
     fs.writeFileSync( pathUtil.join(outPath)+'.nojekyll', '');
+    return done();
   },
   clean: function(done) {
     return new Promise(function(resolve, reject) {
@@ -99,46 +100,50 @@ var compiler = {
     });
   }
 }
+gulp.task('clean', compiler.clean);
+gulp.task('dotfiles', compiler.dotfiles);
 gulp.task('scripts', compiler.scripts);
 gulp.task('styles', compiler.styles);
 gulp.task('pages', compiler.pages);
 gulp.task('static', compiler.static);
-
-// Methods
-gulp.task('watch', function() {
-  gulp.watch(paths.js, ['scripts']);
-  gulp.watch('scss/**/*', ['styles']);
-  gulp.watch('jade/**/*', ['pages']);
-  gulp.watch(paths.static, ['static']);
-});
-
-gulp.task('server', ['compile', 'watch'], function() {
-  livereload.listen();
-  connect()
-    .use(connect.static('out'))
-    .listen(9000);
-  console.log("Server listening on port 9000...");
-});
-
-gulp.task('compile', () =>
-  compiler.clean().then(() => 
-    Promise.all([
-      compiler.dotfiles(),
-      compiler.scripts(),
-      compiler.styles(),
-      compiler.pages(),
-      compiler.static()
-    ])
-  )
-);
-
-gulp.task('resumes', ['compile'], () =>
+gulp.task('resumes', () =>
   compiler.resume('index.html', 'resume')
     .then(() => compiler.resume('tech_resume/index.html', 'tech_resume'))
     .then(() => gulp.src('./resumes/resume.pdf').pipe(gulp.dest(outPath)) )
 );
 
-gulp.task('pushRemote', ['compile', 'resumes'], function(done) {
+// Methods
+gulp.task('compile', 
+  gulp.series(
+    'clean',
+    gulp.parallel(
+      'dotfiles',
+      'scripts',
+      'styles',
+      'pages',
+      'static'
+    ),
+    'resumes'
+  )
+);
+
+gulp.task('watch', function(done) {
+  gulp.watch(paths.js, compiler.scripts);
+  gulp.watch('scss/**/*', compiler.styles);
+  gulp.watch('jade/**/*', compiler.pages);
+  gulp.watch(paths.static, compiler.static);
+  return done();
+});
+
+gulp.task('server', gulp.series('compile', 'watch', function() {
+  livereload.listen();
+  connect()
+    .use(connect.static('out'))
+    .listen(9000);
+  console.log("Server listening on port 9000...");
+}));
+
+gulp.task('pushRemote', function(done) {
   // Get last commit line
   safeps.spawnCommand('git', ['log', '--oneline'], {cwd: __dirname}, function(err, stdout) {
     if(err){
@@ -151,7 +156,7 @@ gulp.task('pushRemote', ['compile', 'resumes'], function(done) {
       ['init'],
       ['add', '--all', '--force'],
       ['commit', '-m', lastCommit],
-      ['push', '--quiet', '--force', deployRepo, "master"]
+      ['push', '--quiet', '--force', deployRepo, "main"]
     ]
     // Run git commands
     safeps.spawnCommands('git', gitCommands, {cwd:outPath, stdio:'inherit'}, function(err){
@@ -163,15 +168,14 @@ gulp.task('pushRemote', ['compile', 'resumes'], function(done) {
     });
   });
 });
-gulp.task('resetRemote', ['pushRemote'], function(done) {
+
+gulp.task('resetRemote', function(done) {
   rimraf( pathUtil.join(outPath, ".git"), function(err) {
     if(err) return done(err);
     done();
   });
 });
 
-gulp.task('deploy', ['compile', 'resumes', 'pushRemote', 'resetRemote'], function(){
-  console.log("Deployed to Github Pages!");
-});
+gulp.task('deploy', gulp.series('compile', 'pushRemote', 'resetRemote'));
 
-gulp.task('default', ['server']);
+gulp.task('default', gulp.series('server'));
