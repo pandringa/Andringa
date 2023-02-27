@@ -95,7 +95,7 @@ var compiler = {
     return puppeteer.launch().then(async browser => {
       const page = await browser.newPage();
       await page.goto('file://'+pathUtil.join(outPath, inputName), {waitUntil: 'networkidle2'});
-      await page.pdf({path: './resumes/'+outputName+'.pdf', pageRanges: '1'});
+      await page.pdf({path: './resumes/'+outputName+'.pdf'});
       await browser.close();
     });
   }

@@ -4,30 +4,37 @@
       "title": "Education",
       "items": [
         {
-          "title": "Oxford Internet Institute",
-          "subtitle": "Rhodes Scholar; MSc Social Science of the Internet",
-          "text": "Pursuing a Masters focusing on online journalism, funded by the Rhodes Trust. My thesis research looks at email newsletters as a source of news, exploring how they change the relationship between writers and audiences.",
+          "title": "Master of Public Policy",
+          "subtitle": "Blavatnik School of Government, University of Oxford",
+          "text": "I studied comparative technology policy in my second year of the Rhodes, analyzing how different regulatory approaches promote (or inhibit) free expression and healthy media ecosystems.",
           "location": "Oxford, UK",
-          "date": "Sept. 2021 - August 2022"
+          "date": "Sept. 2022 - Aug. 2023"
         },
         {
-          "title": "University of North Carolina at Chapel Hill",
-          "subtitle": "B.A. Journalism (honors); Computer Science",
-          "text": "Graduated with Highest Distinction, double-majoring in journalism and computer science with a minor in entrepreneurship. Relevant coursework includes Software Architecture, Interactive Journalism, Big Data Ethics, UX design, Multimedia Storytelling and Emerging Technologies.",
+          "title": "MSc., Social Science of the Internet",
+          "subtitle": "Oxford Internet Institute, University of Oxford",
+          "text": "I studied platform economics, user behavior, and digital journalism in my first year as a Rhodes Scholar, receiving a distinction for my thesis on the relationships mediated by journalistic email newsletters.",
+          "location": "Oxford, UK",
+          "date": "Sept. 2021 - Aug. 2022"
+        },
+        {
+          "title": "B.A., Journalism & Computer Science",
+          "subtitle": "University of North Carolina at Chapel Hill",
+          "text": "I graduated with Highest Distinction, double-majoring in journalism and computer science with a minor in entrepreneurship. Relevant coursework includes: Software Architecture, Interactive Journalism, Big Data Ethics, UX design, Multimedia Storytelling and Emerging Technologies.",
           "location": "Chapel Hill, NC",
           "date": "Aug. 2016 - May 2020"
         },
         {
-          "title": "Duke University",
-          "subtitle": "Robertson Scholar",
-          "text": "Member of a selective scholarship program as a “dual citizen” of both UNC and Duke, studying and living at both schools. Coursework: Algorithmic Journalism, Politics and Media, Fact-Checking and Profile Writing.",
+          "title": "Robertson Scholar",
+          "subtitle": "Duke University",
+          "text": "I joined a selective scholarship program as a “dual citizen” of both UNC and Duke, studying and living at both schools. Coursework: Algorithmic Journalism, Politics and Media, Fact-Checking and Profile Writing.",
           "location": "Durham, NC",
           "date": "Aug. 2016 - May 2020"
         },
         {
           "title": "Thomas Jefferson High School for Science and Technology",
           "subtitle": "Software Engineering",
-          "text": "Attended a selective STEM high school, graduating with a concentration in software engineering.",
+          "text": "I attended a selective STEM high school, graduating with a concentration in software engineering.",
           "location": "Alexandria, VA",
           "date": "Sept. 2012 - June 2016",
           "hide_print": true
@@ -35,36 +42,44 @@
       ]
     },
     {
-      "title": "Experience",
+      "title": "Work Experience",
       "items": [
         {
           "title": "The Washington Post",
           "subtitle": "Newsroom Engineer, Elections",
-          "text": "Helped build the Post's elections infrastructure for the 2020 presidential race, including UX design, data visualization, and frontend development; along with work on data pipelines for the Post's COVID trackers.",
+          "text": "As a hybrid journalist-engineer on the Newsroom Engineering team, I wrote software to cover data-driven stories like the Olympics, COVID-19, and the U.S. elections. Along the way I designed new visualizations, created stable data pipelines, and built cloud infrastructures serving millions of users.",
           "location": "Washington DC",
           "date": "May 2020-Sept. 2021",
           "link": "https://washingtonpost.com/elections/"
         },
         {
+          "title": "Reese News Innovation Lab",
+          "subtitle": "Research Fellow",
+          "text": "I led software development and UX research projects studying data visualization and AR/VR experiences for news, building internal prototypes and projects for partner organizations like The Washington Post.",
+          "location": "Chapel Hill, NC",
+          "date": "Jan. 2019-May 2020",
+          "link": "https://www.uncbluesky.com/"
+        },
+        {
+          "title": "The Guardian",
+          "subtitle": "Data Reporting Contributor",
+          "text": "I built data pipelines and results pages for the 2018 U.S. midterms and 2020 primaries with the Visuals desk, writing data stories about climate change, campaign finance, and gun violence between the two elections.",
+          "location": "London, UK",
+          "date": "Sept. 2018-May 2020",
+          "link": "https://theguardian.com/profile/peter-andringa"
+        },
+        {
           "title": "The Wall Street Journal",
           "subtitle": "Graphics Intern",
-          "text": "Scraped and analyzed data, built interactives and designed graphics for The Journal's Business & Finance section in both print and online, including graphics for front-page stories on both platforms.",
+          "text": "I covered daily corporate news, scraped data, performed statistical analyses, and designed front-page graphics for the paper's Business and Finance section both online and in print.",
           "location": "New York, NY",
           "date": "June-Aug. 2019",
           "link": "https://wsj.com/"
         },
         {
-          "title": "The Guardian",
-          "subtitle": "Visuals Intern",
-          "text": "Covered the 2018 midterm elections for the Guardian, building parts of the election backend and results page. Later produced post-election analyses and visual stories, then freelanced for the paper in 2019-20.",
-          "location": "London, UK",
-          "date": "Sept-Dec. 2018",
-          "link": "https://theguardian.com/profile/peter-andringa"
-        },
-        {
           "title": "NBC",
           "subtitle": "Multimedia Journalism Intern",
-          "text": "Produced videos, graphics and interactives for NBC’s national newsroom, creating reusable digital tools and new reader experiences across 15 owned-and-operated local websites.",
+          "text": "I produced videos, graphics, and interactive investigations for NBC News, developing reusable digital tools and designing new reader experiences across 15 owned-and-operated local websites.",
           "location": "New York, NY",
           "date": "June-Aug. 2018",
           "link": "https://www.nbcnewyork.com/results/?keywords=%22Peter+Andringa%22&byline=y&sort=date"
@@ -72,29 +87,29 @@
         {
           "title": "The Delta Center",
           "subtitle": "Media Intern",
-          "text": "Helped run the Delta Center’s “Most Southern Place on Earth” teacher-training workshops by coordinating logistics, taking photos and video, producing multimedia stories and designing printed marketing.",
+          "text": "I helped run teacher training workshops for the National Endowment for the Humanities: planning logistics, making photos and videos, and designing digital and printed marketing.",
           "location": "Cleveland, MS",
           "date": "June-Aug. 2017",
           "link": "https://deltacenterdsu.com",
-          "hide_print": true
+          "hide_print": false
         },
         {
           "title": "CustomInk",
           "subtitle": "Software Engineering Intern, eCommerce",
-          "text": "Entirely rebuilt the internal inventory management website, improving load times and reliability of the system using MySQL, MongoDB, Ruby on Rails and Javascript.",          
+          "text": "I rebuilt a critical inventory management system for the eCommerce engineering team, improving load times and reliability of a system processing tens of thousands of transactions per day.",          
           "location": "Fairfax, VA",
           "date": "June-Aug. 2016",
           "link": "https://customink.com",
-          "hide_print": true
+          "hide_print": false
         },
         {
           "title": "nvite",
           "subtitle": "Software Engineering Intern", 
-          "text": "Architected, built and launched a new “communities” feature for the start-up events platform, a key part of their eventual acquisition by Eventbrite in 2017.",      
+          "text": "I architected, built and launched a new “communities” feature for the start-up events platform, which was eventually cited as a key reason for their eventual acquisition by Eventbrite in 2017.",      
           "location": "Washington, DC",
           "date": "June-Aug. 2015",
           "link": "https://nvite.com",
-          "hide_print": true
+          "hide_print": false
         },
         {
           "title": "3advance",
@@ -102,7 +117,7 @@
           "location": "Washington, DC",
           "date": "June-Aug 2014",
           "link": "https://3advance.com",
-          "hide_print": true
+          "hide_print": false
         },
         {
           "title": "SocialTables",
@@ -115,43 +130,79 @@
       ]
     },
     {
-      "title": "Portfolio",
+      "title": "Awards, Honors, & Fellowships",
+      "layout": "columns",
+      "items": [
+        {
+          "title": "Rhodes Scholar",
+          "subtitle": "Virginia & Exeter, 2021"
+        },
+        {
+          "title": "Robertson Scholar",
+          "subtitle": "UNC/Duke, 2016"
+        },
+        {
+          "title": "Quarrell Read Prize",
+          "subtitle": "Exeter College, 2022"
+        },
+        { 
+          "title": "Graduate Affiliate, CITAP", 
+          "subtitle": "UNC, 2022"
+        },
+        { 
+          "title": "Honors Laureate", 
+          "subtitle": "Honors Carolina, 2020"
+        },
+        { 
+          "title": "Outstanding Journalism Research", 
+          "subtitle": "Duke, 2020"
+        },
+        { 
+          "title": "Phi Beta Kappa", 
+          "subtitle": "UNC, 2018"
+        },
+        { 
+          "title": "Kappa Tau Alpha", 
+          "subtitle": "UNC, 2018"
+        }
+      ]
+    },
+    {
+      "title": "News Publications",
       "more_link": "https://peterandringa.com/projects",
       "display_link": "peterandringa.com/projects",
       "items": [
         {
           "title": "2020 Elections: Live Results",
-          "subtitle": "Data, Interactive",
-          "text": "On the Washington Post's Elections Engineering team, I worked to ensure the functionality and effective storytelling on our 2020 election results pages, contributing to the entire stack from scraping and data processing all the way to visualization.",
+          "subtitle": "Data, Graphics",
+          "text": "I designed, architected, and built multiple parts of the Post’s election night coverage, including data pipelines, vote modeling, data visualizations, and integration across our native apps.",
           "location": "The Washington Post",
-          "date": "November 2020",
+          "date": "Nov. 2020",
           "link": "https://www.washingtonpost.com/elections/election-results/virginia-2020/",
-          "underline": true,
-          "hide_print": true
+          "underline": true
         },
         {
           "title": "2020 Elections: Tracking the Early Vote",
           "subtitle": "Data, Engineering",
-          "text": "Built a system to aggregate early voting and turnout data from all 50 states, then used it to analyze and visualize results for this live tracker that ran for a month ahead of the 2020 election.",
+          "text": "I built a system to aggregate early voting and turnout data from all 50 states, analyzing and visualizing results for this tracker that ran for a month and appeared on the front page of both web and print editions.",
           "location": "The Washington Post",
-          "date": "October 2020",
+          "date": "Oct. 2020",
           "link": "https://www.washingtonpost.com/graphics/2020/elections/early-voting-numbers-so-far/",
           "underline": true
         },
         {
           "title": "Teachers for Bernie, Retirees for Trump: Who's backing whom in 2020",
-          "subtitle": "Data, Interactive",
-          "text": "Built a database to help Guardian reporters analyze the campaign finance filings from presidential hopefuls, then used that data to write multiple stories about donor demographics.",
+          "subtitle": "Data, Graphics",
+          "text": "I built a database to help Guardian reporters analyze campaign finance filings from presidential hopefuls, then used that data to write multiple stories about donor demographics.",
           "location": "The Guardian",
-          "date": "October 2019",
+          "date": "Oct. 2019",
           "link": "https://www.theguardian.com/us-news/2019/oct/20/bernie-sanders-pete-buttigieg-donald-trump-voters",
-          "underline": true,
-          "hide_print": true
+          "underline": true
         },
         {
-          "title": "Gun violence has sharply declined in the's Bay Area. What happened?",
-          "subtitle": "Interactive",
-          "text": "Led design, development and data visualization for the first story in The Guardian's series about gun violence in the San Francisco Bay Area.",
+          "title": "Gun violence has sharply declined in the Bay Area. What happened?",
+          "subtitle": "Data, Graphics",
+          "text": "I led design, development and data visualization for this story on gun violence in the San Francisco Bay Area.",
           "location": "The Guardian",
           "date": "June 2019",
           "link": "https://www.theguardian.com/us-news/ng-interactive/2019/jun/03/gun-violence-bay-area-drop-30-percent-why-investigation",
@@ -159,8 +210,8 @@
         },
         {
           "title": "2018 US Midterms: Live Results",
-          "subtitle": "Interactive, Data",
-          "text": "Designed and built portions of The Guardian's elections stack, including backend data parsing, a staging environment, front-end React components, the ticker and post-election graphics analyzing results.",
+          "subtitle": "Data, Engineering",
+          "text": "I designed and built portions of The Guardian's elections stack, including backend data parsing, a staging environment, front-end components, and post-election graphics analyzing the results.",
           "location": "The Guardian",
           "date": "Nov. 2018",
           "link": "https://www.theguardian.com/us-news/ng-interactive/2018/nov/06/midterm-elections-2018-live-results-latest-winners-and-seats",
@@ -188,58 +239,84 @@
         }
       ]
     },
+    
     {
-      "title": "Research",
+      "title": "Research Publications",
       "items": [
         {
-          "title": "Visualizing Data Beyond Flatland",
-          "subtitle": "Digital Journalism, UX/UI",
-          "text": "My undergraduate honors thesis studied the user experience of augmented reality journalism, designing my own AR graphics and conducting user tests to create guidelines for future designs.",
+          "title": "Email Newsletters and the Changing Journalist-Audience Relationship",
+          "text": "Conducted a mixed-methods research study exploring the growth of independent email newsletters as a journalistic form and the platform’s impacts on both writers and readers.",
+          "location": "Oxford Internet Institute",
+          "date": "Aug. 2022",
+          "link": "/oii-thesis.pdf",
+          "underline": true
+        },
+        {
+          "title": "Escaping Flatland: The user experience of data visualizations in augmented reality",
+          "text": "My undergraduate thesis studied the user experience of augmented reality journalism, designing my own AR graphics and conducting user tests to create guidelines for future designs.",
           "location": "Reese Innovation Lab",
           "date": "April 2020",
           "link": "https://medium.com/reese-innovate/visualizing-data-beyond-flatland-e6c5e81850de",
           "underline": true
         },
         {
-          "title": "Duke DeWitt Wallace Center for Media and Democracy",
-          "subtitle": "Online Gatekeeping, Local News",
-          "text": "I worked with Dr. Phillip Napoli to study the audience for local news on Facebook, using computational methods and exclusive datasets. Published in Nieman Lab and the Association of Internet Researchers, and recieved the center's award for Outstanding Journalism Research.",
-          "location": "Duke University",
-          "date": "May 2018 - May 2020",
-          "link": "http://dewitt.sanford.duke.edu"
+          "title": "Local News on Facebook: Assessing the Critical Information Needs",
+          "text": "Created and analyzed a database of more than 300,000 local news stories distributed on Facebook, to examine what types of local news are produced and shared on the platform.",
+          "location": "Nieman Lab",
+          "date": "Sept. 2019",
+          "link": "https://www.niemanlab.org/2019/09/researchers-analyzed-more-than-300000-local-news-stories-on-facebook-heres-what-they-found/"
         },
         {
-          "title": "Reese Innovation Lab",
-          "subtitle": "AR Storytelling",
-          "text": "I developed new storytelling technologies in Prof. Steven King's lab, including a photogrammetry tool, AR experiences and a prototype of scavenger hunt app which won a $75,000 grant. Responsibilities included product management, research, design and development.",
-          "location": "UNC - Chapel Hill",
-          "date": "Sept 2017 - May 2020",
-          "link": "https://reeseinnovate.com"
+          "title": "“How is Social Media Gatekeeping Different?”: A multi-platform comparative analysis",
+          "text": "Scraped data across years of print, web, and social media stories from the New York Times to examine how different types of news are prioritized and spread across each platform.",
+          "location": "Association of Internet Researchers",
+          "date": "Oct. 2018",
+          "link": "https://journals.uic.edu/ojs/index.php/spir/article/view/10472"
         }
       ]
     },
     {
-      "title": "Other Experience",
-      "hide_print": true,
+      "title": "Volunteer & Leadership Experience",
+      "hide_print": false,
       "items": [
+        {
+          "title": "Middle Common Room, Exeter College Oxford",
+          "subtitle": "President (2023-); Social Secretary (2022)",
+          "location": "Oxford, UK",
+          "date": "Oct. 2021 - Sept. 2023",
+          "text": "Worked closely with fellows, participated in the College's governing body, planned social events, and supported the community of graduate students in the Middle Common Room."
+        },
+        {
+          "title": "Rhodes Technology and Society Forum",
+          "subtitle": "Co-Chair, Networked Society",
+          "location": "London, UK",
+          "date": "Oct. 2021 - Sept. 2023",
+          "text": "Selected speakers, led planning, and moderated panels in the “Networked Society” track of the Rhodes Trust’s first annual conference on technology ethics and governance."
+        },
         {
           "title": "UNC Faculty Council",
           "subtitle": "Student Representative",
-          "date": "Sept. 2017 - May 2020"
+          "location": "Chapel Hill, NC",
+          "date": "Sept. 2017 - May 2020",
+          "text": "Served as a liaison between faculty and students on campus policy issues, leading student input on a redesign of general eduction curriculum in the College of Arts & Sciences."
         },
         {
           "title": "Robertson Community Council",
           "subtitle": "Co-Director",
-          "date": "Sept. 2016 - May 2018"
+          "location": "Durham, NC",
+          "date": "Sept. 2016 - May 2018",
+          "text": "Served as a student voice to the Robertson Scholars program leadership and board of directors."
         },
         {
           "title": "TEDxUNC",
           "subtitle": "Director of Marketing",
+          "location": "Chapel Hill, NC",
           "date": "Sept. 2016 - Feb. 2018"
         },
         {
           "title": "UNC Student Government",
           "subtitle": "Academic Affairs & First Year Council",
+          "location": "Chapel Hill, NC",
           "date": "Sept. 2016 - May. 2018"
         }
       ]

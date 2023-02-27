@@ -1,6 +1,6 @@
 {
   "name": "Peter Andringa",
-  "subhead": "News • Tech • Social Science",
+  "subhead": "Journalism • Technology • Internet Policy",
   "sections": [
     {
       "title": "Currently",
@@ -8,7 +8,7 @@
       "items": [
         {
           "title": "Rhodes Scholar,",
-          "subtitle": "Oxford Internet Institute"
+          "subtitle": "Blavatnik School of Government"
         }
       ]
     },
@@ -52,11 +52,6 @@
       "name": "github",
       "link": "https://github.com/pandringa",
       "print_text": "/pandringa",
-      "hide_print": true
-    },
-    {
-      "name": "dribbble",
-      "link": "https://dribbble.com/pandringa",
       "hide_print": true
     },
     {

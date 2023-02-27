@@ -1,7 +1,7 @@
 @media print {
   @page { 
     margin: 0;
-    padding-top: 1.2in;
+    padding-top: 1.3in;
   }
   body {
     font-size: 0.8em;
@@ -30,7 +30,7 @@
     height: auto !important;
     min-height: 0.4in !important;
     margin: 0 0 0.5em !important;
-    padding: 0.2in !important;
+    padding: 0.3in !important;
     text-align: left;
     align-items: top;
     h1, h3 {
@@ -73,7 +73,7 @@
     }
     .social-icons {
       width: 100% !important;
-      align-items: left;
+      justify-content: flex-end;
       vertical-align: bottom;
       flex-direction: row;
       font-size: 0.9em;
@@ -81,6 +81,9 @@
       margin-right: 0!important;
       a {
         border-bottom: none !important;
+        text-align: right;
+        flex-grow: 0;
+        margin-left: 0.75em;
         .print-text {
           border-bottom: 1px solid $blue;
         }
@@ -91,15 +94,26 @@
     display: block;
     opacity: 1;
     margin: 0;
-    padding: 0.25in;
+    padding: 0.3in;
     margin-top: 0.8in;
-    .section-head,  {
+    .section-head  {
       color: $dark-gray;
-      margin-top: 1.4em;
+      margin-top: 1.5em;
       margin-bottom: 0.5em;
+      &:nth-of-type(4){
+        page-break-before: always;
+        margin-top: 1.3in;
+      }
     }
     .indented {
       padding-left: 2em;
+      &.columns {
+        padding-top: 0.2em;
+        row-gap: 0.25em;
+        .resume-item{
+          margin-top: 0 !important;
+        }
+      }
     }
     .resume-item {
       margin: 0.56em 0 0 !important;
@@ -109,11 +123,12 @@
         }
         .body {
           color: #111;
+          margin-top: 0.2em;
         }
       }
       .item-right {
         flex: 0 0 14em;
-        padding-right: 2em;
+        // padding-right: 2em;
         color: #111;
       }
     }

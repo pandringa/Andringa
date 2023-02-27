@@ -6,7 +6,7 @@ $sans-serifs: "Source Sans Pro", "Helvetica", sans-serif;
 $blue: #2980b9;
 $gray: #f1f2f3;
 $medium-gray: #78797a;
-$dark-gray: #444648;
+$dark-gray: #393b3c;
 $padding: 35px;
 
 body{
@@ -231,9 +231,6 @@ section.resume, section.projects {
 
 	.section-head {
 		color: $medium-gray;
-		&:first-of-type {
-			margin-top: 0;
-		}
 		letter-spacing: 0.06em;
 		margin-top: 1.5em;
 		margin-bottom: 0.75em;
@@ -241,6 +238,28 @@ section.resume, section.projects {
 
 	.indented {
 		padding-left: 1em;
+	}
+
+	.columns {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 0.5em;
+		row-gap: 0.5em;
+		max-width: 810px;
+		.resume-item {
+			display: flex;
+			margin: 0 0;
+			width: auto;
+			&:first-of-type{
+				margin: 0;
+			}
+			.item-left {
+				flex: 1 0 auto;
+			}
+			.item-right {
+				flex: 0 0 auto;
+			}
+		}
 	}
 
 	.resume-item {
@@ -284,9 +303,10 @@ section.resume, section.projects {
 			text-align: right;
 			width: auto;
 			font-family: $sans-serifs;
-			font-size: 0.75em;
+			font-size: 0.8em;
 			letter-spacing: 0.025em;
 			color: #333;
+			padding-top: 0.3em;
 			.location {
 				font-weight: bold;
 			}
@@ -538,8 +558,16 @@ body.animate {
 		margin-left: 0;
 		padding: 2rem;
 		padding-top: 0;
+
+		.columns{
+			grid-template-columns: repeat(2, 50%);
+			font-size: 0.9em;
+			max-width: 810px;
+		}
+
 		.indented {
 			padding-left: 0;
+			margin-top: 0.75em;
 		}
 		.section-head {
 			color: black;
@@ -547,12 +575,13 @@ body.animate {
 			background: $gray;
 			margin: 2rem -2rem 0;
 			padding: 0.5rem 2rem;
-			&:first-of-type{
+			&:first-of-type {
 				margin-top: 0;
 			}
 		}
 		.resume-item {
 			flex-direction: column;
+			margin: 0.75em 0;
 			.item-left {
 				order: 2;
 				align-self: start;
@@ -562,7 +591,7 @@ body.animate {
 						display: block;
 						margin-left: 0;
 						color: #8a8b8c;
-						font-size: 0.8em;
+						font-size: 0.9em;
 					}
 				}
 			}

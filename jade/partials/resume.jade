@@ -1,7 +1,7 @@
 mixin resume(data)
 	for section in data.sections
 		h5.section-head(class=(section.hide_print ? 'hide-print' : ''))= section.title
-		.indented(class=(section.hide_print ? 'hide-print' : ''))
+		.indented(class=(section.hide_print ? 'hide-print' : '') class=(section.layout == 'columns' ? 'columns' : ''))
 			for i in section.items
 				.resume-item(class=(i.hide_print ? "hide-print" : ""))
 					.item-left
