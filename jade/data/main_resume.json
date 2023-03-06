@@ -6,28 +6,28 @@
         {
           "title": "Master of Public Policy",
           "subtitle": "Blavatnik School of Government, University of Oxford",
-          "text": "I studied comparative technology policy in my second year of the Rhodes, analyzing how different regulatory approaches promote (or inhibit) free expression and healthy media ecosystems.",
+          "text": "Completing a rigorous course in philosophy, political science, law, and policy evaluation, with a special focus on comparative technology policy, media ecosystems, and free expression.",
           "location": "Oxford, UK",
-          "date": "Sept. 2022 - Aug. 2023"
+          "date": "Sept. 2022 - July 2023"
         },
         {
           "title": "MSc., Social Science of the Internet",
           "subtitle": "Oxford Internet Institute, University of Oxford",
-          "text": "I studied platform economics, user behavior, and digital journalism in my first year as a Rhodes Scholar, receiving a distinction for my thesis on the relationships mediated by journalistic email newsletters.",
+          "text": "Studied platform economics, internet law, social dynamics, and digital media, receiving a distinction on a thesis studying the relationships mediated by journalistic email newsletters.",
           "location": "Oxford, UK",
           "date": "Sept. 2021 - Aug. 2022"
         },
         {
           "title": "B.A., Journalism & Computer Science",
           "subtitle": "University of North Carolina at Chapel Hill",
-          "text": "I graduated with Highest Distinction, double-majoring in journalism and computer science with a minor in entrepreneurship. Relevant coursework includes: Software Architecture, Interactive Journalism, Big Data Ethics, UX design, Multimedia Storytelling and Emerging Technologies.",
+          "text": "Graduated with Highest Distinction, double-majoring in journalism and computer science with a minor in entrepreneurship. Relevant coursework includes: Software Architecture, Interactive Journalism, Big Data Ethics, UX design, Multimedia Storytelling and Emerging Technologies.",
           "location": "Chapel Hill, NC",
           "date": "Aug. 2016 - May 2020"
         },
         {
           "title": "Robertson Scholar",
           "subtitle": "Duke University",
-          "text": "I joined a selective scholarship program as a “dual citizen” of both UNC and Duke, studying and living at both schools. Coursework: Algorithmic Journalism, Politics and Media, Fact-Checking and Profile Writing.",
+          "text": "Joined a selective scholarship program as a “dual citizen” of both UNC and Duke, studying and living at both schools. Coursework: Algorithmic Journalism, Politics and Media, Fact-Checking and Profile Writing.",
           "location": "Durham, NC",
           "date": "Aug. 2016 - May 2020"
         },
@@ -47,7 +47,7 @@
         {
           "title": "The Washington Post",
           "subtitle": "Newsroom Engineer, Elections",
-          "text": "As a hybrid journalist-engineer on the Newsroom Engineering team, I wrote software to cover data-driven stories like the Olympics, COVID-19, and the U.S. elections. Along the way I designed new visualizations, created stable data pipelines, and built cloud infrastructures serving millions of users.",
+          "text": "Wrote software as a hybrid journalist-engineer covering data-driven stories like the Olympics, COVID-19, and the U.S. elections. Designed new visualizations, created stable data pipelines, and built cloud infrastructures serving millions of users.",
           "location": "Washington DC",
           "date": "May 2020-Sept. 2021",
           "link": "https://washingtonpost.com/elections/"
@@ -55,7 +55,7 @@
         {
           "title": "Reese News Innovation Lab",
           "subtitle": "Research Fellow",
-          "text": "I led software development and UX research projects studying data visualization and AR/VR experiences for news, building internal prototypes and projects for partner organizations like The Washington Post.",
+          "text": "Led software development and UX research projects studying data visualization and AR/VR experiences for news, building internal prototypes and projects for partner organizations like The Washington Post.",
           "location": "Chapel Hill, NC",
           "date": "Jan. 2019-May 2020",
           "link": "https://www.uncbluesky.com/"
@@ -63,7 +63,7 @@
         {
           "title": "The Guardian",
           "subtitle": "Data Reporting Contributor",
-          "text": "I built data pipelines and results pages for the 2018 U.S. midterms and 2020 primaries with the Visuals desk, writing data stories about climate change, campaign finance, and gun violence between the two elections.",
+          "text": "Built data pipelines and results pages for the 2018 U.S. midterms and 2020 primaries with the Visuals desk, writing data stories about climate change, campaign finance, and gun violence between the two elections.",
           "location": "London, UK",
           "date": "Sept. 2018-May 2020",
           "link": "https://theguardian.com/profile/peter-andringa"
@@ -71,7 +71,7 @@
         {
           "title": "The Wall Street Journal",
           "subtitle": "Graphics Intern",
-          "text": "I covered daily corporate news, scraped data, performed statistical analyses, and designed front-page graphics for the paper's Business and Finance section both online and in print.",
+          "text": "Reported on corporate news, scraped data, performed statistical analyses, and designed front-page graphics for the paper's Business and Finance section both online and in print.",
           "location": "New York, NY",
           "date": "June-Aug. 2019",
           "link": "https://wsj.com/"
@@ -79,7 +79,7 @@
         {
           "title": "NBC",
           "subtitle": "Multimedia Journalism Intern",
-          "text": "I produced videos, graphics, and interactive investigations for NBC News, developing reusable digital tools and designing new reader experiences across 15 owned-and-operated local websites.",
+          "text": "Produced videos, graphics, and digital investigations for NBC News, developing reusable data analysis tools and designing interactive storytelling components across 15 owned-and-operated local websites.",
           "location": "New York, NY",
           "date": "June-Aug. 2018",
           "link": "https://www.nbcnewyork.com/results/?keywords=%22Peter+Andringa%22&byline=y&sort=date"
@@ -87,7 +87,7 @@
         {
           "title": "The Delta Center",
           "subtitle": "Media Intern",
-          "text": "I helped run teacher training workshops for the National Endowment for the Humanities: planning logistics, making photos and videos, and designing digital and printed marketing.",
+          "text": "Helped run teacher training workshops for the National Endowment for the Humanities: planning logistics, making photos and videos, and designing digital and printed marketing.",
           "location": "Cleveland, MS",
           "date": "June-Aug. 2017",
           "link": "https://deltacenterdsu.com",
@@ -96,7 +96,7 @@
         {
           "title": "CustomInk",
           "subtitle": "Software Engineering Intern, eCommerce",
-          "text": "I rebuilt a critical inventory management system for the eCommerce engineering team, improving load times and reliability of a system processing tens of thousands of transactions per day.",          
+          "text": "Rebuilt a critical inventory management system for the eCommerce engineering team, improving load times and reliability of a system processing tens of thousands of transactions per day.",          
           "location": "Fairfax, VA",
           "date": "June-Aug. 2016",
           "link": "https://customink.com",
@@ -105,7 +105,7 @@
         {
           "title": "nvite",
           "subtitle": "Software Engineering Intern", 
-          "text": "I architected, built and launched a new “communities” feature for the start-up events platform, which was eventually cited as a key reason for their eventual acquisition by Eventbrite in 2017.",      
+          "text": "Architected, built and launched a new “communities” feature for the start-up events platform, which was eventually cited as a key reason for their eventual acquisition by Eventbrite in 2017.",      
           "location": "Washington, DC",
           "date": "June-Aug. 2015",
           "link": "https://nvite.com",
@@ -115,7 +115,7 @@
           "title": "3advance",
           "subtitle": "Engineering Intern",
           "location": "Washington, DC",
-          "date": "June-Aug 2014",
+          "date": "June-Aug. 2014",
           "link": "https://3advance.com",
           "hide_print": false
         },
@@ -123,7 +123,7 @@
           "title": "SocialTables",
           "subtitle": "Product Engineering Intern",
           "location": "Washington, DC",
-          "date": "June-Aug 2013",
+          "date": "June-Aug. 2013",
           "link": "https://socialtables.com",
           "hide_print": true
         }
