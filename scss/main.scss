@@ -250,6 +250,7 @@ section.resume, section.projects {
 			display: flex;
 			margin: 0 0;
 			width: auto;
+			min-width: 0;
 			&:first-of-type{
 				margin: 0;
 			}
