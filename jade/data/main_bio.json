@@ -8,7 +8,8 @@
       "items": [
         {
           "title": "Visual Investigations,",
-          "subtitle": "The Financial Times"
+          "subtitle": "The Financial Times",
+          "link": "https://ft.com/peter-andringa"
         }
       ]
     },
@@ -17,16 +18,16 @@
       "hide_print": true,
       "items": [
         {
-          "title": "Election 2020: Early Voting Numbers",
-          "subtitle": "The Washington Post",
+          "title": "How China is tearing down Islam",
+          "subtitle": "The Financial Times",
           "substyle": "small",
-          "link": "https://www.washingtonpost.com/graphics/2020/elections/early-voting-numbers-so-far/"
+          "link": "https://t.co/gtt1RtuPot"
         },
         {
-          "title": "Gun violence has declined in the Bay Area. What happened?",
-          "subtitle": "The Guardian",
+          "title": "Did Israel bomb a civillian evacuation route in Gaza?",
+          "subtitle": "The Financial Times",
           "substyle": "small",
-          "link": "https://www.theguardian.com/us-news/ng-interactive/2019/jun/03/gun-violence-bay-area-drop-30-percent-why-investigation"
+          "link": "https://www.ft.com/content/95c5fcf1-c756-415f-85b8-1e4bbff24736"
         }
       ]
     }
